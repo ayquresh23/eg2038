@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EG2038 — Microstructure Evolution & Control in Metallic Materials Study Site</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ayquresh23/study-site-core@main/css/base.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<style>:root{--accent:#00a87a;--accent-soft:rgba(0,168,122,0.10)}</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand" onclick="showSection('home', event)">
+      <div class="nav-logo">TD</div>
+      <span>EG2038</span>
+    </a>
+    <a href="https://ayquresh23.github.io" class="nav-hub-link">← All Modules</a>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="home" onclick="showSection('home', event)">Home</button>
+      <button class="nav-tab" data-section="u1" onclick="showSection('u1', event)">U1 Thermodynamics</button>
+      <button class="nav-tab" data-section="formulas" onclick="showSection('formulas', event)">Formulas</button>
+      <button class="nav-tab" data-section="glossary" onclick="showSection('glossary', event)">Glossary</button>
+      <button class="nav-tab" data-section="traps" onclick="showSection('traps', event)">Traps</button>
+    </div>
+    <div class="nav-mode">
+      <button class="mode-btn active" data-mode="learn" onclick="setMode('learn')">Learn</button>
+      <button class="mode-btn" data-mode="revise" onclick="setMode('revise')">Revise</button>
+      <button class="mode-btn" title="Flashcards" onclick="showSection('glossary');setTimeout(()=>enterFlashcards(),200)" style="font-size:14px;padding:5px 8px">📇</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div id="app"></div>
+</main>
+
+<script src="js/content-data.js"></script>
+<script src="js/glossary-data.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ayquresh23/study-site-core@main/js/render.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ayquresh23/study-site-core@main/js/engine.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script>renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}]});</script>
+</body>
+</html>
