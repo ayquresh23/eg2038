@@ -33,5 +33,29 @@ const glossaryData = {
       ["Heat capacity (C)", "The quantity of heat required to raise the temperature of a substance by one degree; specific heat capacity is heat capacity per unit mass, commonly measured by DSC calorimetry"],
       ["Third law of thermodynamics", "States that the entropy of a perfect crystal is zero at absolute zero (0 K); this provides the reference point used to calculate absolute entropy at any other temperature"]
     ]
+  },
+  u2: {
+    name: "Unit 2 - Solution Thermodynamics",
+    terms: [
+      ["Mole fraction", "The fraction of the atoms (moles) in a mixture that are of one component. For a binary alloy \\(X_A + X_B = 1\\)"],
+      ["Molar free energy", "Free energy per mole of material. The unit-2 graphs of \\(G\\) against \\(X_B\\) all use molar free energy"],
+      ["Free energy of mixing", "\\(\\Delta G_{\\mathrm{mix}} = \\Delta H_{\\mathrm{mix}} - T\\Delta S_{\\mathrm{mix}}\\). The change in free energy when pure A and B form a solution. Negative means mixing is favourable"],
+      ["Enthalpy of mixing (heat of solution)", "\\(\\Delta H_{\\mathrm{mix}}\\). Heat released (negative) or absorbed (positive) when A and B mix, caused by the change in bonding"],
+      ["Entropy of mixing", "\\(\\Delta S_{\\mathrm{mix}}\\). The increase in entropy on mixing, from the extra ways to arrange the atoms. Always positive"],
+      ["Configurational entropy", "The part of the entropy that comes from the number of different ways the atoms can be arranged, as opposed to thermal entropy"],
+      ["Boltzmann equation", "\\(S = k\\ln\\omega\\). Links entropy to \\(\\omega\\), the number of ways of arranging the system"],
+      ["Ideal solution", "A solution where A-A, B-B and A-B bonds have equal energy, so \\(\\Delta H_{\\mathrm{mix}} = 0\\) and mixing is driven purely by entropy"],
+      ["Regular solution", "A solution with unequal bond energies, giving \\(\\Delta H_{\\mathrm{mix}} = \\Omega X_A X_B\\), while entropy of mixing stays the same as in the ideal case"],
+      ["Bond energy parameter (ε)", "\\(\\varepsilon = E_{AB} - \\tfrac12(E_{AA}+E_{BB})\\). Negative means A-B bonds are preferred; positive means like-atom bonds are preferred"],
+      ["Regular solution parameter (Ω)", "\\(\\Omega = N_a z\\varepsilon\\). The bond energy parameter scaled to one mole, with \\(z\\) the number of bonds per atom. Same sign as \\(\\varepsilon\\)"],
+      ["Ordering", "A tendency for unlike atoms to sit next to each other (A-B bonds), which happens when \\(\\varepsilon < 0\\)"],
+      ["Clustering", "A tendency for like atoms to group together (A-A and B-B bonds), which happens when \\(\\varepsilon > 0\\) at low temperature"],
+      ["Miscibility gap", "A composition range where a single mixed phase is unstable and the alloy splits into two phases of different composition, because the \\(\\Delta G_{\\mathrm{mix}}\\) curve has a hump"],
+      ["Substitutional alloy", "A solid solution where solute atoms replace solvent atoms on lattice sites. Occurs when atomic sizes are similar, e.g. brass (Cu-Zn)"],
+      ["Interstitial alloy", "A solid solution where small solute atoms sit in the gaps between solvent atoms, e.g. carbon in iron (steel)"],
+      ["Intermediate phase", "A phase with a different crystal structure to the pure components, stable over a range of compositions"],
+      ["Intermetallic compound", "An intermediate phase with a very narrow composition range, so a fixed formula \\(A_mB_n\\). Its free energy curve is narrow and steep"],
+      ["Chemical potential (μ)", "\\(\\mu_A = (\\partial G'/\\partial n_A)_{T,P,n_B}\\). The change in total free energy when a small amount of A is added. Also called partial molar free energy. Equal in both phases at equilibrium"]
+    ]
   }
 };
