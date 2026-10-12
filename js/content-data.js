@@ -1,6 +1,7 @@
 // EG2038 Study Site — content data
 // Schema documented in study-site-core/js/render.js
 window.SITE_CONFIG = {
+  "wikiHint": "metallurgy",
   "slug": "eg2038",
   "topicIds": ["u1", "u2"],
   "navOrder": ["u1", "u2"],
