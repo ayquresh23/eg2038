@@ -59,3 +59,70 @@ const glossaryData = {
     ]
   }
 };
+
+/* Side-by-side comparisons, shown in term previews and expanded glossary entries */
+const glossaryComparisons = [
+  { terms: ["Isolated system", "Closed system", "Open system"],
+    rows: [
+      ["Exchanges mass?", "No", "No", "Yes"],
+      ["Exchanges energy?", "No", "Yes", "Yes"]
+    ] },
+  { terms: ["Intensive variable", "Extensive variable"],
+    rows: [
+      ["Depends on system size?", "No", "Yes"],
+      ["Examples", "T, P, composition, molar quantities", "V, U, H, S, G, mass"]
+    ] },
+  { terms: ["Equilibrium", "Metastable state"],
+    rows: [
+      ["Gibbs energy", "Global minimum", "Local minimum"],
+      ["Stability", "Stable indefinitely", "Persists until an energy barrier is overcome"],
+      ["Examples", "Stable phases from the phase diagram", "Diamond, martensite, glass"]
+    ] },
+  { terms: ["Driving force", "Kinetics"],
+    rows: [
+      ["Question answered", "Can the change happen? (ΔG < 0)", "How fast does it happen?"],
+      ["Controlled by", "Thermodynamics (G)", "Activation energy, diffusion, temperature"]
+    ] },
+  { terms: ["Heat", "Work"],
+    rows: [
+      ["Energy transferred by", "A temperature difference", "A force acting through a distance"],
+      ["Type", "Path function", "Path function"]
+    ] },
+  { terms: ["Enthalpy", "Entropy", "Gibbs free energy"],
+    rows: [
+      ["Symbol", "H", "S", "G = H − TS"],
+      ["Measures", "Heat content at constant pressure", "Disorder / number of arrangements", "Stability at constant T and P"]
+    ] },
+  { terms: ["Phase", "Component"],
+    rows: [
+      ["What it is", "Physically distinct, homogeneous region", "Chemically independent constituent"],
+      ["Example", "Liquid, α, β", "Cu, Ni, or a compound such as Fe₃C"]
+    ] },
+  { terms: ["Ideal solution", "Regular solution"],
+    rows: [
+      ["ΔH_mix", "0", "Ω X_A X_B"],
+      ["ΔS_mix", "Ideal configurational entropy", "Same as ideal (random mixing assumed)"],
+      ["Bonding", "A–B bonds same as A–A and B–B", "A–B bonds differ (Ω ≠ 0)"]
+    ] },
+  { terms: ["Enthalpy of mixing", "Entropy of mixing"],
+    rows: [
+      ["Origin", "Bond energy changes on mixing", "More possible arrangements"],
+      ["Sign", "Positive, negative or zero", "Always positive (favours mixing)"]
+    ] },
+  { terms: ["Ordering", "Clustering"],
+    rows: [
+      ["Ω", "Negative (A–B bonds favoured)", "Positive (like bonds favoured)"],
+      ["Result", "Ordered arrangement, intermetallics", "Clusters of like atoms, miscibility gap"]
+    ] },
+  { terms: ["Substitutional alloy", "Interstitial alloy"],
+    rows: [
+      ["Solute sits", "On host lattice sites", "In gaps between host atoms"],
+      ["Solute size", "Similar to host", "Much smaller (C, N, H)"],
+      ["Example", "Cu–Ni", "C in Fe"]
+    ] },
+  { terms: ["Intermediate phase", "Intermetallic compound"],
+    rows: [
+      ["Composition", "Exists over a range", "Narrow, fixed stoichiometry"],
+      ["On a phase diagram", "A field between the terminal solutions", "A near-vertical line"]
+    ] }
+];
