@@ -3,17 +3,19 @@
 window.SITE_CONFIG = {
   "wikiHint": "metallurgy",
   "slug": "eg2038",
-  "topicIds": ["u1", "u2", "u3"],
-  "navOrder": ["u1", "u2", "u3"],
+  "topicIds": ["u1", "u2", "u3", "u4"],
+  "navOrder": ["u1", "u2", "u3", "u4"],
   "topicColors": {
     "u1": "#00a87a",
     "u2": "#3b82e8",
-    "u3": "#8855f5"
+    "u3": "#8855f5",
+    "u4": "#e04545"
   },
   "topicLabels": {
     "u1": "Intro to Thermodynamics",
     "u2": "Solution Thermodynamics",
-    "u3": "Using Phase Diagrams"
+    "u3": "Using Phase Diagrams",
+    "u4": "Construction of Phase Diagrams"
   }
 };
 
@@ -23,16 +25,16 @@ window.SITE_CONTENT = {
     "title": "EG2038 Study Site",
     "subtitle": "Thermodynamics and kinetics as the twin forces behind every microstructure: why phases form, when they're stable, and how alloying, processing and heat treatment control the properties that follow. Built out unit by unit as the module runs.",
     "stats": [
-      { "value": "3 of 10", "label": "Units built" },
-      { "value": "69", "label": "Terms" },
-      { "value": "18", "label": "Formulas" },
-      { "value": "30", "label": "Exam Traps" }
+      { "value": "4 of 10", "label": "Units built" },
+      { "value": "79", "label": "Terms" },
+      { "value": "22", "label": "Formulas" },
+      { "value": "41", "label": "Exam Traps" }
     ],
     "extra": [
       { "type": "raw", "html": "<h2>Quick reference</h2>" },
       {
         "type": "raw",
-        "html": "<div class=\"card-grid\">\n      <div class=\"topic-card\" onclick=\"showSection('formulas')\" style=\"--bar-color:#00a87a\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📐 Formula Sheet</div>\n        <div class=\"topic-desc\">Every equation covered so far. Variables defined, units flagged.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('glossary')\" style=\"--bar-color:#2fa15c\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📚 Glossary</div>\n        <div class=\"topic-desc\">69 terms from Units 1 to 3. Instant search, topic filter, and flashcard mode.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('traps')\" style=\"--bar-color:#e04545\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">⚠️ MCQ Traps</div>\n        <div class=\"topic-desc\">Plausible-but-wrong claims the exam uses. Know what's actually true.</div>\n      </div>\n    </div>"
+        "html": "<div class=\"card-grid\">\n      <div class=\"topic-card\" onclick=\"showSection('formulas')\" style=\"--bar-color:#00a87a\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📐 Formula Sheet</div>\n        <div class=\"topic-desc\">Every equation covered so far. Variables defined, units flagged.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('glossary')\" style=\"--bar-color:#2fa15c\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📚 Glossary</div>\n        <div class=\"topic-desc\">79 terms from Units 1 to 4. Instant search, topic filter, and flashcard mode.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('traps')\" style=\"--bar-color:#e04545\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">⚠️ MCQ Traps</div>\n        <div class=\"topic-desc\">Plausible-but-wrong claims the exam uses. Know what's actually true.</div>\n      </div>\n    </div>"
       }
     ]
   },
@@ -1222,7 +1224,409 @@ window.SITE_CONTENT = {
       "readTime": "30 min",
       "color": "#8855f5"
     },
-    { "soon": true, "numLabel": "Unit 4", "title": "Construction of Phase Diagrams", "desc": "Coming soon — added once covered in lectures.", "color": "#e04545", "sections": [] },
+    {
+      "id": "u4",
+      "numLabel": "Unit 4 of 10",
+      "title": "Construction of Phase Diagrams",
+      "subtitle": "Unit 3 read phase diagrams. This unit shows where they come from: free energy curves for each phase, a common tangent between them, and a projection of the tangent points onto a temperature against composition plot. It then reads what a diagram's shape says about how A and B atoms interact, and lists the four invariant reactions.",
+      "sections": [
+        {
+          "type": "toc",
+          "title": "In this unit",
+          "items": [
+            {
+              "href": "#u4-big",
+              "label": "The big picture"
+            },
+            {
+              "href": "#u4-hetero",
+              "label": "Equilibrium between two phases"
+            },
+            {
+              "href": "#u4-iso",
+              "label": "Building an isomorphous diagram"
+            },
+            {
+              "href": "#u4-gap",
+              "label": "Atoms that repel: the miscibility gap"
+            },
+            {
+              "href": "#u4-order",
+              "label": "Atoms that attract: ordered alloys"
+            },
+            {
+              "href": "#u4-invariant",
+              "label": "Invariant reactions"
+            },
+            {
+              "href": "#u4-types",
+              "label": "Eutectic and peritectic diagram types"
+            },
+            {
+              "href": "#u4-congruent",
+              "label": "Congruent transformations"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u4-big",
+          "text": "The Big Picture"
+        },
+        {
+          "type": "p",
+          "text": "A topographic map is built from thousands of height readings, then summarised as contour lines. A phase diagram is the same trick applied to free energy. Someone works out the free energy of every phase at one temperature, finds which phase (or pair of phases) is lowest at each composition, and records the answer. Do that at many temperatures, stack the results, and you have the diagram you used in Unit 3.",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "Unit 2 supplied the free energy curves (ideal and regular solutions, ordering, clustering). Unit 3 used finished diagrams. This unit joins the two: how a diagram is constructed from the curves, and what its shape says about how A and B atoms feel about each other.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "1. Draw the curves",
+              "color": "#e04545",
+              "text": "At one temperature, plot molar free energy against composition for every phase that could exist (liquid, each solid structure)."
+            },
+            {
+              "title": "2. Find the lowest option",
+              "color": "#e04545",
+              "text": "Where one curve is lowest, that single phase is stable. Where two curves compete, a common tangent between them marks the two-phase region."
+            },
+            {
+              "title": "3. Project and repeat",
+              "color": "#e04545",
+              "text": "Plot the tangent points at this temperature on a temperature against composition grid. Repeat at many temperatures. The points trace the phase boundaries."
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u4-hetero",
+          "text": "Equilibrium Between Two Phases"
+        },
+        {
+          "type": "p",
+          "text": "Oil and vinegar will not form one smooth liquid. Shake them and they settle into two layers, each with its own composition. Alloys do the same thing in the solid state when A and B prefer different crystal structures. Say the A-rich end likes to be \\(\\alpha\\) (BCC) and the B-rich end likes to be \\(\\beta\\) (FCC).",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "Each phase then has its <strong>own</strong> free energy curve. The \\(\\alpha\\) curve has its low point on the A-rich side, because forcing a B-rich alloy into the \\(\\alpha\\) structure costs free energy. The \\(\\beta\\) curve is the mirror image. The curves cross somewhere in the middle, and the lecture asks the key question: what happens to alloys near the crossover?",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: free energy curves for two phases and the common tangent (schematic)</div>\n<svg viewBox=\"0 0 640 340\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Molar free energy against composition for two phases, alpha and beta. A common tangent line touches the alpha curve at one composition and the beta curve at another. For an alloy composition X0 between them, a mixture of the two phases lies on the tangent line and has lower free energy than either single phase.\">\n<line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"262\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"70,34 65,44 75,44\" fill=\"#5e5e6c\"/>\n<line x1=\"70\" y1=\"262\" x2=\"600\" y2=\"262\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"607,262 597,257 597,267\" fill=\"#5e5e6c\"/>\n<polyline points=\"70.0,176.3 75.8,180.7 81.7,185.0 87.5,189.1 93.4,193.0 99.2,196.8 105.1,200.3 110.9,203.7 116.7,206.9 122.6,209.9 128.4,212.7 134.3,215.3 140.1,217.8 146.0,220.0 151.8,222.1 157.6,224.0 163.5,225.8 169.3,227.3 175.2,228.7 181.0,229.8 186.9,230.8 192.7,231.6 198.5,232.3 204.4,232.7 210.2,233.0 216.1,233.0 221.9,232.9 227.8,232.6 233.6,232.2 239.4,231.5 245.3,230.7 251.1,229.7 257.0,228.5 262.8,227.1 268.7,225.5 274.5,223.7 280.3,221.8 286.2,219.7 292.0,217.4 297.9,214.9 303.7,212.2 309.6,209.4 315.4,206.4 321.2,203.2 327.1,199.8 332.9,196.2 338.8,192.4 344.6,188.5 350.4,184.3 356.3,180.0 362.1,175.5 368.0,170.9 373.8,166.0 379.7,161.0 385.5,155.7 391.3,150.3 397.2,144.7 403.0,139.0 408.9,133.0 414.7,126.9 420.6,120.5 426.4,114.0 432.2,107.3 438.1,100.5 443.9,93.4 449.8,86.2 455.6,78.8 461.5,71.2 467.3,63.4 473.1,55.4\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n<polyline points=\"181.0,54.0 186.9,62.5 192.7,70.8 198.5,78.9 204.4,86.8 210.2,94.6 216.1,102.1 221.9,109.5 227.8,116.7 233.6,123.7 239.4,130.5 245.3,137.2 251.1,143.7 257.0,149.9 262.8,156.0 268.7,162.0 274.5,167.7 280.3,173.2 286.2,178.6 292.0,183.8 297.9,188.8 303.7,193.6 309.6,198.3 315.4,202.7 321.2,207.0 327.1,211.1 332.9,215.0 338.8,218.7 344.6,222.2 350.4,225.6 356.3,228.8 362.1,231.8 368.0,234.6 373.8,237.2 379.7,239.6 385.5,241.9 391.3,244.0 397.2,245.9 403.0,247.6 408.9,249.1 414.7,250.5 420.6,251.6 426.4,252.6 432.2,253.4 438.1,254.0 443.9,254.4 449.8,254.7 455.6,254.8 461.5,254.6 467.3,254.3 473.1,253.9 479.0,253.2 484.8,252.3 490.7,251.3 496.5,250.1 502.4,248.7 508.2,247.1 514.0,245.4 519.9,243.4 525.7,241.3 531.6,239.0 537.4,236.5 543.3,233.8 549.1,230.9 554.9,227.9 560.8,224.7 566.6,221.3 572.5,217.7 578.3,213.9 584.2,209.9 590.0,205.8\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n<polyline points=\"132.4,226.2 538.0,263.1\" fill=\"none\" stroke=\"#e04545\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-dasharray=\"7 5\"/>\n<circle cx=\"198.6\" cy=\"232.3\" r=\"5\" fill=\"#e04545\"/>\n<line x1=\"198.6\" y1=\"238.3\" x2=\"198.6\" y2=\"262\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/>\n<circle cx=\"437.8\" cy=\"254.0\" r=\"5\" fill=\"#e04545\"/>\n<line x1=\"437.8\" y1=\"260.0\" x2=\"437.8\" y2=\"262\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/>\n<line x1=\"288.4\" y1=\"210.8\" x2=\"288.4\" y2=\"262\" stroke=\"#5e5e6c\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/>\n<circle cx=\"288.4\" cy=\"218.8\" r=\"4.5\" fill=\"#3b82e8\"/>\n<circle cx=\"288.4\" cy=\"180.6\" r=\"4.5\" fill=\"#e08000\"/>\n<circle cx=\"288.4\" cy=\"240.4\" r=\"5.5\" fill=\"#e04545\"/>\n<text x=\"299.4\" y=\"176.6\" fill=\"#e08000\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >G<tspan dy=\"4\" font-size=\"10\">&#946;</tspan></text>\n<text x=\"299.4\" y=\"223.8\" fill=\"#3b82e8\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >G<tspan dy=\"4\" font-size=\"10\">&#945;</tspan></text>\n<text x=\"299.4\" y=\"256.4\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >G<tspan dy=\"4\" font-size=\"10\">e</tspan> (mixture of &#945; + &#946;)</text>\n<text x=\"106.4\" y=\"191.1\" fill=\"#3b82e8\" font-size=\"16\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" >&#945;</text>\n<text x=\"564.0\" y=\"214.8\" fill=\"#e08000\" font-size=\"16\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >&#946;</text>\n<text x=\"70.0\" y=\"282.0\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >A</text>\n<text x=\"590.0\" y=\"282.0\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >B</text>\n<text x=\"198.6\" y=\"282.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >X<tspan dy=\"4\" font-size=\"10\">&#945;e</tspan></text>\n<text x=\"437.8\" y=\"282.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >X<tspan dy=\"4\" font-size=\"10\">&#946;e</tspan></text>\n<text x=\"288.4\" y=\"282.0\" fill=\"#5e5e6c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >X<tspan dy=\"4\" font-size=\"10\">0</tspan></text>\n<text x=\"330.0\" y=\"334.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >composition (mole fraction of B) &#8594;</text>\n<text x=\"28.0\" y=\"160.0\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" transform=\"rotate(-90 28 160)\">molar free energy</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">The tangent touches \\(\\alpha\\) at \\(X^{\\alpha}_{e}\\) and \\(\\beta\\) at \\(X^{\\beta}_{e}\\). At \\(X_0\\) the mixture (\\(G_e\\)) sits below both single phases (\\(G_\\alpha\\) and \\(G_\\beta\\)).</p>\n</div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Why the alloy splits in two",
+          "html": "<ul><li><strong>Single phase:</strong> an alloy at \\(X_0\\) as pure \\(\\alpha\\) has free energy on the \\(\\alpha\\) curve, or on the \\(\\beta\\) curve if it were all \\(\\beta\\). The lower of the two is the best single-phase option</li><li><strong>Two phases:</strong> the atoms can instead separate into \\(\\alpha\\) and \\(\\beta\\) of different compositions. The free energy of such a mixture is a weighted average, so it lies on the straight line joining the two phase points</li><li><strong>Lowest possible line:</strong> slide the pair of phase compositions until the line cannot go any lower. That is the <strong>common tangent</strong>, touching \\(\\alpha\\) at \\(X^{\\alpha}_{e}\\) and \\(\\beta\\) at \\(X^{\\beta}_{e}\\)</li><li><strong>Equilibrium:</strong> once the phases reach \\(X^{\\alpha}_{e}\\) and \\(X^{\\beta}_{e}\\) no further change lowers the free energy. For every alloy between those two compositions, \\(G_e\\) on the tangent beats both single phases</li></ul>"
+        },
+        {
+          "type": "formulablock",
+          "name": "Condition for equilibrium between two phases",
+          "eqs": [
+            "\\mu_A^{\\alpha} = \\mu_A^{\\beta} \\qquad \\mu_B^{\\alpha} = \\mu_B^{\\beta}",
+            "W_\\alpha = \\frac{X^{\\beta}_{e} - X_0}{X^{\\beta}_{e} - X^{\\alpha}_{e}} \\qquad W_\\beta = \\frac{X_0 - X^{\\alpha}_{e}}{X^{\\beta}_{e} - X^{\\alpha}_{e}}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\mu_i^{\\phi}\\)",
+              "desc": "chemical potential of component \\(i\\) in phase \\(\\phi\\)"
+            },
+            {
+              "symbol": "\\(X^{\\alpha}_{e},\\ X^{\\beta}_{e}\\)",
+              "desc": "equilibrium compositions, the tangent points"
+            }
+          ],
+          "note": "The chemical potential of each component is the same in both phases, but the compositions are not. Graphically that is one straight line touching both curves. The second line is the lever rule again, now written in mole fractions, so it gives <strong>mole</strong> fractions of the phases. Unit 3's version used wt%, which gives mass fractions."
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Why one tangent gives equal chemical potentials",
+          "html": "<p>Extend a tangent to the two vertical edges of the plot. Its intercepts are \\(\\mu_A\\) (at the A edge) and \\(\\mu_B\\) (at the B edge) for the phase it touches. A single straight line touching both curves has one pair of intercepts, so both phases share the same \\(\\mu_A\\) and the same \\(\\mu_B\\). This intercept construction is a standard result and is not drawn on the lecture slide.</p>"
+        },
+        {
+          "type": "example",
+          "label": "Try it: explain the split",
+          "q": "An alloy sits at a composition in the crossover region, where the \\(\\alpha\\) and \\(\\beta\\) curves intersect. Why is it not simply single-phase \\(\\alpha\\) or single-phase \\(\\beta\\)?",
+          "steps": [
+            "At the crossover both single-phase options are high, because the alloy is far from the minimum of either curve",
+            "A mixture of \\(\\alpha\\) near \\(X^{\\alpha}_{e}\\) and \\(\\beta\\) near \\(X^{\\beta}_{e}\\) has a free energy on the common tangent",
+            "The tangent lies below both curves between the two tangent points, so the mixture has the lower free energy"
+          ],
+          "answer": "The two-phase mixture is more stable than either single phase, so the alloy separates into \\(\\alpha + \\beta\\) with the compositions set by the tangent points. That is exactly the two-phase field you read with tie lines in Unit 3."
+        },
+        {
+          "type": "h2",
+          "id": "u4-iso",
+          "text": "Building an Isomorphous Diagram"
+        },
+        {
+          "type": "p",
+          "text": "Cu-Ni coins and cupronickel seawater pipes rely on a system where the two metals mix freely in every proportion, in both the liquid and the solid. That is the <strong>isomorphous</strong> system. The simplest way to build it is to treat both liquid and solid as ideal solutions, so \\(\\Delta H_{\\mathrm{mix}} = 0\\) in each, and compare the two free energy curves at three temperatures. Take \\(T_m(A)\\) above \\(T_m(B)\\).",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: building the diagram from free energy curves (schematic)</div>\n<svg viewBox=\"0 0 640 372\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Building an isomorphous phase diagram from free energy curves. Left: three small free energy against composition plots for the liquid and solid at a temperature T1 above both melting points, T2 between them and T3 below both. At T1 the liquid curve is lowest everywhere, at T3 the solid curve is lowest everywhere, and at T2 a common tangent touches the solid curve at c and the liquid curve at d. Right: the resulting phase diagram with liquid on top, solid below, a two phase band between, and the three temperatures drawn as horizontal lines, with the tie line at T2 running from c to d.\">\n<line x1=\"52\" y1=\"12\" x2=\"52\" y2=\"108\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/>\n<line x1=\"52\" y1=\"108\" x2=\"236\" y2=\"108\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/>\n<polyline points=\"52.0,22.3 54.6,26.5 57.2,29.5 59.8,32.1 62.4,34.4 65.0,36.5 67.7,38.4 70.3,40.2 72.9,41.9 75.5,43.4 78.1,44.9 80.7,46.2 83.3,47.5 85.9,48.7 88.5,49.8 91.1,50.9 93.7,51.8 96.3,52.7 99.0,53.6 101.6,54.4 104.2,55.1 106.8,55.8 109.4,56.4 112.0,57.0 114.6,57.5 117.2,58.0 119.8,58.4 122.4,58.8 125.0,59.1 127.7,59.4 130.3,59.6 132.9,59.8 135.5,59.9 138.1,60.0 140.7,60.1 143.3,60.1 145.9,60.0 148.5,59.9 151.1,59.8 153.7,59.6 156.3,59.4 159.0,59.1 161.6,58.8 164.2,58.4 166.8,58.0 169.4,57.5 172.0,57.0 174.6,56.4 177.2,55.8 179.8,55.1 182.4,54.4 185.0,53.6 187.7,52.7 190.3,51.8 192.9,50.9 195.5,49.8 198.1,48.7 200.7,47.5 203.3,46.2 205.9,44.9 208.5,43.4 211.1,41.9 213.7,40.2 216.3,38.4 219.0,36.5 221.6,34.4 224.2,32.1 226.8,29.5 229.4,26.5 232.0,22.3\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polyline points=\"52.0,37.2 54.6,42.0 57.2,45.6 59.8,48.9 62.4,51.8 65.0,54.6 67.7,57.2 70.3,59.6 72.9,61.9 75.5,64.1 78.1,66.2 80.7,68.2 83.3,70.1 85.9,71.9 88.5,73.7 91.1,75.4 93.7,77.0 96.3,78.6 99.0,80.1 101.6,81.5 104.2,82.9 106.8,84.2 109.4,85.5 112.0,86.7 114.6,87.9 117.2,89.0 119.8,90.1 122.4,91.1 125.0,92.1 127.7,93.0 130.3,93.9 132.9,94.7 135.5,95.5 138.1,96.2 140.7,96.9 143.3,97.5 145.9,98.1 148.5,98.7 151.1,99.2 153.7,99.7 156.3,100.1 159.0,100.4 161.6,100.8 164.2,101.0 166.8,101.3 169.4,101.4 172.0,101.6 174.6,101.6 177.2,101.7 179.8,101.6 182.4,101.5 185.0,101.4 187.7,101.2 190.3,100.9 192.9,100.6 195.5,100.2 198.1,99.7 200.7,99.2 203.3,98.5 205.9,97.8 208.5,97.0 211.1,96.1 213.7,95.1 216.3,94.0 219.0,92.7 221.6,91.2 224.2,89.6 226.8,87.6 229.4,85.2 232.0,81.8\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"44.0\" y=\"20.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" >T<tspan dy=\"4\" font-size=\"10\">1</tspan></text>\n<text x=\"52.0\" y=\"122.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >A</text>\n<text x=\"232.0\" y=\"122.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >B</text>\n<text x=\"222.4\" y=\"108.4\" fill=\"#e08000\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >L</text>\n<text x=\"222.4\" y=\"28.2\" fill=\"#3b82e8\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >S</text>\n<line x1=\"52\" y1=\"124\" x2=\"52\" y2=\"220\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/>\n<line x1=\"52\" y1=\"220\" x2=\"236\" y2=\"220\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/>\n<polyline points=\"52.0,165.3 54.6,169.7 57.2,173.0 59.8,175.8 62.4,178.2 65.0,180.5 67.7,182.6 70.3,184.5 72.9,186.3 75.5,187.9 78.1,189.5 80.7,190.9 83.3,192.3 85.9,193.6 88.5,194.8 91.1,195.9 93.7,197.0 96.3,197.9 99.0,198.9 101.6,199.7 104.2,200.5 106.8,201.2 109.4,201.9 112.0,202.5 114.6,203.1 117.2,203.6 119.8,204.0 122.4,204.4 125.0,204.8 127.7,205.1 130.3,205.3 132.9,205.5 135.5,205.7 138.1,205.8 140.7,205.8 143.3,205.8 145.9,205.8 148.5,205.7 151.1,205.5 153.7,205.3 156.3,205.1 159.0,204.8 161.6,204.4 164.2,204.0 166.8,203.6 169.4,203.1 172.0,202.5 174.6,201.9 177.2,201.2 179.8,200.5 182.4,199.7 185.0,198.9 187.7,197.9 190.3,197.0 192.9,195.9 195.5,194.8 198.1,193.6 200.7,192.3 203.3,190.9 205.9,189.5 208.5,187.9 211.1,186.3 213.7,184.5 216.3,182.6 219.0,180.5 221.6,178.2 224.2,175.8 226.8,173.0 229.4,169.7 232.0,165.3\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polyline points=\"52.0,134.3 54.6,139.7 57.2,143.8 59.8,147.5 62.4,150.9 65.0,154.0 67.7,157.0 70.3,159.8 72.9,162.5 75.5,165.1 78.1,167.5 80.7,169.9 83.3,172.1 85.9,174.3 88.5,176.4 91.1,178.4 93.7,180.4 96.3,182.2 99.0,184.0 101.6,185.8 104.2,187.5 106.8,189.1 109.4,190.7 112.0,192.2 114.6,193.6 117.2,195.1 119.8,196.4 122.4,197.7 125.0,198.9 127.7,200.1 130.3,201.3 132.9,202.4 135.5,203.4 138.1,204.4 140.7,205.4 143.3,206.3 145.9,207.1 148.5,207.9 151.1,208.7 153.7,209.4 156.3,210.0 159.0,210.6 161.6,211.2 164.2,211.7 166.8,212.1 169.4,212.5 172.0,212.8 174.6,213.1 177.2,213.3 179.8,213.5 182.4,213.6 185.0,213.7 187.7,213.6 190.3,213.6 192.9,213.4 195.5,213.2 198.1,212.9 200.7,212.5 203.3,212.0 205.9,211.5 208.5,210.8 211.1,210.0 213.7,209.2 216.3,208.1 219.0,207.0 221.6,205.6 224.2,204.0 226.8,202.1 229.4,199.8 232.0,196.2\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"44.0\" y=\"132.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" >T<tspan dy=\"4\" font-size=\"10\">2</tspan></text>\n<text x=\"52.0\" y=\"234.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >A</text>\n<text x=\"232.0\" y=\"234.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >B</text>\n<polyline points=\"79.1,197.0 204.9,218.7\" fill=\"none\" stroke=\"#e04545\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/>\n<circle cx=\"118.7\" cy=\"203.8\" r=\"4\" fill=\"#e04545\"/>\n<text x=\"109.7\" y=\"219.8\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >c</text>\n<circle cx=\"165.3\" cy=\"211.8\" r=\"4\" fill=\"#e04545\"/>\n<text x=\"174.3\" y=\"202.8\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >d</text>\n<line x1=\"52\" y1=\"236\" x2=\"52\" y2=\"332\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/>\n<line x1=\"52\" y1=\"332\" x2=\"236\" y2=\"332\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/>\n<polyline points=\"52.0,305.2 54.6,307.5 57.2,309.1 59.8,310.5 62.4,311.8 65.0,312.9 67.7,313.9 70.3,314.9 72.9,315.8 75.5,316.6 78.1,317.4 80.7,318.2 83.3,318.9 85.9,319.5 88.5,320.1 91.1,320.7 93.7,321.2 96.3,321.7 99.0,322.1 101.6,322.6 104.2,323.0 106.8,323.3 109.4,323.7 112.0,324.0 114.6,324.3 117.2,324.5 119.8,324.8 122.4,325.0 125.0,325.1 127.7,325.3 130.3,325.4 132.9,325.5 135.5,325.6 138.1,325.6 140.7,325.7 143.3,325.7 145.9,325.6 148.5,325.6 151.1,325.5 153.7,325.4 156.3,325.3 159.0,325.1 161.6,325.0 164.2,324.8 166.8,324.5 169.4,324.3 172.0,324.0 174.6,323.7 177.2,323.3 179.8,323.0 182.4,322.6 185.0,322.1 187.7,321.7 190.3,321.2 192.9,320.7 195.5,320.1 198.1,319.5 200.7,318.9 203.3,318.2 205.9,317.4 208.5,316.6 211.1,315.8 213.7,314.9 216.3,313.9 219.0,312.9 221.6,311.8 224.2,310.5 226.8,309.1 229.4,307.5 232.0,305.2\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polyline points=\"52.0,246.3 54.6,249.2 57.2,251.5 59.8,253.5 62.4,255.4 65.0,257.2 67.7,258.9 70.3,260.5 72.9,262.0 75.5,263.5 78.1,264.9 80.7,266.3 83.3,267.6 85.9,268.9 88.5,270.2 91.1,271.4 93.7,272.5 96.3,273.7 99.0,274.8 101.6,275.8 104.2,276.9 106.8,277.9 109.4,278.9 112.0,279.8 114.6,280.7 117.2,281.6 119.8,282.5 122.4,283.3 125.0,284.2 127.7,284.9 130.3,285.7 132.9,286.5 135.5,287.2 138.1,287.9 140.7,288.5 143.3,289.2 145.9,289.8 148.5,290.4 151.1,290.9 153.7,291.5 156.3,292.0 159.0,292.5 161.6,292.9 164.2,293.4 166.8,293.8 169.4,294.2 172.0,294.5 174.6,294.9 177.2,295.2 179.8,295.4 182.4,295.7 185.0,295.9 187.7,296.1 190.3,296.2 192.9,296.3 195.5,296.4 198.1,296.4 200.7,296.4 203.3,296.4 205.9,296.3 208.5,296.2 211.1,296.0 213.7,295.7 216.3,295.4 219.0,295.0 221.6,294.5 224.2,293.9 226.8,293.1 229.4,292.1 232.0,290.5\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"44.0\" y=\"244.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" >T<tspan dy=\"4\" font-size=\"10\">3</tspan></text>\n<text x=\"52.0\" y=\"346.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >A</text>\n<text x=\"232.0\" y=\"346.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >B</text>\n<text x=\"222.4\" y=\"286.9\" fill=\"#e08000\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >L</text>\n<text x=\"222.4\" y=\"328.7\" fill=\"#3b82e8\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >S</text>\n<text x=\"142.0\" y=\"364.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >free energy curves at three temperatures</text>\n<line x1=\"330\" y1=\"22\" x2=\"330\" y2=\"332\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"330,16 325,26 335,26\" fill=\"#5e5e6c\"/>\n<line x1=\"330\" y1=\"332\" x2=\"594\" y2=\"332\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"601,332 591,327 591,337\" fill=\"#5e5e6c\"/>\n<polyline points=\"586.0,258.6 584.4,256.6 582.7,254.6 581.0,252.6 579.3,250.7 577.5,248.7 575.7,246.7 573.9,244.7 572.0,242.7 570.1,240.7 568.1,238.7 566.1,236.7 564.0,234.7 561.9,232.7 559.8,230.8 557.6,228.8 555.4,226.8 553.1,224.8 550.8,222.8 548.5,220.8 546.1,218.8 543.7,216.8 541.2,214.8 538.7,212.8 536.1,210.9 533.5,208.9 530.9,206.9 528.2,204.9 525.5,202.9 522.7,200.9 519.9,198.9 517.1,196.9 514.2,194.9 511.2,192.9 508.3,190.9 505.2,189.0 502.2,187.0 499.1,185.0 495.9,183.0 492.7,181.0 489.5,179.0 486.2,177.0 482.9,175.0 479.5,173.0 476.1,171.0 472.7,169.1 469.2,167.1 465.6,165.1 462.1,163.1 458.4,161.1 454.8,159.1 451.1,157.1 447.3,155.1 443.5,153.1 439.7,151.1 435.8,149.1 431.9,147.2 427.9,145.2 423.9,143.2 419.9,141.2 415.8,139.2 411.7,137.2 407.5,135.2 403.3,133.2 399.0,131.2 394.7,129.2 390.3,127.3 386.0,125.3 381.5,123.3 377.1,121.3 372.5,119.3 368.0,117.3 363.4,115.3 358.7,113.3 354.1,111.3 349.3,109.3 344.6,107.4 339.7,105.4 334.9,103.4 330.0,101.4\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/>\n<polyline points=\"586.0,258.6 580.3,256.6 574.7,254.6 569.3,252.6 563.9,250.7 558.7,248.7 553.6,246.7 548.5,244.7 543.6,242.7 538.8,240.7 534.0,238.7 529.4,236.7 524.8,234.7 520.3,232.7 515.9,230.8 511.6,228.8 507.4,226.8 503.2,224.8 499.1,222.8 495.1,220.8 491.1,218.8 487.2,216.8 483.4,214.8 479.6,212.8 475.9,210.9 472.2,208.9 468.6,206.9 465.1,204.9 461.6,202.9 458.2,200.9 454.8,198.9 451.5,196.9 448.2,194.9 444.9,192.9 441.7,190.9 438.6,189.0 435.5,187.0 432.4,185.0 429.4,183.0 426.4,181.0 423.4,179.0 420.5,177.0 417.6,175.0 414.8,173.0 412.0,171.0 409.2,169.1 406.4,167.1 403.7,165.1 401.1,163.1 398.4,161.1 395.8,159.1 393.2,157.1 390.6,155.1 388.1,153.1 385.6,151.1 383.1,149.1 380.7,147.2 378.2,145.2 375.8,143.2 373.4,141.2 371.1,139.2 368.7,137.2 366.4,135.2 364.1,133.2 361.8,131.2 359.6,129.2 357.4,127.3 355.1,125.3 353.0,123.3 350.8,121.3 348.6,119.3 346.5,117.3 344.4,115.3 342.3,113.3 340.2,111.3 338.1,109.3 336.1,107.4 334.0,105.4 332.0,103.4 330.0,101.4\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/>\n<line x1=\"330\" y1=\"49.0\" x2=\"586\" y2=\"49.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/>\n<text x=\"322.0\" y=\"53.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" >T<tspan dy=\"4\" font-size=\"10\">1</tspan></text>\n<line x1=\"330\" y1=\"180.0\" x2=\"586\" y2=\"180.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/>\n<text x=\"322.0\" y=\"184.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" >T<tspan dy=\"4\" font-size=\"10\">2</tspan></text>\n<line x1=\"330\" y1=\"311.0\" x2=\"586\" y2=\"311.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/>\n<text x=\"322.0\" y=\"315.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" >T<tspan dy=\"4\" font-size=\"10\">3</tspan></text>\n<line x1=\"424.9\" y1=\"180.0\" x2=\"491.1\" y2=\"180.0\" stroke=\"#e04545\" stroke-width=\"3\"/>\n<circle cx=\"424.9\" cy=\"180.0\" r=\"4.5\" fill=\"#e04545\"/>\n<text x=\"424.9\" y=\"171.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >c</text>\n<circle cx=\"491.1\" cy=\"180.0\" r=\"4.5\" fill=\"#e04545\"/>\n<text x=\"491.1\" y=\"171.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >d</text>\n<text x=\"406.8\" y=\"59.4\" fill=\"#e08000\" font-size=\"16\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >L</text>\n<text x=\"539.9\" y=\"290.1\" fill=\"#3b82e8\" font-size=\"16\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >S</text>\n<text x=\"447.8\" y=\"92.6\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >S + L</text>\n<line x1=\"458.0\" y1=\"96.6\" x2=\"416.9\" y2=\"153.8\" stroke=\"#90909c\" stroke-width=\"0.9\"/>\n<text x=\"330.0\" y=\"350.0\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >A</text>\n<text x=\"586.0\" y=\"350.0\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >B</text>\n<line x1=\"326\" y1=\"101.4\" x2=\"330\" y2=\"101.4\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<text x=\"336.0\" y=\"93.4\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >T<tspan dy=\"4\" font-size=\"10\">m(A)</tspan></text>\n<line x1=\"586\" y1=\"258.6\" x2=\"590\" y2=\"258.6\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<text x=\"594.0\" y=\"262.6\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" >T<tspan dy=\"4\" font-size=\"10\">m(B)</tspan></text>\n<text x=\"458.0\" y=\"366.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" >composition &#8594;</text>\n<text x=\"300.0\" y=\"20.0\" fill=\"#90909c\" font-size=\"1\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" ></text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">Schematic only: drawn from the ideal-solution free energy equations, with an exaggerated entropy of fusion so the two-phase band is easy to see.</p>\n</div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Three temperatures, three answers",
+          "html": "<ul><li><strong>\\(T_1\\), above both melting points:</strong> the liquid curve is lowest at every composition. Every alloy is liquid</li><li><strong>\\(T_2\\), between the melting points:</strong> pure A is below its melting point so it is solid, but pure B is above its own so it is liquid. The curves cross. The common tangent touches the solid curve at <strong>c</strong> and the liquid curve at <strong>d</strong>. Alloys to the left of c are solid, to the right of d are liquid, and between c and d they are solid + liquid</li><li><strong>\\(T_3\\), below both melting points:</strong> the solid curve is lowest everywhere. Every alloy is solid</li></ul><p style=\"margin-top:8px\">Plot c and d against \\(T_2\\) on the diagram, then repeat at many temperatures. The c points trace the <strong>solidus</strong> and the d points trace the <strong>liquidus</strong>.</p>"
+        },
+        {
+          "type": "example",
+          "label": "Try it: read the curves",
+          "q": "At \\(T_2\\), which phase is stable for pure A and which for pure B? Which curve do the two end points tell you is lower on each side?",
+          "steps": [
+            "\\(T_2 < T_m(A)\\), so A is below its melting point: the solid curve is lower at the A edge",
+            "\\(T_2 > T_m(B)\\), so B is above its melting point: the liquid curve is lower at the B edge"
+          ],
+          "answer": "Solid is lower on the A side and liquid is lower on the B side, which forces the curves to cross. The crossover is what makes a two-phase band between c and d."
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Link to Unit 3",
+          "html": "<p>Unit 3 followed a Cu-35 wt% Ni alloy down the finished diagram. This is where the liquid-to-solid band it travelled through comes from: a stack of common tangents, one per temperature.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u4-gap",
+          "text": "Atoms That Repel: the Miscibility Gap"
+        },
+        {
+          "type": "p",
+          "text": "Think about oil and water again, but in a crystal. Suppose A and B mix happily and ideally in the liquid (\\(\\Delta H_{\\mathrm{mix}} = 0\\)) but dislike each other in the solid (\\(\\Delta H_{\\mathrm{mix}} > 0\\)), so each atom would rather sit next to its own kind. This is the clustering case from Unit 2, where a positive \\(\\Delta H_{\\mathrm{mix}}\\) fights the entropy gain.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Liquid, ideal",
+              "color": "#e04545",
+              "text": "Mixing costs no enthalpy, so the liquid curve keeps its usual single dip."
+            },
+            {
+              "title": "Solid, unfavourable mixing",
+              "color": "#e04545",
+              "text": "The positive \\(\\Delta H_{\\mathrm{mix}}\\) pushes the middle of the solid curve up. At low temperature the entropy term is too weak to win, so the curve develops two dips."
+            },
+            {
+              "title": "Result on the diagram",
+              "color": "#e04545",
+              "text": "A common tangent between the two dips makes a region where the solid splits into \\(\\alpha' + \\alpha''\\): same crystal structure, different compositions."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Two features to remember",
+          "html": "<ul><li><strong>The gap:</strong> below a certain temperature a single solid solution is unstable and separates into \\(\\alpha'\\) and \\(\\alpha''\\), two solutions of the same crystal structure. This is a miscibility gap</li><li><strong>The liquid survives longer:</strong> because A and B repel in the solid, the liquid is stable down to a lower temperature than the melting point of pure A or pure B. The liquidus and solidus dip to a minimum between the two melting points</li></ul><p style=\"margin-top:8px\">The lecture gives several example diagrams of this type as figures only. Keep one open beside these notes.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u4-order",
+          "text": "Atoms That Attract: Ordered Alloys"
+        },
+        {
+          "type": "p",
+          "text": "Now flip the sign. If A and B atoms prefer each other (\\(\\Delta H_{\\mathrm{mix}} < 0\\)), the solid wants a neat arrangement where unlike atoms are neighbours, like alternating colours on a chessboard. That is <strong>ordering</strong>, and the ordered solid is written \\(\\alpha'\\) on the diagram. β-brass (CuZn) is the textbook example, though it is not on the slides.",
+          "class": ""
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "What the diagram shows",
+          "html": "<ul><li><strong>Higher melting point:</strong> strong A-B attraction stabilises the solid, so melting is harder and happens at a higher temperature than for pure A or pure B</li><li><strong>Very strong attraction:</strong> the ordered phase can extend all the way up to the melting temperature, so there is no disordered solid in between</li></ul><p style=\"margin-top:8px\">Compare with the miscibility gap: positive \\(\\Delta H_{\\mathrm{mix}}\\) makes the liquid last longer, negative \\(\\Delta H_{\\mathrm{mix}}\\) makes the solid last longer.</p>"
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "\\(\\Delta H_{\\mathrm{mix}} = 0\\)",
+              "color": "#e04545",
+              "text": "Ideal. Isomorphous diagram, a simple lens between the melting points."
+            },
+            {
+              "title": "\\(\\Delta H_{\\mathrm{mix}} > 0\\) in the solid",
+              "color": "#e04545",
+              "text": "Unlike atoms repel. Miscibility gap in the solid, liquid stable down to a lower temperature."
+            },
+            {
+              "title": "\\(\\Delta H_{\\mathrm{mix}} < 0\\) in the solid",
+              "color": "#e04545",
+              "text": "Unlike atoms attract. Ordered phase \\(\\alpha'\\), melting at a higher temperature than either pure metal."
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u4-invariant",
+          "text": "Invariant Reactions"
+        },
+        {
+          "type": "p",
+          "text": "Solder melting at one sharp temperature, and a steel changing structure at one fixed temperature on slow cooling, are both <strong>invariant reactions</strong>: transformations between phases of <em>fixed composition</em> at a <em>fixed temperature</em> under equilibrium conditions. On a phase diagram they appear as horizontal lines. There are four to know, each written as it happens on cooling.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Eutectic",
+              "color": "#e04545",
+              "text": "A liquid transforms into two solids.<br>\\(L \\rightarrow \\alpha + \\beta\\)"
+            },
+            {
+              "title": "Eutectoid",
+              "color": "#e04545",
+              "text": "One solid transforms into two new solids.<br>\\(\\gamma \\rightarrow \\alpha + \\beta\\)"
+            },
+            {
+              "title": "Peritectic",
+              "color": "#e04545",
+              "text": "A liquid and a solid react to form a new solid.<br>\\(L + \\alpha \\rightarrow \\gamma\\)"
+            },
+            {
+              "title": "Peritectoid",
+              "color": "#e04545",
+              "text": "Two solids react to form a new solid.<br>\\(\\alpha + \\beta \\rightarrow \\gamma\\). On the slides: \\((\\mathrm{Ti}) + \\mathrm{TiAg} \\rightarrow \\mathrm{Ti_2Ag}\\)"
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "How to spot them on a diagram",
+          "html": "<p>Find the horizontal line and look at the fields just above and just below it at the composition where the reaction happens.</p><ul><li><strong>One phase above, two below:</strong> the phase splits. A liquid splitting is <strong>eutectic</strong>, a solid splitting is <strong>eutectoid</strong></li><li><strong>Two phases above, one below:</strong> two phases combine. If one of them is liquid it is <strong>peritectic</strong>, if both are solid it is <strong>peritectoid</strong></li></ul><p style=\"margin-top:8px\">Not every horizontal line is an invariant reaction. A tie line inside a two-phase field is also horizontal, but it is only a tool for reading compositions. The invariant line is the one drawn on the diagram where three phases meet.</p>"
+        },
+        {
+          "type": "formulablock",
+          "name": "The four invariant reactions (on cooling)",
+          "eqs": [
+            "\\text{Eutectic: } L \\rightarrow \\alpha + \\beta \\qquad \\text{Eutectoid: } \\gamma \\rightarrow \\alpha + \\beta",
+            "\\text{Peritectic: } L + \\alpha \\rightarrow \\gamma \\qquad \\text{Peritectoid: } \\alpha + \\beta \\rightarrow \\gamma"
+          ],
+          "vars": [
+            {
+              "symbol": "Rule",
+              "desc": "liquid involved means eutectic or peritectic; solids only means eutectoid or peritectoid"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "label": "Try it: name that reaction",
+          "q": "Classify each reaction on cooling: (a) \\(L + \\delta \\rightarrow \\gamma\\) at 1493 °C in Fe-C, (b) \\(L \\rightarrow \\gamma + \\mathrm{Fe_3C}\\) at 1147 °C, (c) \\(\\gamma \\rightarrow \\alpha + \\mathrm{Fe_3C}\\) at 727 °C, (d) \\((\\mathrm{Ti}) + \\mathrm{TiAg} \\rightarrow \\mathrm{Ti_2Ag}\\).",
+          "steps": [
+            "(a) A liquid and a solid combine into one solid: <strong>peritectic</strong>",
+            "(b) One liquid splits into two solids: <strong>eutectic</strong>",
+            "(c) One solid splits into two solids: <strong>eutectoid</strong>",
+            "(d) Two solids combine into one solid, no liquid: <strong>peritectoid</strong>"
+          ],
+          "answer": "Count the phases on each side, then ask whether a liquid is involved. (a) to (c) are the Fe-C reactions from Unit 3, and Unit 9 returns to them in full."
+        },
+        {
+          "type": "h2",
+          "id": "u4-types",
+          "text": "Eutectic and Peritectic Diagram Types"
+        },
+        {
+          "type": "p",
+          "text": "Not every eutectic diagram is built the same way, and the lecture shows two flavours side by side. The slides give these as figures, so the explanations below are the free energy reasoning behind them.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Eutectic, same crystal structure",
+              "color": "#e04545",
+              "text": "\\(\\alpha\\) and \\(\\beta\\) share one structure. This is the miscibility gap diagram, with the liquid curve dropping low enough to cut across the solid's gap."
+            },
+            {
+              "title": "Eutectic, different structures",
+              "color": "#e04545",
+              "text": "\\(\\alpha\\) and \\(\\beta\\) have their own free energy curves, as in the two-phase construction earlier, and the liquid curve dips between them."
+            },
+            {
+              "title": "Peritectic with an intermediate phase",
+              "color": "#e04545",
+              "text": "The product phase sits between the two ends of the diagram. The slide labels the end phase a terminal solid solution and the middle one an intermediate phase."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Two labels worth knowing",
+          "html": "<ul><li><strong>Terminal solid solution:</strong> a solid solution based on one pure component, found at an end of the diagram (such as \\(\\alpha\\) at the A edge)</li><li><strong>Intermediate phase:</strong> a phase with a different crystal structure from either pure component, found between the ends and stable over a composition range (Unit 2)</li></ul>"
+        },
+        {
+          "type": "h2",
+          "id": "u4-congruent",
+          "text": "Congruent Transformations"
+        },
+        {
+          "type": "p",
+          "text": "A <strong>congruent</strong> transformation is one where the composition of the phases involved does not change. Pure copper melting is the everyday case: solid copper becomes liquid copper, and nothing about the composition changes. The lecture lists melting and solidification, ordering and miscibility gap, and allotropic transformation as examples.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Allotropic transformation",
+              "color": "#e04545",
+              "text": "A pure element changes to a different crystal structure. Iron going from BCC to FCC on heating is the classic example."
+            },
+            {
+              "title": "Polymorphic transformation",
+              "color": "#e04545",
+              "text": "The same change of crystal structure, but in an alloy (a phase with more than one element)."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Do not confuse these",
+          "html": "<p>Congruent means the <em>composition</em> stays the same. It does not mean the phase stays the same: melting changes solid into liquid but is still congruent. The invariant reactions above are the opposite, since there the compositions of the phases change.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "",
+          "text": "Unit 4 essentials"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "html": "<ul><li>A phase diagram is built from free energy curves: draw every phase's curve at one temperature, find the lowest option, project the result, repeat</li><li>Each phase has its own curve. Two phases coexist along a <strong>common tangent</strong>. Its touching points are the equilibrium compositions \\(X^{\\alpha}_{e}\\) and \\(X^{\\beta}_{e}\\)</li><li>Equilibrium between phases: \\(\\mu_A^{\\alpha} = \\mu_A^{\\beta}\\) and \\(\\mu_B^{\\alpha} = \\mu_B^{\\beta}\\). Same chemical potentials, different compositions</li><li>Isomorphous (\\(\\Delta H_{\\mathrm{mix}} = 0\\)): above both melting points all liquid, below both all solid, between them a common tangent c to d gives the two-phase band. The c points trace the solidus, the d points the liquidus</li><li>\\(\\Delta H_{\\mathrm{mix}} > 0\\) in the solid: miscibility gap (\\(\\alpha' + \\alpha''\\)), liquid stable to below both melting points</li><li>\\(\\Delta H_{\\mathrm{mix}} < 0\\) in the solid: ordering (\\(\\alpha'\\)), melting above both pure melting points, ordered phase may reach the melting temperature</li><li>Invariant reactions on cooling: eutectic \\(L \\rightarrow \\alpha + \\beta\\), eutectoid \\(\\gamma \\rightarrow \\alpha + \\beta\\), peritectic \\(L + \\alpha \\rightarrow \\gamma\\), peritectoid \\(\\alpha + \\beta \\rightarrow \\gamma\\). Horizontal lines on the diagram</li><li>Congruent: no change of composition (melting, ordering, allotropic). Allotropic is for a pure element, polymorphic for an alloy</li></ul>",
+          "titleLearn": "Quick recap",
+          "titleRevise": "EXAM CHEAT SHEET"
+        }
+      ],
+      "essentialsTitle": null,
+      "essentialsHeading": null,
+      "essentials": null,
+      "desc": "How phase diagrams are built from free energy curves: common tangents, isomorphous diagrams, miscibility gaps, ordering, invariant reactions and congruent transformations.",
+      "difficulty": "Medium",
+      "readTime": "25 min",
+      "color": "#e04545"
+    },
     { "soon": true, "numLabel": "Unit 5", "title": "Limitations of Thermodynamics (Intro to Kinetics)", "desc": "Coming soon — added once covered in lectures.", "color": "#d89800", "sections": [] },
     { "soon": true, "numLabel": "Unit 6", "title": "Solidification — Nucleation", "desc": "Coming soon — added once covered in lectures.", "color": "#e08000", "sections": [] },
     { "soon": true, "numLabel": "Unit 7", "title": "Solidification — Growth", "desc": "Coming soon — added once covered in lectures.", "color": "#e03f78", "sections": [] },
@@ -1422,6 +1826,53 @@ window.SITE_CONTENT = {
           ]
         }
       ]
+    },
+    {
+      "heading": "U4 - Construction of Phase Diagrams",
+      "blocks": [
+        {
+          "type": "formulablock",
+          "name": "Equilibrium between two phases",
+          "eqs": [
+            "\\mu_A^{\\alpha} = \\mu_A^{\\beta} \\qquad \\mu_B^{\\alpha} = \\mu_B^{\\beta}"
+          ],
+          "vars": [
+            {
+              "symbol": "Graphically",
+              "desc": "one common tangent touches both free energy curves"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Lever rule on the common tangent (mole fractions)",
+          "eqs": [
+            "W_\\alpha = \\frac{X^{\\beta}_{e} - X_0}{X^{\\beta}_{e} - X^{\\alpha}_{e}} \\qquad W_\\beta = \\frac{X_0 - X^{\\alpha}_{e}}{X^{\\beta}_{e} - X^{\\alpha}_{e}}"
+          ],
+          "note": "Gives mole fractions. Unit 3's wt% version gives mass fractions."
+        },
+        {
+          "type": "formulablock",
+          "name": "Sign of the enthalpy of mixing and the diagram it builds",
+          "eqs": [
+            "\\Delta H_{\\mathrm{mix}} = 0: \\text{ isomorphous} \\qquad \\Delta H_{\\mathrm{mix}} > 0: \\text{ miscibility gap} \\qquad \\Delta H_{\\mathrm{mix}} < 0: \\text{ ordering}"
+          ],
+          "vars": [
+            {
+              "symbol": "Solid",
+              "desc": "the sign refers to mixing in the solid; the liquid is taken as ideal in the lecture examples"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "The four invariant reactions (on cooling)",
+          "eqs": [
+            "\\text{Eutectic: } L \\rightarrow \\alpha + \\beta \\qquad \\text{Eutectoid: } \\gamma \\rightarrow \\alpha + \\beta",
+            "\\text{Peritectic: } L + \\alpha \\rightarrow \\gamma \\qquad \\text{Peritectoid: } \\alpha + \\beta \\rightarrow \\gamma"
+          ]
+        }
+      ]
     }
   ],
   "formulaSheetSubtitle": "Every equation covered so far. Variables defined, units flagged. Grows as more units are added.",
@@ -1588,6 +2039,66 @@ window.SITE_CONTENT = {
           "tag": "U3 - T12",
           "claim": "\"In a hyper-peritectic alloy, excess α is left after the peritectic reaction.\"",
           "truth": "<strong>FALSE.</strong> Hyper-peritectic alloys have excess <strong>liquid</strong> left over, which carries on solidifying as β. It is the <strong>hypo</strong>-peritectic alloys that are left with excess α."
+        }
+      ]
+    },
+    {
+      "heading": "Unit 4 - Construction of Phase Diagrams",
+      "items": [
+        {
+          "tag": "U4 - T1",
+          "claim": "\"The common tangent touches each free energy curve at its minimum.\"",
+          "truth": "<strong>FALSE.</strong> The tangent points are where one straight line has the same slope on both curves. For two curves of different height and shape these sit away from the curve minima."
+        },
+        {
+          "tag": "U4 - T2",
+          "claim": "\"An alloy in the crossover region takes whichever single-phase free energy is lower.\"",
+          "truth": "<strong>FALSE.</strong> Between the two tangent points a mixture of the two phases lies on the common tangent, which is below both single-phase curves. The alloy separates into two phases."
+        },
+        {
+          "tag": "U4 - T3",
+          "claim": "\"At equilibrium between \\(\\alpha\\) and \\(\\beta\\), the two phases have the same composition.\"",
+          "truth": "<strong>FALSE.</strong> What is equal is the chemical potential of each component, \\(\\mu_A^{\\alpha} = \\mu_A^{\\beta}\\) and \\(\\mu_B^{\\alpha} = \\mu_B^{\\beta}\\). The compositions \\(X^{\\alpha}_{e}\\) and \\(X^{\\beta}_{e}\\) are different."
+        },
+        {
+          "tag": "U4 - T4",
+          "claim": "\"In an isomorphous system above both melting points, the solid free energy curve is lowest.\"",
+          "truth": "<strong>FALSE.</strong> Above both melting points the liquid curve is lowest at every composition, so every alloy is liquid. The solid curve is lowest everywhere only below both melting points."
+        },
+        {
+          "tag": "U4 - T5",
+          "claim": "\"A miscibility gap forms because A and B atoms attract each other.\"",
+          "truth": "<strong>FALSE.</strong> A miscibility gap comes from a positive \\(\\Delta H_{\\mathrm{mix}}\\): unlike atoms repel, so each prefers its own kind and the solid splits into \\(\\alpha'\\) and \\(\\alpha''\\). Attraction (negative \\(\\Delta H_{\\mathrm{mix}}\\)) gives ordering."
+        },
+        {
+          "tag": "U4 - T6",
+          "claim": "\"An ordered alloy melts at a lower temperature than either pure component.\"",
+          "truth": "<strong>FALSE.</strong> The strong A-B attraction makes the ordered solid hard to melt, so it melts at a <em>higher</em> temperature than pure A or pure B. It is the miscibility gap case where the liquid is stable below both melting points."
+        },
+        {
+          "tag": "U4 - T7",
+          "claim": "\"Every horizontal line on a phase diagram is an invariant reaction.\"",
+          "truth": "<strong>FALSE.</strong> Tie lines inside two-phase fields are horizontal too, but they only let you read off compositions. An invariant reaction is the horizontal line on the diagram where three phases meet."
+        },
+        {
+          "tag": "U4 - T8",
+          "claim": "\"A peritectoid reaction involves a liquid.\"",
+          "truth": "<strong>FALSE.</strong> Peritectoid is two <strong>solids</strong> reacting to form a new solid, \\(\\alpha + \\beta \\rightarrow \\gamma\\). With a liquid and a solid it is peritectic."
+        },
+        {
+          "tag": "U4 - T9",
+          "claim": "\"The two solid phases in a eutectic system must have different crystal structures.\"",
+          "truth": "<strong>FALSE.</strong> The lecture shows both kinds. If the solids share a structure, the eutectic is the liquid cutting across a solid miscibility gap. If they differ, each has its own free energy curve."
+        },
+        {
+          "tag": "U4 - T10",
+          "claim": "\"Melting cannot be a congruent transformation, because the phase changes.\"",
+          "truth": "<strong>FALSE.</strong> Congruent means the <em>composition</em> does not change, not that the phase stays the same. Melting and solidification are listed as congruent. Invariant reactions are the opposite: there the phase compositions change."
+        },
+        {
+          "tag": "U4 - T11",
+          "claim": "\"Allotropic and polymorphic transformations are the same thing.\"",
+          "truth": "<strong>FALSE.</strong> Both are changes of crystal structure, but <strong>allotropic</strong> is for a pure element and <strong>polymorphic</strong> is for an alloy (a phase with more than one element)."
         }
       ]
     }

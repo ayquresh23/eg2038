@@ -84,6 +84,21 @@ const glossaryData = {
       ["Ferrite (α)","The body-centred cubic solid solution of carbon in iron. Dissolves only up to about 0.02 wt% C"],
       ["Cementite (Fe₃C)","The iron carbide compound, containing 6.7 wt% C"]
     ]
+  },
+  u4: {
+    name: "Unit 4 - Construction of Phase Diagrams",
+    terms: [
+      ["Heterogeneous equilibrium", "Equilibrium between two or more phases that coexist. Each phase has its own free energy curve, and the compositions settle where the total free energy of the mixture is lowest"],
+      ["Common tangent", "A single straight line touching the free energy curves of two phases. The two touching points are the equilibrium compositions of the phases, and they are what gets plotted on the phase diagram. The line gives equal chemical potentials in both phases"],
+      ["Miscibility gap", "A region of temperature and composition where a single solid solution is unstable and separates into two phases of the same crystal structure but different composition (\\(\\alpha' + \\alpha''\\)). It comes from a positive \\(\\Delta H_{\\mathrm{mix}}\\)"],
+      ["Ordered phase", "A solid solution in which A and B atoms sit in regular, preferred positions instead of at random. It forms when \\(\\Delta H_{\\mathrm{mix}} < 0\\) and is written \\(\\alpha'\\). It melts at a higher temperature than either pure component"],
+      ["Invariant reaction", "A transformation between phases of fixed composition at a fixed temperature under equilibrium conditions. It appears as a horizontal line on the phase diagram. The eutectic, eutectoid, peritectic and peritectoid reactions are the four examples"],
+      ["Peritectoid reaction", "On cooling, two solid phases react to form a new solid phase at a fixed temperature, \\(\\alpha + \\beta \\rightarrow \\gamma\\). Slide example: \\((\\mathrm{Ti}) + \\mathrm{TiAg} \\rightarrow \\mathrm{Ti_2Ag}\\)"],
+      ["Terminal solid solution", "A solid solution based on one of the pure components, found at an end of the phase diagram, such as \\(\\alpha\\) at the A edge"],
+      ["Congruent transformation", "A transformation in which the composition of the phases involved does not change. Examples: melting and solidification, ordering, allotropic transformation"],
+      ["Allotropic transformation", "A pure element changing to a different crystal structure, such as iron changing from BCC to FCC on heating"],
+      ["Polymorphic transformation", "The same change of crystal structure as an allotropic one, but in an alloy (a phase containing more than one element)"]
+    ]
   }
 };
 
@@ -152,10 +167,10 @@ const glossaryComparisons = [
       ["Composition", "Exists over a range", "Narrow, fixed stoichiometry"],
       ["On a phase diagram", "A field between the terminal solutions", "A near-vertical line"]
     ] },
-  {"terms":["Eutectic reaction","Eutectoid reaction","Peritectic reaction"],"rows":[["On cooling","L → α + β","γ → α + Fe₃C","L + α → β"],
-      ["Starts from","One liquid","One solid","A liquid and a solid"],
-      ["Ends with","Two solids","Two solids","One solid"],
-      ["Example","Pb-Sn, 183 °C","Fe-C, 727 °C","Fe-C, 1493 °C"]]},
+  {"terms":["Eutectic reaction","Eutectoid reaction","Peritectic reaction","Peritectoid reaction"],"rows":[["On cooling","L → α + β","γ → α + Fe₃C","L + α → β","α + β → γ"],
+      ["Starts from","One liquid","One solid","A liquid and a solid","Two solids"],
+      ["Ends with","Two solids","Two solids","One solid","One solid"],
+      ["Example","Pb-Sn, 183 °C","Fe-C, 727 °C","Fe-C, 1493 °C","Ti-Ag (slide)"]]},
   {"terms":["Hypoeutectic","Hypereutectic"],"rows":[["Composition","Below the eutectic","Above the eutectic"],
       ["Pro-eutectic phase (Pb-Sn)","α (Pb-rich)","β (Sn-rich)"],
       ["Final microstructure","Pro-eutectic α in eutectic","Pro-eutectic β in eutectic"]]},
@@ -168,5 +183,8 @@ const glossaryComparisons = [
       ["Seen on a micrograph?","Not directly","Yes, as area fraction"]]},
   {"terms":["Hypo-peritectic","Hyper-peritectic"],"rows":[["Composition","Between \\(\\alpha_p\\) and \\(\\beta_p\\)","Between \\(\\beta_p\\) and \\(L_p\\)"],
       ["Left over after the reaction","Excess α","Excess liquid"],
-      ["Final structure","β matrix with α remnants","All β"]]}
+      ["Final structure","β matrix with α remnants","All β"]]},
+  {"terms": ["Allotropic transformation", "Polymorphic transformation"], "rows": [["Applies to", "A pure element", "An alloy phase (more than one element)"], ["What changes", "Crystal structure", "Crystal structure"]]},
+  {"terms": ["Terminal solid solution", "Intermediate phase"], "rows": [["Crystal structure", "That of a pure component", "Different from either component"], ["Position on the diagram", "At the ends", "Between the ends"]]},
+  {"terms": ["Ordered phase", "Miscibility gap"], "rows": [["\\(\\Delta H_{\\mathrm{mix}}\\)", "Negative", "Positive"], ["A-B atoms", "Prefer each other", "Prefer their own kind"], ["Result in the solid", "Regular arrangement, higher melting point", "Splits into \\(\\alpha' + \\alpha''\\)"]]}
 ];
