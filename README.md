@@ -8,10 +8,11 @@ Study site for EG2038 (Microstructure Evolution & Control in Metallic Materials:
 
 - Unit 1: Introduction to Thermodynamics (why microstructure matters, thermodynamics vs kinetics, stability & metastability, terminology, first/second law, enthalpy, entropy, Gibbs free energy, measuring the parameters)
 - Unit 2: Solution Thermodynamics (free energy of mixing, ideal and regular solutions, ordering and clustering, real solutions and intermetallics, chemical potential)
-- 47 glossary terms with flashcard mode
-- Formula sheet
-- 18 MCQ trap cards
-- Units 3-10 (Construction/Interpretation of Phase Diagrams, Limitations of Thermodynamics, Solidification, Metalforming, Fe-C System, Precipitation Strengthening) will be added as they're covered in lectures
+- Unit 3: Using Phase Diagrams (phase identification and tie lines, the lever rule, mass vs volume fraction, microstructure development in isomorphous, eutectic and peritectic systems, why eutectics are lamellar)
+- 69 glossary terms with flashcard mode
+- Formula sheet (18 blocks)
+- 30 MCQ trap cards
+- Units 4-10 (Construction of Phase Diagrams, Limitations of Thermodynamics, Solidification, Metalforming, Fe-C System, Precipitation Strengthening) will be added as they're covered in lectures
 
 ## Part of the MatSciEng hub
 

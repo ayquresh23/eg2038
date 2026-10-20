@@ -57,6 +57,33 @@ const glossaryData = {
       ["Intermetallic compound", "An intermediate phase with a very narrow composition range, so a fixed formula \\(A_mB_n\\). Its free energy curve is narrow and steep"],
       ["Chemical potential (μ)", "\\(\\mu_A = (\\partial G'/\\partial n_A)_{T,P,n_B}\\). The change in total free energy when a small amount of A is added. Also called partial molar free energy. Equal in both phases at equilibrium"]
     ]
+  },
+  u3: {
+    name: "Unit 3 - Using Phase Diagrams",
+    terms: [
+      ["Tie line","A horizontal (constant temperature) line drawn across a two-phase field. Its ends sit on the phase boundaries, and the compositions at the ends are the compositions of the two phases in equilibrium"],
+      ["Lever rule","The method for finding the mass fraction of each phase in a two-phase field. A phase's fraction is the length of the tie line arm on the opposite side of the alloy composition, divided by the whole tie line length"],
+      ["Mass fraction (W)","The fraction of the alloy's mass that is in a given phase. The lever rule gives mass fractions. Multiply by 100 for wt%"],
+      ["Volume fraction (V)","The fraction of the alloy's volume taken up by a phase. This is what a micrograph shows as area fraction. Found from the mass fractions and the phase densities"],
+      ["Isomorphous system","A binary system in which the two components dissolve in each other in all proportions in both the liquid and the solid, e.g. Cu-Ni. The diagram has a liquid field, one solid field and a two-phase band"],
+      ["Liquidus","The line on a phase diagram above which the alloy is completely liquid. Crossing it on cooling, the first solid begins to form"],
+      ["Solidus","The line below which the alloy is completely solid. Crossing it on cooling, the last of the liquid disappears"],
+      ["Solvus","The solubility limit line of a solid phase. Cooling an alloy across it means the phase can no longer hold all its solute, so a second solid phase precipitates"],
+      ["Eutectic reaction","On cooling, one liquid transforms into two solid phases at a fixed temperature, \\(L \\rightarrow \\alpha + \\beta\\). In Pb-Sn this happens at 183 °C and 61.9 wt% Sn"],
+      ["Eutectoid reaction","On cooling, one solid phase transforms into two new solid phases at a fixed temperature. In Fe-C, austenite → ferrite + cementite at 727 °C and 0.76 wt% C"],
+      ["Peritectic reaction","On cooling, a liquid and a solid react to form a new solid phase at a fixed temperature, \\(L + \\alpha \\rightarrow \\beta\\). In Fe-C, liquid + δ-ferrite → austenite at 1493 °C"],
+      ["Hypoeutectic","An alloy with less solute than the eutectic composition (in Pb-Sn, between 18.3 and 61.9 wt% Sn). It forms pro-eutectic α, then eutectic"],
+      ["Hypereutectic","An alloy with more solute than the eutectic composition (in Pb-Sn, between 61.9 and 97.8 wt% Sn). It forms pro-eutectic β, then eutectic"],
+      ["Pro-eutectic phase","The solid phase that forms from the liquid before the eutectic temperature is reached, in an off-eutectic alloy. It appears as larger grains sitting in the eutectic matrix"],
+      ["Microconstituent","A region of the microstructure with its own distinct appearance, such as pro-eutectic α or the eutectic. A microconstituent can contain more than one phase: the eutectic is α + β"],
+      ["Lamellar structure","A microstructure of alternating thin parallel plates of two phases, as in the eutectic"],
+      ["Co-operative growth","Two phases growing side by side from the liquid so that the solute rejected by one is absorbed by the other, keeping diffusion distances short. It produces the lamellar eutectic"],
+      ["Hypo-peritectic","A peritectic-system alloy between the \\(\\alpha_p\\) and \\(\\beta_p\\) compositions. After the peritectic reaction, excess α is left inside a β matrix"],
+      ["Hyper-peritectic","A peritectic-system alloy between the \\(\\beta_p\\) and \\(L_p\\) compositions. After the peritectic reaction, excess liquid is left, which continues to solidify as β"],
+      ["Austenite (γ)","The face-centred cubic solid solution of carbon in iron. Dissolves up to 2.14 wt% C, at 1147 °C"],
+      ["Ferrite (α)","The body-centred cubic solid solution of carbon in iron. Dissolves only up to about 0.02 wt% C"],
+      ["Cementite (Fe₃C)","The iron carbide compound, containing 6.7 wt% C"]
+    ]
   }
 };
 
@@ -124,5 +151,22 @@ const glossaryComparisons = [
     rows: [
       ["Composition", "Exists over a range", "Narrow, fixed stoichiometry"],
       ["On a phase diagram", "A field between the terminal solutions", "A near-vertical line"]
-    ] }
+    ] },
+  {"terms":["Eutectic reaction","Eutectoid reaction","Peritectic reaction"],"rows":[["On cooling","L → α + β","γ → α + Fe₃C","L + α → β"],
+      ["Starts from","One liquid","One solid","A liquid and a solid"],
+      ["Ends with","Two solids","Two solids","One solid"],
+      ["Example","Pb-Sn, 183 °C","Fe-C, 727 °C","Fe-C, 1493 °C"]]},
+  {"terms":["Hypoeutectic","Hypereutectic"],"rows":[["Composition","Below the eutectic","Above the eutectic"],
+      ["Pro-eutectic phase (Pb-Sn)","α (Pb-rich)","β (Sn-rich)"],
+      ["Final microstructure","Pro-eutectic α in eutectic","Pro-eutectic β in eutectic"]]},
+  {"terms":["Liquidus","Solidus","Solvus"],"rows":[["Separates","Liquid from liquid + solid","Liquid + solid from solid","A single solid from solid + second solid"],
+      ["Crossing it on cooling","First solid appears","Last liquid disappears","A second solid precipitates"]]},
+  {"terms":["Phase","Microconstituent"],"rows":[["What it is","Physically distinct, homogeneous region","Region with a distinct look in the microstructure"],
+      ["Eutectic example","α and β are two phases","The eutectic is one microconstituent"],
+      ["Pb-30 wt% Sn","85.3% α, 14.7% β","73.2% pro-eutectic α, 26.8% eutectic"]]},
+  {"terms":["Mass fraction (W)","Volume fraction (V)"],"rows":[["Found from","The lever rule","Mass fractions and densities"],
+      ["Seen on a micrograph?","Not directly","Yes, as area fraction"]]},
+  {"terms":["Hypo-peritectic","Hyper-peritectic"],"rows":[["Composition","Between \\(\\alpha_p\\) and \\(\\beta_p\\)","Between \\(\\beta_p\\) and \\(L_p\\)"],
+      ["Left over after the reaction","Excess α","Excess liquid"],
+      ["Final structure","β matrix with α remnants","All β"]]}
 ];

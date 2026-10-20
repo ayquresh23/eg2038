@@ -3,15 +3,17 @@
 window.SITE_CONFIG = {
   "wikiHint": "metallurgy",
   "slug": "eg2038",
-  "topicIds": ["u1", "u2"],
-  "navOrder": ["u1", "u2"],
+  "topicIds": ["u1", "u2", "u3"],
+  "navOrder": ["u1", "u2", "u3"],
   "topicColors": {
     "u1": "#00a87a",
-    "u2": "#3b82e8"
+    "u2": "#3b82e8",
+    "u3": "#8855f5"
   },
   "topicLabels": {
     "u1": "Intro to Thermodynamics",
-    "u2": "Solution Thermodynamics"
+    "u2": "Solution Thermodynamics",
+    "u3": "Using Phase Diagrams"
   }
 };
 
@@ -21,16 +23,16 @@ window.SITE_CONTENT = {
     "title": "EG2038 Study Site",
     "subtitle": "Thermodynamics and kinetics as the twin forces behind every microstructure: why phases form, when they're stable, and how alloying, processing and heat treatment control the properties that follow. Built out unit by unit as the module runs.",
     "stats": [
-      { "value": "2 of 10", "label": "Units built" },
-      { "value": "47", "label": "Terms" },
-      { "value": "15", "label": "Formulas" },
-      { "value": "18", "label": "Exam Traps" }
+      { "value": "3 of 10", "label": "Units built" },
+      { "value": "69", "label": "Terms" },
+      { "value": "18", "label": "Formulas" },
+      { "value": "30", "label": "Exam Traps" }
     ],
     "extra": [
       { "type": "raw", "html": "<h2>Quick reference</h2>" },
       {
         "type": "raw",
-        "html": "<div class=\"card-grid\">\n      <div class=\"topic-card\" onclick=\"showSection('formulas')\" style=\"--bar-color:#00a87a\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📐 Formula Sheet</div>\n        <div class=\"topic-desc\">Every equation covered so far. Variables defined, units flagged.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('glossary')\" style=\"--bar-color:#2fa15c\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📚 Glossary</div>\n        <div class=\"topic-desc\">47 terms from Units 1 and 2. Instant search, topic filter, and flashcard mode.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('traps')\" style=\"--bar-color:#e04545\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">⚠️ MCQ Traps</div>\n        <div class=\"topic-desc\">Plausible-but-wrong claims the exam uses. Know what's actually true.</div>\n      </div>\n    </div>"
+        "html": "<div class=\"card-grid\">\n      <div class=\"topic-card\" onclick=\"showSection('formulas')\" style=\"--bar-color:#00a87a\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📐 Formula Sheet</div>\n        <div class=\"topic-desc\">Every equation covered so far. Variables defined, units flagged.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('glossary')\" style=\"--bar-color:#2fa15c\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📚 Glossary</div>\n        <div class=\"topic-desc\">69 terms from Units 1 to 3. Instant search, topic filter, and flashcard mode.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('traps')\" style=\"--bar-color:#e04545\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">⚠️ MCQ Traps</div>\n        <div class=\"topic-desc\">Plausible-but-wrong claims the exam uses. Know what's actually true.</div>\n      </div>\n    </div>"
       }
     ]
   },
@@ -325,7 +327,7 @@ window.SITE_CONTENT = {
       "id": "u2",
       "numLabel": "Unit 2 of 10",
       "title": "Solution Thermodynamics",
-      "subtitle": "Alloys are mixtures, so before you can read a phase diagram you need to know what mixing does to free energy. This unit builds that up from ideal solutions, to atoms with bonding preferences, to real alloys, and finishes with the chemical potential that Unit 3 uses to construct phase diagrams.",
+      "subtitle": "Alloys are mixtures, so before you can read a phase diagram you need to know what mixing does to free energy. This unit builds that up from ideal solutions, to atoms with bonding preferences, to real alloys, and finishes with the chemical potential that later units use to construct phase diagrams.",
       "sections": [
         {
           "type": "toc",
@@ -394,7 +396,7 @@ window.SITE_CONTENT = {
             {
               "title": "4. Chemical potential",
               "color": "#3b82e8",
-              "text": "Each component's share of the free energy. The tool Unit 3 uses to build phase diagrams."
+              "text": "Each component's share of the free energy. The tool used to build phase diagrams."
             }
           ]
         },
@@ -666,7 +668,7 @@ window.SITE_CONTENT = {
         },
         {
           "type": "raw",
-          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: \\(\\varepsilon > 0\\) at high and low temperature</div>\n<svg viewBox=\"0 0 640 340\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Free energy of mixing against composition for a regular solution with positive epsilon: a single smooth dip at high temperature, and a curve with a central hump flanked by two shallow dips at low temperature\"><defs></defs>\n<line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"290\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<polygon points=\"90,24 85,34 95,34\" fill=\"#5e5e6c\"/>\n<line x1=\"90\" y1=\"290\" x2=\"590\" y2=\"290\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<polygon points=\"597,290 587,285 587,295\" fill=\"#5e5e6c\"/>\n<text x=\"340\" y=\"328\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\"></text>\n<text x=\"42\" y=\"160\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" transform=\"rotate(-90 42 160)\" font-family=\"Inter,system-ui,sans-serif\">free energy of mixing, ΔG/RT</text>\n<text x=\"340\" y=\"328\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">composition, X<tspan font-size=\"10\" dy=\"3\">B</tspan><tspan dy=\"-3\">&#8203;</tspan>  →</text>\n<line x1=\"90\" y1=\"121.1\" x2=\"590\" y2=\"121.1\" stroke=\"#5e5e6c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/>\n<text x=\"586\" y=\"114.0810810810811\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">ΔG<tspan font-size=\"10\" dy=\"3\">mix</tspan><tspan dy=\"-3\">&#8203;</tspan> = 0</text>\n<path d=\"M90.0,121.4 L91.3,126.3 L92.5,130.2 L93.8,133.6 L95.0,136.8 L96.3,139.7 L97.5,142.5 L98.8,145.2 L100.0,147.7 L101.3,150.1 L102.5,152.4 L103.8,154.7 L105.0,156.9 L106.3,159.0 L107.5,161.0 L108.8,163.0 L110.0,164.9 L111.3,166.8 L112.5,168.6 L113.8,170.4 L115.0,172.2 L116.3,173.9 L117.5,175.5 L118.8,177.2 L120.0,178.8 L121.3,180.3 L122.5,181.9 L123.8,183.4 L125.0,184.8 L126.3,186.3 L127.5,187.7 L128.8,189.1 L130.0,190.4 L131.3,191.8 L132.5,193.1 L133.8,194.4 L135.0,195.7 L136.3,196.9 L137.5,198.1 L138.8,199.3 L140.0,200.5 L141.3,201.7 L142.5,202.9 L143.8,204.0 L145.0,205.1 L146.3,206.2 L147.5,207.3 L148.8,208.4 L150.0,209.4 L151.3,210.4 L152.5,211.4 L153.8,212.4 L155.0,213.4 L156.3,214.4 L157.5,215.4 L158.8,216.3 L160.0,217.2 L161.3,218.2 L162.5,219.1 L163.8,220.0 L165.0,220.8 L166.3,221.7 L167.5,222.6 L168.8,223.4 L170.0,224.2 L171.3,225.1 L172.5,225.9 L173.8,226.7 L175.0,227.4 L176.3,228.2 L177.5,229.0 L178.8,229.7 L180.0,230.5 L181.3,231.2 L182.5,231.9 L183.8,232.7 L185.0,233.4 L186.3,234.1 L187.5,234.8 L188.8,235.4 L190.0,236.1 L191.3,236.8 L192.5,237.4 L193.8,238.0 L195.0,238.7 L196.3,239.3 L197.5,239.9 L198.8,240.5 L200.0,241.1 L201.3,241.7 L202.5,242.3 L203.8,242.9 L205.0,243.5 L206.3,244.0 L207.5,244.6 L208.8,245.1 L210.0,245.6 L211.3,246.2 L212.5,246.7 L213.8,247.2 L215.0,247.7 L216.3,248.2 L217.5,248.7 L218.8,249.2 L220.0,249.7 L221.3,250.2 L222.5,250.6 L223.8,251.1 L225.0,251.5 L226.3,252.0 L227.5,252.4 L228.8,252.9 L230.0,253.3 L231.3,253.7 L232.5,254.1 L233.8,254.6 L235.0,255.0 L236.3,255.4 L237.5,255.7 L238.8,256.1 L240.0,256.5 L241.3,256.9 L242.5,257.3 L243.8,257.6 L245.0,258.0 L246.3,258.3 L247.5,258.7 L248.8,259.0 L250.0,259.4 L251.3,259.7 L252.5,260.0 L253.8,260.3 L255.0,260.6 L256.3,260.9 L257.5,261.2 L258.8,261.5 L260.0,261.8 L261.3,262.1 L262.5,262.4 L263.8,262.7 L265.0,263.0 L266.3,263.2 L267.5,263.5 L268.8,263.7 L270.0,264.0 L271.3,264.2 L272.5,264.5 L273.8,264.7 L275.0,265.0 L276.3,265.2 L277.5,265.4 L278.8,265.6 L280.0,265.8 L281.3,266.0 L282.5,266.2 L283.8,266.4 L285.0,266.6 L286.3,266.8 L287.5,267.0 L288.8,267.2 L290.0,267.4 L291.3,267.5 L292.5,267.7 L293.8,267.9 L295.0,268.0 L296.3,268.2 L297.5,268.3 L298.8,268.5 L300.0,268.6 L301.3,268.7 L302.5,268.9 L303.8,269.0 L305.0,269.1 L306.3,269.2 L307.5,269.4 L308.8,269.5 L310.0,269.6 L311.3,269.7 L312.5,269.8 L313.8,269.9 L315.0,269.9 L316.3,270.0 L317.5,270.1 L318.8,270.2 L320.0,270.3 L321.3,270.3 L322.5,270.4 L323.8,270.4 L325.0,270.5 L326.3,270.5 L327.5,270.6 L328.8,270.6 L330.0,270.7 L331.3,270.7 L332.5,270.7 L333.8,270.7 L335.0,270.8 L336.3,270.8 L337.5,270.8 L338.8,270.8 L340.0,270.8 L341.2,270.8 L342.5,270.8 L343.7,270.8 L345.0,270.8 L346.2,270.7 L347.5,270.7 L348.7,270.7 L350.0,270.7 L351.2,270.6 L352.5,270.6 L353.7,270.5 L355.0,270.5 L356.2,270.4 L357.5,270.4 L358.7,270.3 L360.0,270.3 L361.2,270.2 L362.5,270.1 L363.7,270.0 L365.0,269.9 L366.2,269.9 L367.5,269.8 L368.7,269.7 L370.0,269.6 L371.2,269.5 L372.5,269.4 L373.7,269.2 L375.0,269.1 L376.2,269.0 L377.5,268.9 L378.7,268.7 L380.0,268.6 L381.2,268.5 L382.5,268.3 L383.7,268.2 L385.0,268.0 L386.2,267.9 L387.5,267.7 L388.7,267.5 L390.0,267.4 L391.2,267.2 L392.5,267.0 L393.7,266.8 L395.0,266.6 L396.2,266.4 L397.5,266.2 L398.7,266.0 L400.0,265.8 L401.2,265.6 L402.5,265.4 L403.7,265.2 L405.0,265.0 L406.2,264.7 L407.5,264.5 L408.7,264.2 L410.0,264.0 L411.2,263.7 L412.5,263.5 L413.7,263.2 L415.0,263.0 L416.2,262.7 L417.5,262.4 L418.7,262.1 L420.0,261.8 L421.2,261.5 L422.5,261.2 L423.7,260.9 L425.0,260.6 L426.2,260.3 L427.5,260.0 L428.7,259.7 L430.0,259.4 L431.2,259.0 L432.5,258.7 L433.7,258.3 L435.0,258.0 L436.2,257.6 L437.5,257.3 L438.7,256.9 L440.0,256.5 L441.2,256.1 L442.5,255.7 L443.7,255.4 L445.0,255.0 L446.2,254.6 L447.5,254.1 L448.7,253.7 L450.0,253.3 L451.2,252.9 L452.5,252.4 L453.7,252.0 L455.0,251.5 L456.2,251.1 L457.5,250.6 L458.7,250.2 L460.0,249.7 L461.2,249.2 L462.5,248.7 L463.7,248.2 L465.0,247.7 L466.2,247.2 L467.5,246.7 L468.7,246.2 L470.0,245.6 L471.2,245.1 L472.5,244.6 L473.7,244.0 L475.0,243.5 L476.2,242.9 L477.5,242.3 L478.7,241.7 L480.0,241.1 L481.2,240.5 L482.5,239.9 L483.7,239.3 L485.0,238.7 L486.2,238.0 L487.5,237.4 L488.7,236.8 L490.0,236.1 L491.2,235.4 L492.5,234.8 L493.7,234.1 L495.0,233.4 L496.2,232.7 L497.5,231.9 L498.7,231.2 L500.0,230.5 L501.2,229.7 L502.5,229.0 L503.7,228.2 L505.0,227.4 L506.2,226.7 L507.5,225.9 L508.7,225.1 L510.0,224.2 L511.2,223.4 L512.5,222.6 L513.7,221.7 L515.0,220.8 L516.2,220.0 L517.5,219.1 L518.7,218.2 L520.0,217.2 L521.2,216.3 L522.5,215.4 L523.7,214.4 L525.0,213.4 L526.2,212.4 L527.5,211.4 L528.7,210.4 L530.0,209.4 L531.2,208.4 L532.5,207.3 L533.7,206.2 L535.0,205.1 L536.2,204.0 L537.5,202.9 L538.7,201.7 L540.0,200.5 L541.2,199.3 L542.5,198.1 L543.7,196.9 L545.0,195.7 L546.2,194.4 L547.5,193.1 L548.7,191.8 L550.0,190.4 L551.2,189.1 L552.5,187.7 L553.7,186.3 L555.0,184.8 L556.2,183.4 L557.5,181.9 L558.7,180.3 L560.0,178.8 L561.2,177.2 L562.5,175.5 L563.7,173.9 L565.0,172.2 L566.2,170.4 L567.5,168.6 L568.7,166.8 L570.0,164.9 L571.2,163.0 L572.5,161.0 L573.7,159.0 L575.0,156.9 L576.2,154.7 L577.5,152.4 L578.7,150.1 L580.0,147.7 L581.2,145.2 L582.5,142.5 L583.7,139.7 L585.0,136.8 L586.2,133.6 L587.5,130.2 L588.7,126.3 L590.0,121.4\" fill=\"none\" stroke=\"#00a87a\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n<path d=\"M90.0,121.3 L91.3,124.6 L92.5,126.8 L93.8,128.5 L95.0,130.0 L96.3,131.3 L97.5,132.5 L98.8,133.5 L100.0,134.4 L101.3,135.2 L102.5,135.9 L103.8,136.5 L105.0,137.1 L106.3,137.7 L107.5,138.1 L108.8,138.5 L110.0,138.9 L111.3,139.2 L112.5,139.5 L113.8,139.8 L115.0,140.0 L116.3,140.2 L117.5,140.4 L118.8,140.5 L120.0,140.6 L121.3,140.7 L122.5,140.7 L123.8,140.8 L125.0,140.8 L126.3,140.8 L127.5,140.8 L128.8,140.7 L130.0,140.7 L131.3,140.6 L132.5,140.5 L133.8,140.4 L135.0,140.3 L136.3,140.1 L137.5,140.0 L138.8,139.9 L140.0,139.7 L141.3,139.5 L142.5,139.3 L143.8,139.1 L145.0,138.9 L146.3,138.7 L147.5,138.5 L148.8,138.2 L150.0,138.0 L151.3,137.8 L152.5,137.5 L153.8,137.2 L155.0,137.0 L156.3,136.7 L157.5,136.4 L158.8,136.1 L160.0,135.9 L161.3,135.6 L162.5,135.3 L163.8,135.0 L165.0,134.7 L166.3,134.3 L167.5,134.0 L168.8,133.7 L170.0,133.4 L171.3,133.1 L172.5,132.7 L173.8,132.4 L175.0,132.1 L176.3,131.7 L177.5,131.4 L178.8,131.1 L180.0,130.7 L181.3,130.4 L182.5,130.0 L183.8,129.7 L185.0,129.4 L186.3,129.0 L187.5,128.7 L188.8,128.3 L190.0,128.0 L191.3,127.6 L192.5,127.3 L193.8,126.9 L195.0,126.6 L196.3,126.2 L197.5,125.9 L198.8,125.5 L200.0,125.2 L201.3,124.8 L202.5,124.5 L203.8,124.1 L205.0,123.8 L206.3,123.4 L207.5,123.1 L208.8,122.7 L210.0,122.4 L211.3,122.0 L212.5,121.7 L213.8,121.4 L215.0,121.0 L216.3,120.7 L217.5,120.3 L218.8,120.0 L220.0,119.7 L221.3,119.3 L222.5,119.0 L223.8,118.7 L225.0,118.4 L226.3,118.0 L227.5,117.7 L228.8,117.4 L230.0,117.1 L231.3,116.8 L232.5,116.4 L233.8,116.1 L235.0,115.8 L236.3,115.5 L237.5,115.2 L238.8,114.9 L240.0,114.6 L241.3,114.3 L242.5,114.0 L243.8,113.7 L245.0,113.4 L246.3,113.2 L247.5,112.9 L248.8,112.6 L250.0,112.3 L251.3,112.0 L252.5,111.8 L253.8,111.5 L255.0,111.2 L256.3,111.0 L257.5,110.7 L258.8,110.5 L260.0,110.2 L261.3,110.0 L262.5,109.7 L263.8,109.5 L265.0,109.2 L266.3,109.0 L267.5,108.8 L268.8,108.5 L270.0,108.3 L271.3,108.1 L272.5,107.9 L273.8,107.7 L275.0,107.4 L276.3,107.2 L277.5,107.0 L278.8,106.8 L280.0,106.6 L281.3,106.4 L282.5,106.3 L283.8,106.1 L285.0,105.9 L286.3,105.7 L287.5,105.5 L288.8,105.4 L290.0,105.2 L291.3,105.0 L292.5,104.9 L293.8,104.7 L295.0,104.6 L296.3,104.4 L297.5,104.3 L298.8,104.2 L300.0,104.0 L301.3,103.9 L302.5,103.8 L303.8,103.6 L305.0,103.5 L306.3,103.4 L307.5,103.3 L308.8,103.2 L310.0,103.1 L311.3,103.0 L312.5,102.9 L313.8,102.8 L315.0,102.7 L316.3,102.6 L317.5,102.6 L318.8,102.5 L320.0,102.4 L321.3,102.3 L322.5,102.3 L323.8,102.2 L325.0,102.2 L326.3,102.1 L327.5,102.1 L328.8,102.0 L330.0,102.0 L331.3,102.0 L332.5,102.0 L333.8,101.9 L335.0,101.9 L336.3,101.9 L337.5,101.9 L338.8,101.9 L340.0,101.9 L341.2,101.9 L342.5,101.9 L343.7,101.9 L345.0,101.9 L346.2,101.9 L347.5,102.0 L348.7,102.0 L350.0,102.0 L351.2,102.0 L352.5,102.1 L353.7,102.1 L355.0,102.2 L356.2,102.2 L357.5,102.3 L358.7,102.3 L360.0,102.4 L361.2,102.5 L362.5,102.6 L363.7,102.6 L365.0,102.7 L366.2,102.8 L367.5,102.9 L368.7,103.0 L370.0,103.1 L371.2,103.2 L372.5,103.3 L373.7,103.4 L375.0,103.5 L376.2,103.6 L377.5,103.8 L378.7,103.9 L380.0,104.0 L381.2,104.2 L382.5,104.3 L383.7,104.4 L385.0,104.6 L386.2,104.7 L387.5,104.9 L388.7,105.0 L390.0,105.2 L391.2,105.4 L392.5,105.5 L393.7,105.7 L395.0,105.9 L396.2,106.1 L397.5,106.3 L398.7,106.4 L400.0,106.6 L401.2,106.8 L402.5,107.0 L403.7,107.2 L405.0,107.4 L406.2,107.7 L407.5,107.9 L408.7,108.1 L410.0,108.3 L411.2,108.5 L412.5,108.8 L413.7,109.0 L415.0,109.2 L416.2,109.5 L417.5,109.7 L418.7,110.0 L420.0,110.2 L421.2,110.5 L422.5,110.7 L423.7,111.0 L425.0,111.2 L426.2,111.5 L427.5,111.8 L428.7,112.0 L430.0,112.3 L431.2,112.6 L432.5,112.9 L433.7,113.2 L435.0,113.4 L436.2,113.7 L437.5,114.0 L438.7,114.3 L440.0,114.6 L441.2,114.9 L442.5,115.2 L443.7,115.5 L445.0,115.8 L446.2,116.1 L447.5,116.4 L448.7,116.8 L450.0,117.1 L451.2,117.4 L452.5,117.7 L453.7,118.0 L455.0,118.4 L456.2,118.7 L457.5,119.0 L458.7,119.3 L460.0,119.7 L461.2,120.0 L462.5,120.3 L463.7,120.7 L465.0,121.0 L466.2,121.4 L467.5,121.7 L468.7,122.0 L470.0,122.4 L471.2,122.7 L472.5,123.1 L473.7,123.4 L475.0,123.8 L476.2,124.1 L477.5,124.5 L478.7,124.8 L480.0,125.2 L481.2,125.5 L482.5,125.9 L483.7,126.2 L485.0,126.6 L486.2,126.9 L487.5,127.3 L488.7,127.6 L490.0,128.0 L491.2,128.3 L492.5,128.7 L493.7,129.0 L495.0,129.4 L496.2,129.7 L497.5,130.0 L498.7,130.4 L500.0,130.7 L501.2,131.1 L502.5,131.4 L503.7,131.7 L505.0,132.1 L506.2,132.4 L507.5,132.7 L508.7,133.1 L510.0,133.4 L511.2,133.7 L512.5,134.0 L513.7,134.3 L515.0,134.7 L516.2,135.0 L517.5,135.3 L518.7,135.6 L520.0,135.9 L521.2,136.1 L522.5,136.4 L523.7,136.7 L525.0,137.0 L526.2,137.2 L527.5,137.5 L528.7,137.8 L530.0,138.0 L531.2,138.2 L532.5,138.5 L533.7,138.7 L535.0,138.9 L536.2,139.1 L537.5,139.3 L538.7,139.5 L540.0,139.7 L541.2,139.9 L542.5,140.0 L543.7,140.1 L545.0,140.3 L546.2,140.4 L547.5,140.5 L548.7,140.6 L550.0,140.7 L551.2,140.7 L552.5,140.8 L553.7,140.8 L555.0,140.8 L556.2,140.8 L557.5,140.7 L558.7,140.7 L560.0,140.6 L561.2,140.5 L562.5,140.4 L563.7,140.2 L565.0,140.0 L566.2,139.8 L567.5,139.5 L568.7,139.2 L570.0,138.9 L571.2,138.5 L572.5,138.1 L573.7,137.7 L575.0,137.1 L576.2,136.5 L577.5,135.9 L578.7,135.2 L580.0,134.4 L581.2,133.5 L582.5,132.5 L583.7,131.3 L585.0,130.0 L586.2,128.5 L587.5,126.8 L588.7,124.6 L590.0,121.3\" fill=\"none\" stroke=\"#e04545\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n<text x=\"340.0\" y=\"230.7929664053869\" fill=\"#00a87a\" font-size=\"12.5\" font-weight=\"600\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">high T: one smooth dip</text>\n<text x=\"340.0\" y=\"246.7929664053869\" fill=\"#00a87a\" font-size=\"11.5\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">(random mixing)</text>\n<text x=\"340.0\" y=\"89.87404748646799\" fill=\"#e04545\" font-size=\"12.5\" font-weight=\"600\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">low T: hump in the middle</text>\n<circle cx=\"125.4\" cy=\"140.8\" r=\"5\" fill=\"#e04545\" stroke=\"#0c0c10\" stroke-width=\"1.5\"/>\n<circle cx=\"554.6\" cy=\"140.8\" r=\"5\" fill=\"#e04545\" stroke=\"#0c0c10\" stroke-width=\"1.5\"/>\n<text x=\"129.375\" y=\"170.7909950490024\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">A-rich</text>\n<text x=\"550.625\" y=\"170.79099504900242\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">B-rich</text>\n<text x=\"90\" y=\"306\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">pure A</text>\n<text x=\"590\" y=\"306\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">pure B</text>\n</svg>\n<p style=\"margin-top:14px;margin-bottom:0\">A hump means a 50:50 mixture has <em>higher</em> free energy than splitting into an A-rich and a B-rich region. The alloy un-mixes into two phases: a <strong>miscibility gap</strong>. Unit 3 puts this on a phase diagram. (Plotted from \\(\\Delta G_{\\mathrm{mix}}/RT = (\\Omega/RT)X_AX_B + X_A\\ln X_A + X_B\\ln X_B\\) with \\(\\Omega/RT = 1\\) and \\(3\\).)</p>\n</div>"
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: \\(\\varepsilon > 0\\) at high and low temperature</div>\n<svg viewBox=\"0 0 640 340\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Free energy of mixing against composition for a regular solution with positive epsilon: a single smooth dip at high temperature, and a curve with a central hump flanked by two shallow dips at low temperature\"><defs></defs>\n<line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"290\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<polygon points=\"90,24 85,34 95,34\" fill=\"#5e5e6c\"/>\n<line x1=\"90\" y1=\"290\" x2=\"590\" y2=\"290\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<polygon points=\"597,290 587,285 587,295\" fill=\"#5e5e6c\"/>\n<text x=\"340\" y=\"328\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\"></text>\n<text x=\"42\" y=\"160\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" transform=\"rotate(-90 42 160)\" font-family=\"Inter,system-ui,sans-serif\">free energy of mixing, ΔG/RT</text>\n<text x=\"340\" y=\"328\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">composition, X<tspan font-size=\"10\" dy=\"3\">B</tspan><tspan dy=\"-3\">&#8203;</tspan>  →</text>\n<line x1=\"90\" y1=\"121.1\" x2=\"590\" y2=\"121.1\" stroke=\"#5e5e6c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/>\n<text x=\"586\" y=\"114.0810810810811\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">ΔG<tspan font-size=\"10\" dy=\"3\">mix</tspan><tspan dy=\"-3\">&#8203;</tspan> = 0</text>\n<path d=\"M90.0,121.4 L91.3,126.3 L92.5,130.2 L93.8,133.6 L95.0,136.8 L96.3,139.7 L97.5,142.5 L98.8,145.2 L100.0,147.7 L101.3,150.1 L102.5,152.4 L103.8,154.7 L105.0,156.9 L106.3,159.0 L107.5,161.0 L108.8,163.0 L110.0,164.9 L111.3,166.8 L112.5,168.6 L113.8,170.4 L115.0,172.2 L116.3,173.9 L117.5,175.5 L118.8,177.2 L120.0,178.8 L121.3,180.3 L122.5,181.9 L123.8,183.4 L125.0,184.8 L126.3,186.3 L127.5,187.7 L128.8,189.1 L130.0,190.4 L131.3,191.8 L132.5,193.1 L133.8,194.4 L135.0,195.7 L136.3,196.9 L137.5,198.1 L138.8,199.3 L140.0,200.5 L141.3,201.7 L142.5,202.9 L143.8,204.0 L145.0,205.1 L146.3,206.2 L147.5,207.3 L148.8,208.4 L150.0,209.4 L151.3,210.4 L152.5,211.4 L153.8,212.4 L155.0,213.4 L156.3,214.4 L157.5,215.4 L158.8,216.3 L160.0,217.2 L161.3,218.2 L162.5,219.1 L163.8,220.0 L165.0,220.8 L166.3,221.7 L167.5,222.6 L168.8,223.4 L170.0,224.2 L171.3,225.1 L172.5,225.9 L173.8,226.7 L175.0,227.4 L176.3,228.2 L177.5,229.0 L178.8,229.7 L180.0,230.5 L181.3,231.2 L182.5,231.9 L183.8,232.7 L185.0,233.4 L186.3,234.1 L187.5,234.8 L188.8,235.4 L190.0,236.1 L191.3,236.8 L192.5,237.4 L193.8,238.0 L195.0,238.7 L196.3,239.3 L197.5,239.9 L198.8,240.5 L200.0,241.1 L201.3,241.7 L202.5,242.3 L203.8,242.9 L205.0,243.5 L206.3,244.0 L207.5,244.6 L208.8,245.1 L210.0,245.6 L211.3,246.2 L212.5,246.7 L213.8,247.2 L215.0,247.7 L216.3,248.2 L217.5,248.7 L218.8,249.2 L220.0,249.7 L221.3,250.2 L222.5,250.6 L223.8,251.1 L225.0,251.5 L226.3,252.0 L227.5,252.4 L228.8,252.9 L230.0,253.3 L231.3,253.7 L232.5,254.1 L233.8,254.6 L235.0,255.0 L236.3,255.4 L237.5,255.7 L238.8,256.1 L240.0,256.5 L241.3,256.9 L242.5,257.3 L243.8,257.6 L245.0,258.0 L246.3,258.3 L247.5,258.7 L248.8,259.0 L250.0,259.4 L251.3,259.7 L252.5,260.0 L253.8,260.3 L255.0,260.6 L256.3,260.9 L257.5,261.2 L258.8,261.5 L260.0,261.8 L261.3,262.1 L262.5,262.4 L263.8,262.7 L265.0,263.0 L266.3,263.2 L267.5,263.5 L268.8,263.7 L270.0,264.0 L271.3,264.2 L272.5,264.5 L273.8,264.7 L275.0,265.0 L276.3,265.2 L277.5,265.4 L278.8,265.6 L280.0,265.8 L281.3,266.0 L282.5,266.2 L283.8,266.4 L285.0,266.6 L286.3,266.8 L287.5,267.0 L288.8,267.2 L290.0,267.4 L291.3,267.5 L292.5,267.7 L293.8,267.9 L295.0,268.0 L296.3,268.2 L297.5,268.3 L298.8,268.5 L300.0,268.6 L301.3,268.7 L302.5,268.9 L303.8,269.0 L305.0,269.1 L306.3,269.2 L307.5,269.4 L308.8,269.5 L310.0,269.6 L311.3,269.7 L312.5,269.8 L313.8,269.9 L315.0,269.9 L316.3,270.0 L317.5,270.1 L318.8,270.2 L320.0,270.3 L321.3,270.3 L322.5,270.4 L323.8,270.4 L325.0,270.5 L326.3,270.5 L327.5,270.6 L328.8,270.6 L330.0,270.7 L331.3,270.7 L332.5,270.7 L333.8,270.7 L335.0,270.8 L336.3,270.8 L337.5,270.8 L338.8,270.8 L340.0,270.8 L341.2,270.8 L342.5,270.8 L343.7,270.8 L345.0,270.8 L346.2,270.7 L347.5,270.7 L348.7,270.7 L350.0,270.7 L351.2,270.6 L352.5,270.6 L353.7,270.5 L355.0,270.5 L356.2,270.4 L357.5,270.4 L358.7,270.3 L360.0,270.3 L361.2,270.2 L362.5,270.1 L363.7,270.0 L365.0,269.9 L366.2,269.9 L367.5,269.8 L368.7,269.7 L370.0,269.6 L371.2,269.5 L372.5,269.4 L373.7,269.2 L375.0,269.1 L376.2,269.0 L377.5,268.9 L378.7,268.7 L380.0,268.6 L381.2,268.5 L382.5,268.3 L383.7,268.2 L385.0,268.0 L386.2,267.9 L387.5,267.7 L388.7,267.5 L390.0,267.4 L391.2,267.2 L392.5,267.0 L393.7,266.8 L395.0,266.6 L396.2,266.4 L397.5,266.2 L398.7,266.0 L400.0,265.8 L401.2,265.6 L402.5,265.4 L403.7,265.2 L405.0,265.0 L406.2,264.7 L407.5,264.5 L408.7,264.2 L410.0,264.0 L411.2,263.7 L412.5,263.5 L413.7,263.2 L415.0,263.0 L416.2,262.7 L417.5,262.4 L418.7,262.1 L420.0,261.8 L421.2,261.5 L422.5,261.2 L423.7,260.9 L425.0,260.6 L426.2,260.3 L427.5,260.0 L428.7,259.7 L430.0,259.4 L431.2,259.0 L432.5,258.7 L433.7,258.3 L435.0,258.0 L436.2,257.6 L437.5,257.3 L438.7,256.9 L440.0,256.5 L441.2,256.1 L442.5,255.7 L443.7,255.4 L445.0,255.0 L446.2,254.6 L447.5,254.1 L448.7,253.7 L450.0,253.3 L451.2,252.9 L452.5,252.4 L453.7,252.0 L455.0,251.5 L456.2,251.1 L457.5,250.6 L458.7,250.2 L460.0,249.7 L461.2,249.2 L462.5,248.7 L463.7,248.2 L465.0,247.7 L466.2,247.2 L467.5,246.7 L468.7,246.2 L470.0,245.6 L471.2,245.1 L472.5,244.6 L473.7,244.0 L475.0,243.5 L476.2,242.9 L477.5,242.3 L478.7,241.7 L480.0,241.1 L481.2,240.5 L482.5,239.9 L483.7,239.3 L485.0,238.7 L486.2,238.0 L487.5,237.4 L488.7,236.8 L490.0,236.1 L491.2,235.4 L492.5,234.8 L493.7,234.1 L495.0,233.4 L496.2,232.7 L497.5,231.9 L498.7,231.2 L500.0,230.5 L501.2,229.7 L502.5,229.0 L503.7,228.2 L505.0,227.4 L506.2,226.7 L507.5,225.9 L508.7,225.1 L510.0,224.2 L511.2,223.4 L512.5,222.6 L513.7,221.7 L515.0,220.8 L516.2,220.0 L517.5,219.1 L518.7,218.2 L520.0,217.2 L521.2,216.3 L522.5,215.4 L523.7,214.4 L525.0,213.4 L526.2,212.4 L527.5,211.4 L528.7,210.4 L530.0,209.4 L531.2,208.4 L532.5,207.3 L533.7,206.2 L535.0,205.1 L536.2,204.0 L537.5,202.9 L538.7,201.7 L540.0,200.5 L541.2,199.3 L542.5,198.1 L543.7,196.9 L545.0,195.7 L546.2,194.4 L547.5,193.1 L548.7,191.8 L550.0,190.4 L551.2,189.1 L552.5,187.7 L553.7,186.3 L555.0,184.8 L556.2,183.4 L557.5,181.9 L558.7,180.3 L560.0,178.8 L561.2,177.2 L562.5,175.5 L563.7,173.9 L565.0,172.2 L566.2,170.4 L567.5,168.6 L568.7,166.8 L570.0,164.9 L571.2,163.0 L572.5,161.0 L573.7,159.0 L575.0,156.9 L576.2,154.7 L577.5,152.4 L578.7,150.1 L580.0,147.7 L581.2,145.2 L582.5,142.5 L583.7,139.7 L585.0,136.8 L586.2,133.6 L587.5,130.2 L588.7,126.3 L590.0,121.4\" fill=\"none\" stroke=\"#00a87a\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n<path d=\"M90.0,121.3 L91.3,124.6 L92.5,126.8 L93.8,128.5 L95.0,130.0 L96.3,131.3 L97.5,132.5 L98.8,133.5 L100.0,134.4 L101.3,135.2 L102.5,135.9 L103.8,136.5 L105.0,137.1 L106.3,137.7 L107.5,138.1 L108.8,138.5 L110.0,138.9 L111.3,139.2 L112.5,139.5 L113.8,139.8 L115.0,140.0 L116.3,140.2 L117.5,140.4 L118.8,140.5 L120.0,140.6 L121.3,140.7 L122.5,140.7 L123.8,140.8 L125.0,140.8 L126.3,140.8 L127.5,140.8 L128.8,140.7 L130.0,140.7 L131.3,140.6 L132.5,140.5 L133.8,140.4 L135.0,140.3 L136.3,140.1 L137.5,140.0 L138.8,139.9 L140.0,139.7 L141.3,139.5 L142.5,139.3 L143.8,139.1 L145.0,138.9 L146.3,138.7 L147.5,138.5 L148.8,138.2 L150.0,138.0 L151.3,137.8 L152.5,137.5 L153.8,137.2 L155.0,137.0 L156.3,136.7 L157.5,136.4 L158.8,136.1 L160.0,135.9 L161.3,135.6 L162.5,135.3 L163.8,135.0 L165.0,134.7 L166.3,134.3 L167.5,134.0 L168.8,133.7 L170.0,133.4 L171.3,133.1 L172.5,132.7 L173.8,132.4 L175.0,132.1 L176.3,131.7 L177.5,131.4 L178.8,131.1 L180.0,130.7 L181.3,130.4 L182.5,130.0 L183.8,129.7 L185.0,129.4 L186.3,129.0 L187.5,128.7 L188.8,128.3 L190.0,128.0 L191.3,127.6 L192.5,127.3 L193.8,126.9 L195.0,126.6 L196.3,126.2 L197.5,125.9 L198.8,125.5 L200.0,125.2 L201.3,124.8 L202.5,124.5 L203.8,124.1 L205.0,123.8 L206.3,123.4 L207.5,123.1 L208.8,122.7 L210.0,122.4 L211.3,122.0 L212.5,121.7 L213.8,121.4 L215.0,121.0 L216.3,120.7 L217.5,120.3 L218.8,120.0 L220.0,119.7 L221.3,119.3 L222.5,119.0 L223.8,118.7 L225.0,118.4 L226.3,118.0 L227.5,117.7 L228.8,117.4 L230.0,117.1 L231.3,116.8 L232.5,116.4 L233.8,116.1 L235.0,115.8 L236.3,115.5 L237.5,115.2 L238.8,114.9 L240.0,114.6 L241.3,114.3 L242.5,114.0 L243.8,113.7 L245.0,113.4 L246.3,113.2 L247.5,112.9 L248.8,112.6 L250.0,112.3 L251.3,112.0 L252.5,111.8 L253.8,111.5 L255.0,111.2 L256.3,111.0 L257.5,110.7 L258.8,110.5 L260.0,110.2 L261.3,110.0 L262.5,109.7 L263.8,109.5 L265.0,109.2 L266.3,109.0 L267.5,108.8 L268.8,108.5 L270.0,108.3 L271.3,108.1 L272.5,107.9 L273.8,107.7 L275.0,107.4 L276.3,107.2 L277.5,107.0 L278.8,106.8 L280.0,106.6 L281.3,106.4 L282.5,106.3 L283.8,106.1 L285.0,105.9 L286.3,105.7 L287.5,105.5 L288.8,105.4 L290.0,105.2 L291.3,105.0 L292.5,104.9 L293.8,104.7 L295.0,104.6 L296.3,104.4 L297.5,104.3 L298.8,104.2 L300.0,104.0 L301.3,103.9 L302.5,103.8 L303.8,103.6 L305.0,103.5 L306.3,103.4 L307.5,103.3 L308.8,103.2 L310.0,103.1 L311.3,103.0 L312.5,102.9 L313.8,102.8 L315.0,102.7 L316.3,102.6 L317.5,102.6 L318.8,102.5 L320.0,102.4 L321.3,102.3 L322.5,102.3 L323.8,102.2 L325.0,102.2 L326.3,102.1 L327.5,102.1 L328.8,102.0 L330.0,102.0 L331.3,102.0 L332.5,102.0 L333.8,101.9 L335.0,101.9 L336.3,101.9 L337.5,101.9 L338.8,101.9 L340.0,101.9 L341.2,101.9 L342.5,101.9 L343.7,101.9 L345.0,101.9 L346.2,101.9 L347.5,102.0 L348.7,102.0 L350.0,102.0 L351.2,102.0 L352.5,102.1 L353.7,102.1 L355.0,102.2 L356.2,102.2 L357.5,102.3 L358.7,102.3 L360.0,102.4 L361.2,102.5 L362.5,102.6 L363.7,102.6 L365.0,102.7 L366.2,102.8 L367.5,102.9 L368.7,103.0 L370.0,103.1 L371.2,103.2 L372.5,103.3 L373.7,103.4 L375.0,103.5 L376.2,103.6 L377.5,103.8 L378.7,103.9 L380.0,104.0 L381.2,104.2 L382.5,104.3 L383.7,104.4 L385.0,104.6 L386.2,104.7 L387.5,104.9 L388.7,105.0 L390.0,105.2 L391.2,105.4 L392.5,105.5 L393.7,105.7 L395.0,105.9 L396.2,106.1 L397.5,106.3 L398.7,106.4 L400.0,106.6 L401.2,106.8 L402.5,107.0 L403.7,107.2 L405.0,107.4 L406.2,107.7 L407.5,107.9 L408.7,108.1 L410.0,108.3 L411.2,108.5 L412.5,108.8 L413.7,109.0 L415.0,109.2 L416.2,109.5 L417.5,109.7 L418.7,110.0 L420.0,110.2 L421.2,110.5 L422.5,110.7 L423.7,111.0 L425.0,111.2 L426.2,111.5 L427.5,111.8 L428.7,112.0 L430.0,112.3 L431.2,112.6 L432.5,112.9 L433.7,113.2 L435.0,113.4 L436.2,113.7 L437.5,114.0 L438.7,114.3 L440.0,114.6 L441.2,114.9 L442.5,115.2 L443.7,115.5 L445.0,115.8 L446.2,116.1 L447.5,116.4 L448.7,116.8 L450.0,117.1 L451.2,117.4 L452.5,117.7 L453.7,118.0 L455.0,118.4 L456.2,118.7 L457.5,119.0 L458.7,119.3 L460.0,119.7 L461.2,120.0 L462.5,120.3 L463.7,120.7 L465.0,121.0 L466.2,121.4 L467.5,121.7 L468.7,122.0 L470.0,122.4 L471.2,122.7 L472.5,123.1 L473.7,123.4 L475.0,123.8 L476.2,124.1 L477.5,124.5 L478.7,124.8 L480.0,125.2 L481.2,125.5 L482.5,125.9 L483.7,126.2 L485.0,126.6 L486.2,126.9 L487.5,127.3 L488.7,127.6 L490.0,128.0 L491.2,128.3 L492.5,128.7 L493.7,129.0 L495.0,129.4 L496.2,129.7 L497.5,130.0 L498.7,130.4 L500.0,130.7 L501.2,131.1 L502.5,131.4 L503.7,131.7 L505.0,132.1 L506.2,132.4 L507.5,132.7 L508.7,133.1 L510.0,133.4 L511.2,133.7 L512.5,134.0 L513.7,134.3 L515.0,134.7 L516.2,135.0 L517.5,135.3 L518.7,135.6 L520.0,135.9 L521.2,136.1 L522.5,136.4 L523.7,136.7 L525.0,137.0 L526.2,137.2 L527.5,137.5 L528.7,137.8 L530.0,138.0 L531.2,138.2 L532.5,138.5 L533.7,138.7 L535.0,138.9 L536.2,139.1 L537.5,139.3 L538.7,139.5 L540.0,139.7 L541.2,139.9 L542.5,140.0 L543.7,140.1 L545.0,140.3 L546.2,140.4 L547.5,140.5 L548.7,140.6 L550.0,140.7 L551.2,140.7 L552.5,140.8 L553.7,140.8 L555.0,140.8 L556.2,140.8 L557.5,140.7 L558.7,140.7 L560.0,140.6 L561.2,140.5 L562.5,140.4 L563.7,140.2 L565.0,140.0 L566.2,139.8 L567.5,139.5 L568.7,139.2 L570.0,138.9 L571.2,138.5 L572.5,138.1 L573.7,137.7 L575.0,137.1 L576.2,136.5 L577.5,135.9 L578.7,135.2 L580.0,134.4 L581.2,133.5 L582.5,132.5 L583.7,131.3 L585.0,130.0 L586.2,128.5 L587.5,126.8 L588.7,124.6 L590.0,121.3\" fill=\"none\" stroke=\"#e04545\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n<text x=\"340.0\" y=\"230.7929664053869\" fill=\"#00a87a\" font-size=\"12.5\" font-weight=\"600\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">high T: one smooth dip</text>\n<text x=\"340.0\" y=\"246.7929664053869\" fill=\"#00a87a\" font-size=\"11.5\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">(random mixing)</text>\n<text x=\"340.0\" y=\"89.87404748646799\" fill=\"#e04545\" font-size=\"12.5\" font-weight=\"600\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">low T: hump in the middle</text>\n<circle cx=\"125.4\" cy=\"140.8\" r=\"5\" fill=\"#e04545\" stroke=\"#0c0c10\" stroke-width=\"1.5\"/>\n<circle cx=\"554.6\" cy=\"140.8\" r=\"5\" fill=\"#e04545\" stroke=\"#0c0c10\" stroke-width=\"1.5\"/>\n<text x=\"129.375\" y=\"170.7909950490024\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">A-rich</text>\n<text x=\"550.625\" y=\"170.79099504900242\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">B-rich</text>\n<text x=\"90\" y=\"306\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">pure A</text>\n<text x=\"590\" y=\"306\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">pure B</text>\n</svg>\n<p style=\"margin-top:14px;margin-bottom:0\">A hump means a 50:50 mixture has <em>higher</em> free energy than splitting into an A-rich and a B-rich region. The alloy un-mixes into two phases: a <strong>miscibility gap</strong>. A later unit puts this on a phase diagram. (Plotted from \\(\\Delta G_{\\mathrm{mix}}/RT = (\\Omega/RT)X_AX_B + X_A\\ln X_A + X_B\\ln X_B\\) with \\(\\Omega/RT = 1\\) and \\(3\\).)</p>\n</div>"
         },
         {
           "type": "h2",
@@ -775,7 +777,7 @@ window.SITE_CONTENT = {
           "type": "conceptbox",
           "variant": "note",
           "html": "<p>When two phases coexist in equilibrium, each component must have the <strong>same chemical potential in both phases</strong>.</p>",
-          "title": "Why this matters for Unit 3"
+          "title": "Why this matters for phase diagrams"
         },
         {
           "type": "formulablock",
@@ -783,7 +785,7 @@ window.SITE_CONTENT = {
           "eqs": [
             "\\mu_A^{\\alpha} = \\mu_A^{\\beta} \\qquad \\mu_B^{\\alpha} = \\mu_B^{\\beta}"
           ],
-          "note": "On a \\(G\\) against \\(X_B\\) graph, \\(\\mu_A\\) and \\(\\mu_B\\) are where the tangent at a given composition hits the left and right edges. Two phases are in equilibrium when <strong>one straight line touches both of their curves</strong>. That is the common tangent construction, and it is how Unit 3 builds phase diagrams."
+          "note": "On a \\(G\\) against \\(X_B\\) graph, \\(\\mu_A\\) and \\(\\mu_B\\) are where the tangent at a given composition hits the left and right edges. Two phases are in equilibrium when <strong>one straight line touches both of their curves</strong>. That is the common tangent construction, and it is how phase diagrams are built."
         },
         {
           "type": "h2",
@@ -806,8 +808,408 @@ window.SITE_CONTENT = {
       "readTime": "20 min",
       "color": "#3b82e8"
     },
-    { "soon": true, "numLabel": "Unit 3", "title": "Construction of Phase Diagrams", "desc": "Coming soon — added once covered in lectures.", "color": "#8855f5", "sections": [] },
-    { "soon": true, "numLabel": "Unit 4", "title": "Interpretation of Phase Diagrams", "desc": "Coming soon — added once covered in lectures.", "color": "#e04545", "sections": [] },
+    {
+      "id": "u3",
+      "numLabel": "Unit 3 of 10",
+      "title": "Using Phase Diagrams",
+      "subtitle": "A phase diagram is a map of what is stable at each temperature and composition. This unit turns it into a calculator: identify the phases, read their compositions off a tie line, find their proportions with the lever rule, then predict the microstructure a slowly cooled alloy ends up with.",
+      "sections": [
+        {
+          "type": "toc",
+          "title": "In this unit",
+          "items": [
+            {
+              "href": "#u3-big",
+              "label": "The big picture"
+            },
+            {
+              "href": "#u3-phases",
+              "label": "Phases and their compositions"
+            },
+            {
+              "href": "#u3-lever",
+              "label": "Proportions: the lever rule"
+            },
+            {
+              "href": "#u3-volume",
+              "label": "What you calculate vs what you see"
+            },
+            {
+              "href": "#u3-iso",
+              "label": "Isomorphous systems (Cu-Ni)"
+            },
+            {
+              "href": "#u3-eutectic",
+              "label": "Eutectic systems (Pb-Sn)"
+            },
+            {
+              "href": "#u3-lamellar",
+              "label": "Why eutectics are lamellar"
+            },
+            {
+              "href": "#u3-peritectic",
+              "label": "Peritectic systems"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u3-big",
+          "text": "The Big Picture"
+        },
+        {
+          "type": "p",
+          "text": "Solder is a good place to start. The tin-lead solder that held electronics together for decades sits close to the eutectic composition of the Pb-Sn system, so it melts and freezes at one sharp temperature instead of going slushy over a range. That choice was made by reading a phase diagram. A phase diagram is a map: give it a temperature and an overall composition, and it tells you which phases are present, what each one is made of, and how much of each there is.",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "Unit 2 showed where the map comes from (free energy curves and common tangents). This unit is about reading it. Every question here follows the same three steps.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "1. Find the point",
+              "color": "#8855f5",
+              "text": "Mark the alloy's overall composition \\(C_0\\) on the horizontal axis and the temperature on the vertical axis. The field the point lands in tells you which phases exist."
+            },
+            {
+              "title": "2. Name the phases",
+              "color": "#8855f5",
+              "text": "One-phase field: that phase, with composition \\(C_0\\). Two-phase field: draw a horizontal tie line through the point. Where it ends on the field boundaries gives each phase's composition."
+            },
+            {
+              "title": "3. Find the proportions",
+              "color": "#8855f5",
+              "text": "In a two-phase field, apply the lever rule to the tie line. For a microstructure, trace the alloy down from the liquid and note what forms in each field it crosses."
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u3-phases",
+          "text": "Phases and Their Compositions"
+        },
+        {
+          "type": "p",
+          "text": "The tie line is always <strong>horizontal</strong>, because two phases can only be in equilibrium at the same temperature. Its ends touch the phase boundaries on either side of the two-phase field, and where each end lands on the composition axis is the composition of that phase. That is usually <em>not</em> the alloy's own composition.",
+          "class": ""
+        },
+        {
+          "type": "example",
+          "label": "Worked example: reading the Fe-C diagram",
+          "q": "Name the phases, and the composition of each, for three Fe-C alloys: Fe-1 wt% C at 1200 °C, Fe-4 wt% C at 600 °C, and Fe-3 wt% C at 1000 °C.",
+          "steps": [
+            "Fe-1 wt% C at 1200 °C: the point sits inside the austenite (γ) field. One phase, austenite, with the full 1 wt% C",
+            "Fe-4 wt% C at 600 °C: the point sits in the ferrite + cementite field, so the phases are ferrite (α) and cementite (Fe₃C)",
+            "Fe-3 wt% C at 1000 °C: the point is in the austenite + cementite field. Draw the horizontal tie line. Its left end meets the austenite boundary at about 1.7 wt% C and its right end meets cementite at 6.7 wt% C"
+          ],
+          "answer": "At 1000 °C the Fe-3 wt% C alloy is austenite (about 1.7 wt% C) plus cementite (6.7 wt% C). Neither phase has the alloy's own 3 wt% C."
+        },
+        {
+          "type": "h3",
+          "text": "Three reactions to recognise"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Invariant reactions on the Fe-C diagram",
+          "html": "<ul><li><strong>Peritectic</strong> at 1493 °C, Fe-0.16 wt% C: liquid + δ-ferrite → austenite</li><li><strong>Eutectic</strong> at 1147 °C, Fe-4.3 wt% C: liquid → austenite (2.14 wt% C) + cementite (6.7 wt% C)</li><li><strong>Eutectoid</strong> at 727 °C, Fe-0.76 wt% C: austenite (0.76 wt% C) → ferrite (0.02 wt% C) + cementite (6.7 wt% C)</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "How to keep them straight",
+          "html": "<p><strong>Eutectic:</strong> one liquid splits into two solids. <strong>Eutectoid:</strong> the same split, but starting from one solid. <strong>Peritectic:</strong> a liquid and a solid react to form a new solid.</p><p style=\"margin-top:8px\">The rest of this unit uses the Pb-Sn eutectic (183 °C, 61.9 wt% Sn) and generic peritectic diagrams. Unit 9 returns to Fe-C in full.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u3-lever",
+          "text": "Proportions: The Lever Rule"
+        },
+        {
+          "type": "p",
+          "text": "Picture a seesaw. A heavy child and a light child balance when the heavy one sits closer to the pivot. The tie line works the same way: the alloy composition \\(C_0\\) is the pivot, and the two phase compositions are the seats. The phase whose composition is <strong>closer to \\(C_0\\)</strong> is the one there is more of.",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: the tie line as a lever</div>\n<svg viewBox=\"0 0 640 250\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"A horizontal tie line across a two-phase field with the alloy composition C0 as the pivot. The left arm R runs from CL to C0 and the right arm S runs from C0 to C-alpha.\">\n<defs><marker id=\"u3A\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#8855f5\"/></marker><marker id=\"u3S\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#8855f5\"/></marker></defs>\n<line x1=\"60\" y1=\"190\" x2=\"590\" y2=\"190\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<polygon points=\"597,190 587,185 587,195\" fill=\"#5e5e6c\"/>\n<line x1=\"140\" y1=\"100\" x2=\"140\" y2=\"190\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/>\n<line x1=\"290\" y1=\"100\" x2=\"290\" y2=\"190\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/>\n<line x1=\"510\" y1=\"100\" x2=\"510\" y2=\"190\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/>\n<line x1=\"140\" y1=\"100\" x2=\"510\" y2=\"100\" stroke=\"#8855f5\" stroke-width=\"3\"/>\n<polygon points=\"290,108 278,130 302,130\" fill=\"#5e5e6c\" opacity=\"0.55\"/>\n<circle cx=\"140\" cy=\"100\" r=\"5.5\" fill=\"#8855f5\"/>\n<circle cx=\"510\" cy=\"100\" r=\"5.5\" fill=\"#8855f5\"/>\n<circle cx=\"290\" cy=\"100\" r=\"6.5\" fill=\"#e04545\"/>\n<text x=\"140\" y=\"80\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">liquid</text>\n<text x=\"290\" y=\"80\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">alloy (pivot)</text>\n<text x=\"510\" y=\"80\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">&#945; solid</text>\n<line x1=\"144\" y1=\"158\" x2=\"286\" y2=\"158\" stroke=\"#8855f5\" stroke-width=\"1.5\" marker-start=\"url(#u3S)\" marker-end=\"url(#u3A)\"/>\n<line x1=\"294\" y1=\"158\" x2=\"506\" y2=\"158\" stroke=\"#8855f5\" stroke-width=\"1.5\" marker-start=\"url(#u3S)\" marker-end=\"url(#u3A)\"/>\n<text x=\"215\" y=\"148\" fill=\"#5e5e6c\" font-size=\"15\" font-style=\"italic\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">R</text>\n<text x=\"400\" y=\"148\" fill=\"#5e5e6c\" font-size=\"15\" font-style=\"italic\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">S</text>\n<text x=\"137\" y=\"214\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">C</text><text x=\"145\" y=\"218\" fill=\"#90909c\" font-size=\"10\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">L</text>\n<text x=\"287\" y=\"214\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">C</text><text x=\"295\" y=\"218\" fill=\"#90909c\" font-size=\"10\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">0</text>\n<text x=\"507\" y=\"214\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">C</text><text x=\"515\" y=\"218\" fill=\"#90909c\" font-size=\"10\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">&#945;</text>\n<text x=\"590\" y=\"236\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">composition &#8594;</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">\\(R = C_0 - C_L\\)&nbsp;&nbsp;&nbsp;\\(S = C_\\alpha - C_0\\)&nbsp;&nbsp;&nbsp;\\(W_\\alpha = \\dfrac{R}{R+S}\\)&nbsp;&nbsp;&nbsp;\\(W_L = \\dfrac{S}{R+S}\\)</p>\n</div>"
+        },
+        {
+          "type": "formulablock",
+          "name": "Lever rule",
+          "eqs": [
+            "W_\\alpha = \\frac{C_0 - C_L}{C_\\alpha - C_L} \\qquad W_L = \\frac{C_\\alpha - C_0}{C_\\alpha - C_L}",
+            "W_\\alpha + W_L = 1"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(C_0\\)",
+              "desc": "overall alloy composition (wt%)"
+            },
+            {
+              "symbol": "\\(C_L,\\ C_\\alpha\\)",
+              "desc": "phase compositions, read from the two ends of the tie line"
+            },
+            {
+              "symbol": "\\(W\\)",
+              "desc": "mass fraction. Multiply by 100 for wt%"
+            }
+          ],
+          "note": "Each fraction is the length of the arm on the <strong>opposite</strong> side of the alloy point from that phase, divided by the whole tie line. For \\(\\alpha\\) the numerator is \\(C_0 - C_L\\), the arm that reaches towards the liquid end."
+        },
+        {
+          "type": "h3",
+          "text": "Where it comes from"
+        },
+        {
+          "type": "formulablock",
+          "name": "Mass balance",
+          "eqs": [
+            "W_L + W_\\alpha = 1",
+            "C_0 = C_L W_L + C_\\alpha W_\\alpha",
+            "C_0 = C_L W_L + C_\\alpha (1 - W_L) \\;\\Rightarrow\\; W_L = \\frac{C_\\alpha - C_0}{C_\\alpha - C_L}"
+          ],
+          "note": "The first line says the fractions add to one. The second is conservation of mass: the amount of B in the alloy has to equal the amount shared between the two phases. Substitute and rearrange and the lever rule drops out."
+        },
+        {
+          "type": "example",
+          "label": "Worked example: Cu-35 wt% Ni at 1250 °C",
+          "q": "A Cu-35 wt% Ni alloy at 1250 °C sits in the α + liquid field. The tie line meets the liquidus at 31.5 wt% Ni and the solidus at 42.5 wt% Ni. How much of each phase is there?",
+          "steps": [
+            "Read off the pieces: \\(C_0 = 35\\), \\(C_L = 31.5\\), \\(C_\\alpha = 42.5\\) (all wt% Ni). Tie line length: \\(42.5 - 31.5 = 11\\)",
+            "\\(W_\\alpha = (35 - 31.5)/11 = 3.5/11 = 0.318\\)",
+            "\\(W_L = (42.5 - 35)/11 = 7.5/11 = 0.682\\)"
+          ],
+          "answer": "31.8 wt% α (42.5 wt% Ni) and 68.2 wt% liquid (31.5 wt% Ni). They add to 100, and liquid is the larger share because 35 sits closer to 31.5 than to 42.5."
+        },
+        {
+          "type": "p",
+          "text": "At 1300 °C the same alloy is entirely liquid, and at 1175 °C it is entirely α. Single-phase fields need no lever rule: the phase is 100% and has composition \\(C_0\\).",
+          "class": ""
+        },
+        {
+          "type": "example",
+          "label": "Worked example: Pb-40 wt% Sn at two temperatures",
+          "q": "Find the phases, their compositions and their proportions for a Pb-40 wt% Sn alloy at 210 °C and at 150 °C.",
+          "steps": [
+            "At 210 °C the alloy is in α + L. The tie line reaches α at 17 wt% Sn and the liquid at 52 wt% Sn",
+            "\\(W_\\alpha = (52 - 40)/(52 - 17) = 12/35 = 34.3\\%\\) and \\(W_L = (40 - 17)/(52 - 17) = 23/35 = 65.7\\%\\)",
+            "At 150 °C the alloy is in α + β. The tie line reaches α at 10 wt% Sn and β at 98 wt% Sn",
+            "\\(W_\\alpha = (98 - 40)/(98 - 10) = 58/88 = 65.9\\%\\) and \\(W_\\beta = (40 - 10)/(98 - 10) = 30/88 = 34.1\\%\\)"
+          ],
+          "answer": "Same alloy, two different pairs of phases, and the balance swings from mostly liquid to mostly α. Always redraw the tie line at the temperature you are asked about."
+        },
+        {
+          "type": "example",
+          "label": "Try it: lever rule on Fe-C",
+          "q": "Fe-3 wt% C at 1000 °C is austenite (1.7 wt% C) plus cementite (6.7 wt% C). How much of each?",
+          "steps": [
+            "Tie line length: \\(6.7 - 1.7 = 5.0\\)",
+            "\\(W_\\gamma = (6.7 - 3)/5.0 = 3.7/5.0 = 0.74\\)",
+            "\\(W_{\\mathrm{Fe_3C}} = (3 - 1.7)/5.0 = 1.3/5.0 = 0.26\\)"
+          ],
+          "answer": "74 wt% austenite and 26 wt% cementite. (Worked from the compositions on the lecture's Fe-C slide.)"
+        },
+        {
+          "type": "h2",
+          "id": "u3-volume",
+          "text": "What You Calculate vs What You See"
+        },
+        {
+          "type": "p",
+          "text": "The lever rule gives <strong>mass</strong> fractions. A micrograph shows <strong>area</strong> fractions, which stand in for volume fractions. If the two phases have different densities the numbers differ, so convert.",
+          "class": ""
+        },
+        {
+          "type": "formulablock",
+          "name": "Mass fraction to volume fraction",
+          "eqs": [
+            "V_\\alpha = \\frac{W_\\alpha/\\rho_\\alpha}{W_\\alpha/\\rho_\\alpha + W_L/\\rho_L} \\qquad V_L = \\frac{W_L/\\rho_L}{W_\\alpha/\\rho_\\alpha + W_L/\\rho_L}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\rho_\\alpha,\\ \\rho_L\\)",
+              "desc": "densities of the two phases"
+            }
+          ],
+          "note": "Divide each mass by its density to get a volume, then take each volume as a share of the total. A dense phase takes up less volume than its mass share suggests."
+        },
+        {
+          "type": "example",
+          "label": "Worked example: 50:50 by mass",
+          "q": "A mixture is 50 wt% Pb and 50 wt% Sn. Treat the two phases as pure Pb (11.3 g/cm³) and pure Sn (7.3 g/cm³), which are rounded textbook values, not lecture data. What is the volume fraction of Pb?",
+          "steps": [
+            "Volume of Pb in 100 g: \\(50/11.3 = 4.42\\ \\mathrm{cm^3}\\)",
+            "Volume of Sn in 100 g: \\(50/7.3 = 6.85\\ \\mathrm{cm^3}\\)",
+            "\\(V_{\\mathrm{Pb}} = 4.42/(4.42 + 6.85) = 0.39\\)"
+          ],
+          "answer": "Pb is 50 wt% but only about 39 vol%, because it is the denser metal. In a micrograph Pb would cover noticeably less than half the area."
+        },
+        {
+          "type": "h2",
+          "id": "u3-iso",
+          "text": "Microstructure in an Isomorphous System (Cu-Ni)"
+        },
+        {
+          "type": "p",
+          "text": "Cupronickel is used for coins and seawater pipework, and Cu-Ni is the textbook isomorphous system: the two metals dissolve in each other in every proportion, so the diagram has a liquid field, one solid α field and a two-phase band between them. To predict a microstructure, take an alloy and follow it down from the liquid, stopping at each field it crosses. The overall composition never changes on the way down. Only the phases and their compositions do.",
+          "class": ""
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Cooling a Cu-35 wt% Ni alloy",
+          "html": "<ul><li><strong>a, above the liquidus:</strong> 100 wt% liquid</li><li><strong>b, just inside the two-phase band:</strong> still about 100 wt% liquid, with the first tiny α crystals appearing. These first crystals are Ni-rich (about 46 wt% Ni on the lecture figure)</li><li><strong>c, mid-band:</strong> \\(C_L = 32\\) and \\(C_\\alpha = 43\\) wt% Ni, so \\(W_\\alpha = (35 - 32)/(43 - 32) = 27.3\\%\\) and \\(W_L = (43 - 35)/(43 - 32) = 72.7\\%\\)</li><li><strong>d, just above the solidus:</strong> almost all α (about 35 wt% Ni). The last of the liquid is Cu-rich (about 24 wt% Ni)</li><li><strong>e, below the solidus:</strong> 100 wt% α at 35 wt% Ni, as a polycrystalline solid</li></ul>"
+        },
+        {
+          "type": "p",
+          "text": "The pattern: as the alloy cools, the α composition slides down the solidus, the liquid composition slides down the liquidus, and the α fraction climbs from 0 to 100%. All of this assumes atoms have time to diffuse so each phase keeps up with the changing equilibrium composition. The later units on kinetics and solidification are where that assumption is tested.",
+          "class": ""
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "A labelling quirk in the lecture slide",
+          "html": "<p>The slide heading says Cu-34 wt% Ni, but the dashed line, the tie lines and every calculation on it use <strong>35 wt% Ni</strong>. These notes use 35.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u3-eutectic",
+          "text": "Microstructure in a Eutectic System (Pb-Sn)"
+        },
+        {
+          "type": "p",
+          "text": "The Pb-Sn diagram has a eutectic: one liquid composition (61.9 wt% Sn) that freezes at one fixed temperature (183 °C) into two solids at once. Pb and Sn dissolve in each other only a little, so the solids are α (Pb-rich, up to 18.3 wt% Sn at 183 °C) and β (Sn-rich, up to 97.8 wt% Sn).",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: Pb-Sn eutectic (schematic, not to scale)</div>\n<svg viewBox=\"0 0 640 348\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Schematic Pb-Sn eutectic phase diagram, not to scale. Liquid on top, alpha and beta solid solutions at the sides, the eutectic isotherm at 183 degrees C between 18.3, 61.9 and 97.8 weight percent tin, and three marked alloy compositions C1, C3 and C2.\">\n<defs><marker id=\"u3A2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#8855f5\"/></marker><marker id=\"u3S2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#8855f5\"/></marker><marker id=\"u3A3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#e08000\"/></marker><marker id=\"u3S3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#e08000\"/></marker></defs>\n<line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"270\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<line x1=\"70\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<polygon points=\"70,34 65,44 75,44\" fill=\"#5e5e6c\"/>\n<polygon points=\"607,270 597,265 597,275\" fill=\"#5e5e6c\"/>\n<path d=\"M70,45.8 Q236.4,98.6 391.9,144.5\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<path d=\"M590,110.9 L391.9,144.5\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<path d=\"M70,45.8 Q111.6,122.6 165.2,144.5\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<path d=\"M165.2,144.5 Q132.4,222 85.6,239.1\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<path d=\"M590,110.9 L578.6,144.5\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<path d=\"M578.6,144.5 Q585.8,215.1 586.9,249.4\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<line x1=\"165.2\" y1=\"144.5\" x2=\"578.6\" y2=\"144.5\" stroke=\"#5e5e6c\" stroke-width=\"2\"/>\n<line x1=\"122\" y1=\"270\" x2=\"122\" y2=\"52\" stroke=\"#8855f5\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<text x=\"119\" y=\"46\" fill=\"#8855f5\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">C</text><text x=\"127\" y=\"50\" fill=\"#8855f5\" font-size=\"10\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">1</text>\n<line x1=\"226\" y1=\"270\" x2=\"226\" y2=\"52\" stroke=\"#8855f5\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<text x=\"223\" y=\"46\" fill=\"#8855f5\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">C</text><text x=\"231\" y=\"50\" fill=\"#8855f5\" font-size=\"10\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">3</text>\n<line x1=\"391.9\" y1=\"270\" x2=\"391.9\" y2=\"52\" stroke=\"#8855f5\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<text x=\"388.9\" y=\"46\" fill=\"#8855f5\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">C</text><text x=\"396.9\" y=\"50\" fill=\"#8855f5\" font-size=\"10\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">2</text>\n<text x=\"340.4\" y=\"64.3\" fill=\"#5e5e6c\" font-size=\"15\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">L</text>\n<text x=\"168.8\" y=\"123.3\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">&#945; + L</text>\n<text x=\"506.8\" y=\"129.4\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">&#946; + L</text>\n<text x=\"96\" y=\"187.7\" fill=\"#5e5e6c\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">&#945;</text>\n<text x=\"340.4\" y=\"204.9\" fill=\"#5e5e6c\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">&#945; + &#946;</text>\n<text x=\"587.4\" y=\"167.1\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">&#946;</text>\n<text x=\"486\" y=\"161.5\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">183 &#176;C</text>\n<line x1=\"165.2\" y1=\"270\" x2=\"165.2\" y2=\"276\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<text x=\"165.2\" y=\"290\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">18.3</text>\n<line x1=\"391.9\" y1=\"270\" x2=\"391.9\" y2=\"276\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<text x=\"391.9\" y=\"290\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">61.9</text>\n<line x1=\"578.6\" y1=\"270\" x2=\"578.6\" y2=\"276\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/>\n<text x=\"578.6\" y=\"290\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">97.8</text>\n<line x1=\"168.2\" y1=\"303\" x2=\"388.9\" y2=\"303\" stroke=\"#8855f5\" stroke-width=\"1.5\" marker-start=\"url(#u3S2)\" marker-end=\"url(#u3A2)\"/>\n<line x1=\"394.9\" y1=\"303\" x2=\"575.6\" y2=\"303\" stroke=\"#e08000\" stroke-width=\"1.5\" marker-start=\"url(#u3S3)\" marker-end=\"url(#u3A3)\"/>\n<text x=\"278.54999999999995\" y=\"321\" fill=\"#8855f5\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">hypoeutectic</text>\n<text x=\"485.25\" y=\"321\" fill=\"#e08000\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">hypereutectic</text>\n<text x=\"32\" y=\"150\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"middle\" transform=\"rotate(-90 32 150)\" font-family=\"Inter,system-ui,sans-serif\">temperature</text>\n<text x=\"330\" y=\"341\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">composition (wt% Sn) &#8594;</text>\n<text x=\"70\" y=\"290\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">Pb</text>\n</svg>\n</div>"
+        },
+        {
+          "type": "h3",
+          "text": "Three kinds of alloy"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "C₁: a dilute alloy that stays inside the α solubility limit",
+          "html": "<ul><li><strong>Above the liquidus:</strong> all liquid</li><li><strong>Between liquidus and solidus:</strong> α crystals grow in the liquid</li><li><strong>Below the solidus:</strong> all α grains</li><li><strong>Below the solvus:</strong> α can no longer hold all its Sn, so small β particles precipitate inside the α grains</li></ul><p style=\"margin-top:8px\">Precipitating a second phase out of a solid like this is the basis of precipitation strengthening, the last unit of the module.</p>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "C₂: the eutectic composition (61.9 wt% Sn)",
+          "html": "<ul><li><strong>Above 183 °C:</strong> all liquid, all the way down</li><li><strong>At 183 °C:</strong> the whole liquid transforms into α (18.3 wt% Sn) and β (97.8 wt% Sn) together, with no freezing range</li><li><strong>Result:</strong> a fine, alternating-layer (lamellar) mixture of α and β</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "C₃: off-eutectic alloys (hypo and hyper)",
+          "html": "<ul><li><strong>Hypoeutectic</strong> (between 18.3 and 61.9 wt% Sn, e.g. 30 wt% Sn): α crystals form from the liquid between the liquidus and 183 °C. These are <strong>pro-eutectic α</strong>, formed before the eutectic. By 183 °C the leftover liquid has reached 61.9 wt% Sn and freezes as the lamellar eutectic. Final structure: large pro-eutectic α grains sitting in a eutectic matrix</li><li><strong>Hypereutectic</strong> (between 61.9 and 97.8 wt% Sn): the same story with <strong>β</strong> as the pro-eutectic phase</li></ul>"
+        },
+        {
+          "type": "example",
+          "label": "Worked example: Pb-30 wt% Sn just below 183 °C",
+          "q": "A hypoeutectic Pb-30 wt% Sn alloy is cooled to just below 183 °C. Find the fractions of pro-eutectic α and eutectic, and then of α and β as phases.",
+          "steps": [
+            "Just before 183 °C the alloy is α (18.3 wt% Sn) plus liquid (61.9 wt% Sn). That liquid becomes the eutectic, so the same tie line gives the microconstituents",
+            "Pro-eutectic α: \\((61.9 - 30)/(61.9 - 18.3) = 31.9/43.6 = 73.2\\%\\)",
+            "Eutectic: \\((30 - 18.3)/43.6 = 11.7/43.6 = 26.8\\%\\)",
+            "Now as phases. Use the tie line from α (18.3) to β (97.8), length 79.5: \\(W_\\alpha = (97.8 - 30)/79.5 = 85.3\\%\\) and \\(W_\\beta = (30 - 18.3)/79.5 = 14.7\\%\\)"
+          ],
+          "answer": "73.2% pro-eutectic α and 26.8% eutectic by microconstituent, but 85.3% α and 14.7% β by phase. Microconstituents are the regions you see; phases are what the material is made of."
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Check that the two views agree",
+          "html": "<p>The eutectic itself is 45.2 wt% α and 54.8 wt% β (tie line at 61.9: \\(35.9/79.5\\) and \\(43.6/79.5\\)). So the total α is \\(73.2 + 0.452 \\times 26.8 = 85.3\\%\\) and the β is \\(0.548 \\times 26.8 = 14.7\\%\\). Same answer, reached through the eutectic.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u3-lamellar",
+          "text": "Why Eutectics Are Lamellar"
+        },
+        {
+          "type": "p",
+          "text": "Under a microscope a eutectic looks like stripes, not a random scatter of grains. That is a neat case of Unit 1's split between thermodynamics and kinetics, and it is worth being able to argue it both ways.",
+          "class": ""
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "The argument in four steps",
+          "html": "<ul><li><strong>Interfaces cost energy.</strong> Every boundary between two phases raises the Gibbs free energy, and a lamellar structure is mostly boundary. Thermodynamically it is a poor arrangement</li><li><strong>But growing it is hard.</strong> α (18.3 wt% Sn) and β (97.8 wt% Sn) both have to grow out of liquid at 61.9 wt% Sn. The two solids differ hugely in composition, so Pb and Sn have to be sorted by diffusion</li><li><strong>Side by side solves the problem.</strong> The Sn rejected by a growing α layer is exactly what the neighbouring β layer needs, and the Pb rejected by β is what α needs. Atoms only travel across one thin layer. This is called <strong>co-operative growth</strong></li><li><strong>Verdict:</strong> kinetically favoured, thermodynamically inefficient. Cool further below the eutectic temperature and atoms can only move shorter distances, so the layers form even thinner, despite the extra interface</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Link to Unit 1",
+          "html": "<p>Thermodynamics says which phases are possible. Kinetics decides how they end up arranged. The lamellar eutectic is the arrangement that is easiest to build, not the one with the lowest free energy.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u3-peritectic",
+          "text": "Microstructure in a Peritectic System"
+        },
+        {
+          "type": "p",
+          "text": "Steels with roughly 0.1 to 0.17 wt% C have a reputation for being awkward to cast continuously, and the peritectic in the Fe-C diagram is a big part of why. A peritectic is the odd one out: on cooling, a liquid and a solid react to make a new solid, \\(L + \\alpha \\rightarrow \\beta\\), at the peritectic temperature \\(T_p\\). What you get depends on where the alloy sits relative to the three compositions on the horizontal line: \\(\\alpha_p\\), \\(\\beta_p\\) and \\(L_p\\), from left to right.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "At the peritectic composition (\\(C_0 = \\beta_p\\))",
+              "color": "#8855f5",
+              "text": "Above \\(T_p\\): liquid + α. At \\(T_p\\) the liquid and α react and are used up together. Below \\(T_p\\): all β."
+            },
+            {
+              "title": "Hypo-peritectic (between \\(\\alpha_p\\) and \\(\\beta_p\\))",
+              "color": "#8855f5",
+              "text": "Not enough liquid to use up all the α. After the reaction, the leftover α sits inside a β matrix. Below \\(T_p\\): α + β."
+            },
+            {
+              "title": "Hyper-peritectic (between \\(\\beta_p\\) and \\(L_p\\))",
+              "color": "#8855f5",
+              "text": "Not enough α to use up the liquid. Leftover liquid keeps solidifying as β through the L + β band. Below the β solidus: all β."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Treat these as equilibrium predictions only",
+          "html": "<p>The lecture stresses that peritectic microstructures often depart strongly from this picture, for kinetic reasons, and defers the detail to EG-286. The usual explanation is that the new β forms as a shell around each α grain. The shell separates the α from the liquid, so the reaction can only continue by diffusion through solid β, which is slow. Real alloys can therefore keep α or liquid that equilibrium says should be gone.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "",
+          "text": "Unit 3 essentials"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "html": "<ul><li>Three steps: locate \\((T, C_0)\\), name the phases (horizontal tie line in a two-phase field), then apply the lever rule</li><li>One-phase field: 100% of that phase at composition \\(C_0\\)</li><li>Lever rule: a phase's fraction is the <strong>opposite</strong> arm over the whole tie line. Closer to \\(C_0\\) means more of that phase</li><li>The lever rule gives mass fractions. Convert with densities to compare with a micrograph</li><li>Overall composition never changes on cooling. Phase compositions slide along the boundaries</li><li>Eutectic: \\(L \\rightarrow \\alpha + \\beta\\). Pb-Sn at 183 °C and 61.9 wt% Sn. Lamellar through co-operative growth, so thermodynamically costly but kinetically favoured</li><li>Hypo: pro-eutectic α + eutectic. Hyper: pro-eutectic β + eutectic. Pb-30 wt% Sn: 73.2% pro-eutectic α and 26.8% eutectic, which is 85.3% α and 14.7% β as phases</li><li>Peritectic: \\(L + \\alpha \\rightarrow \\beta\\). Hypo leaves α behind, hyper leaves liquid behind. Real microstructures often differ (EG-286)</li><li>Fe-C: peritectic 1493 °C / 0.16 wt% C, eutectic 1147 °C / 4.3 wt% C, eutectoid 727 °C / 0.76 wt% C</li></ul>",
+          "titleLearn": "Quick recap",
+          "titleRevise": "EXAM CHEAT SHEET"
+        }
+      ],
+      "essentialsTitle": null,
+      "essentialsHeading": null,
+      "essentials": null,
+      "desc": "Identifying phases and their compositions, the lever rule, mass and volume fractions, and predicting equilibrium microstructures in isomorphous, eutectic and peritectic systems.",
+      "difficulty": "Medium",
+      "readTime": "30 min",
+      "color": "#8855f5"
+    },
+    { "soon": true, "numLabel": "Unit 4", "title": "Construction of Phase Diagrams", "desc": "Coming soon — added once covered in lectures.", "color": "#e04545", "sections": [] },
     { "soon": true, "numLabel": "Unit 5", "title": "Limitations of Thermodynamics (Intro to Kinetics)", "desc": "Coming soon — added once covered in lectures.", "color": "#d89800", "sections": [] },
     { "soon": true, "numLabel": "Unit 6", "title": "Solidification — Nucleation", "desc": "Coming soon — added once covered in lectures.", "color": "#e08000", "sections": [] },
     { "soon": true, "numLabel": "Unit 7", "title": "Solidification — Growth", "desc": "Coming soon — added once covered in lectures.", "color": "#e03f78", "sections": [] },
@@ -924,6 +1326,89 @@ window.SITE_CONTENT = {
           ]
         }
       ]
+    },
+    {
+      "heading": "U3 - Using Phase Diagrams",
+      "blocks": [
+        {
+          "type": "formulablock",
+          "name": "Lever rule",
+          "eqs": [
+            "W_\\alpha = \\frac{C_0 - C_L}{C_\\alpha - C_L} \\qquad W_L = \\frac{C_\\alpha - C_0}{C_\\alpha - C_L}",
+            "W_\\alpha + W_L = 1"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(C_0\\)",
+              "desc": "overall alloy composition"
+            },
+            {
+              "symbol": "\\(C_L,\\ C_\\alpha\\)",
+              "desc": "phase compositions at the ends of the tie line"
+            },
+            {
+              "symbol": "Rule",
+              "desc": "fraction of a phase = opposite arm / whole tie line"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Lever rule from mass balance",
+          "eqs": [
+            "C_0 = C_L W_L + C_\\alpha W_\\alpha \\qquad W_L + W_\\alpha = 1"
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Mass fraction to volume fraction",
+          "eqs": [
+            "V_\\alpha = \\frac{W_\\alpha/\\rho_\\alpha}{W_\\alpha/\\rho_\\alpha + W_L/\\rho_L} \\qquad V_L = \\frac{W_L/\\rho_L}{W_\\alpha/\\rho_\\alpha + W_L/\\rho_L}"
+          ],
+          "vars": [
+            {
+              "symbol": "Why",
+              "desc": "micrographs show area (volume) fraction, not mass fraction"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Hypoeutectic alloy just below the eutectic temperature",
+          "eqs": [
+            "W_{\\text{pro-}\\alpha} = \\frac{C_E - C_0}{C_E - C_\\alpha} \\qquad W_{\\text{eu}} = \\frac{C_0 - C_\\alpha}{C_E - C_\\alpha}",
+            "W_\\alpha = \\frac{C_\\beta - C_0}{C_\\beta - C_\\alpha} \\qquad W_\\beta = \\frac{C_0 - C_\\alpha}{C_\\beta - C_\\alpha}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(C_\\alpha,\\ C_E,\\ C_\\beta\\)",
+              "desc": "18.3, 61.9 and 97.8 wt% Sn for Pb-Sn"
+            },
+            {
+              "symbol": "Hyper",
+              "desc": "pro-eutectic \\(\\beta\\) = \\((C_0 - C_E)/(C_\\beta - C_E)\\), eutectic = \\((C_\\beta - C_0)/(C_\\beta - C_E)\\)"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Invariant reactions (on cooling)",
+          "eqs": [
+            "\\text{Eutectic: } L \\rightarrow \\alpha + \\beta \\qquad \\text{Peritectic: } L + \\alpha \\rightarrow \\beta",
+            "\\text{Eutectoid (Fe-C): } \\gamma \\rightarrow \\alpha + \\mathrm{Fe_3C}"
+          ],
+          "vars": [
+            {
+              "symbol": "Pb-Sn",
+              "desc": "eutectic at 183 °C, 61.9 wt% Sn"
+            },
+            {
+              "symbol": "Fe-C",
+              "desc": "peritectic 1493 °C / 0.16 wt% C, eutectic 1147 °C / 4.3 wt% C, eutectoid 727 °C / 0.76 wt% C"
+            }
+          ]
+        }
+      ]
     }
   ],
   "formulaSheetSubtitle": "Every equation covered so far. Variables defined, units flagged. Grows as more units are added.",
@@ -1025,6 +1510,71 @@ window.SITE_CONTENT = {
           "tag": "U2 - T8",
           "claim": "\"After mixing, the molar free energy of the solution is still \\(X_A G_A + X_B G_B\\).\"",
           "truth": "<strong>FALSE.</strong> That is \\(G_1\\), the free energy <em>before</em> mixing. After mixing it is \\(G = \\mu_A X_A + \\mu_B X_B\\), which sits lower by \\(\\Delta G_{\\mathrm{mix}}\\) when mixing is favourable."
+        }
+      ]
+    },
+    {
+      "heading": "Unit 3 - Using Phase Diagrams",
+      "items": [
+        {
+          "tag": "U3 - T1",
+          "claim": "\"In a single-phase field, find the phase composition by drawing a tie line.\"",
+          "truth": "<strong>FALSE.</strong> A tie line is only for two-phase fields. In a single-phase field the one phase makes up 100% of the alloy and has the alloy's own composition \\(C_0\\)."
+        },
+        {
+          "tag": "U3 - T2",
+          "claim": "\"A tie line can be drawn at any angle, as long as it passes through the alloy point.\"",
+          "truth": "<strong>FALSE.</strong> A tie line is <strong>horizontal</strong>. Two phases in equilibrium must be at the same temperature, so the line is isothermal."
+        },
+        {
+          "tag": "U3 - T3",
+          "claim": "\"The lever rule uses the arm on the same side of the alloy point as the phase you want.\"",
+          "truth": "<strong>FALSE.</strong> It uses the <strong>opposite</strong> arm. For \\(\\alpha\\) the numerator is \\(C_0 - C_L\\), not \\(C_\\alpha - C_0\\). A quick check: the phase whose composition is closer to \\(C_0\\) must come out as the larger fraction."
+        },
+        {
+          "tag": "U3 - T4",
+          "claim": "\"As an alloy cools through a two-phase field, its overall composition changes.\"",
+          "truth": "<strong>FALSE.</strong> The overall composition stays at \\(C_0\\) at every temperature. What changes is the composition of each phase (sliding along the boundaries) and the proportions of the phases."
+        },
+        {
+          "tag": "U3 - T5",
+          "claim": "\"The lever rule weight fractions are what you would measure as area fractions on a micrograph.\"",
+          "truth": "<strong>FALSE.</strong> The lever rule gives <strong>mass</strong> fractions. A micrograph shows area (volume) fractions. If the phases have different densities you must convert, and the denser phase takes up less volume than its mass share."
+        },
+        {
+          "tag": "U3 - T6",
+          "claim": "\"A eutectic reaction is one solid phase transforming into two new solid phases.\"",
+          "truth": "<strong>FALSE.</strong> That is a <strong>eutectoid</strong> reaction. A eutectic reaction starts from a <strong>liquid</strong>: \\(L \\rightarrow \\alpha + \\beta\\)."
+        },
+        {
+          "tag": "U3 - T7",
+          "claim": "\"In a hypoeutectic Pb-Sn alloy the pro-eutectic phase is β.\"",
+          "truth": "<strong>FALSE.</strong> Hypoeutectic means less Sn than the eutectic (below 61.9 wt% Sn), so the pro-eutectic phase is Pb-rich <strong>α</strong>. Pro-eutectic β belongs to hypereutectic alloys."
+        },
+        {
+          "tag": "U3 - T8",
+          "claim": "\"For Pb-30 wt% Sn just below 183 °C, the fraction of pro-eutectic α equals the fraction of α in the alloy.\"",
+          "truth": "<strong>FALSE.</strong> Pro-eutectic α is 73.2%, but total α is 85.3%. The eutectic also contains α, so the total α is the pro-eutectic α plus the α inside the eutectic. Microconstituents and phases are different counts."
+        },
+        {
+          "tag": "U3 - T9",
+          "claim": "\"The lamellar eutectic structure is the lowest free energy arrangement of α and β.\"",
+          "truth": "<strong>FALSE.</strong> Lamellae contain a huge amount of interface, which raises free energy. The structure forms because co-operative growth keeps diffusion distances short. It is <strong>kinetically favoured</strong>, not thermodynamically optimal."
+        },
+        {
+          "tag": "U3 - T10",
+          "claim": "\"An alloy at the eutectic composition freezes over a temperature range, like a solid solution.\"",
+          "truth": "<strong>FALSE.</strong> At the eutectic composition the liquid freezes at one fixed temperature (183 °C for Pb-Sn), as it would for a pure metal. Off-eutectic alloys are the ones that freeze over a range."
+        },
+        {
+          "tag": "U3 - T11",
+          "claim": "\"In a Cu-Ni alloy, the first crystals to form have the same composition as the liquid.\"",
+          "truth": "<strong>FALSE.</strong> The first α crystals are richer in Ni than the liquid (about 46 wt% Ni against 35 wt% Ni in the lecture example). The tie line ends are different compositions by definition."
+        },
+        {
+          "tag": "U3 - T12",
+          "claim": "\"In a hyper-peritectic alloy, excess α is left after the peritectic reaction.\"",
+          "truth": "<strong>FALSE.</strong> Hyper-peritectic alloys have excess <strong>liquid</strong> left over, which carries on solidifying as β. It is the <strong>hypo</strong>-peritectic alloys that are left with excess α."
         }
       ]
     }
