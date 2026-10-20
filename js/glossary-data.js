@@ -72,6 +72,7 @@ const glossaryData = {
       ["Eutectic reaction","On cooling, one liquid transforms into two solid phases at a fixed temperature, \\(L \\rightarrow \\alpha + \\beta\\). In Pb-Sn this happens at 183 °C and 61.9 wt% Sn"],
       ["Eutectoid reaction","On cooling, one solid phase transforms into two new solid phases at a fixed temperature. In Fe-C, austenite → ferrite + cementite at 727 °C and 0.76 wt% C"],
       ["Peritectic reaction","On cooling, a liquid and a solid react to form a new solid phase at a fixed temperature, \\(L + \\alpha \\rightarrow \\beta\\). In Fe-C, liquid + δ-ferrite → austenite at 1493 °C"],
+      ["Reaction naming code", "eu- means one phase becomes two. peri- means two phases become one. -tic means a liquid is involved. -toid means the same reaction entirely in the solid"],
       ["Hypoeutectic","An alloy with less solute than the eutectic composition (in Pb-Sn, between 18.3 and 61.9 wt% Sn). It forms pro-eutectic α, then eutectic"],
       ["Hypereutectic","An alloy with more solute than the eutectic composition (in Pb-Sn, between 61.9 and 97.8 wt% Sn). It forms pro-eutectic β, then eutectic"],
       ["Pro-eutectic phase","The solid phase that forms from the liquid before the eutectic temperature is reached, in an off-eutectic alloy. It appears as larger grains sitting in the eutectic matrix"],
@@ -169,6 +170,8 @@ const glossaryComparisons = [
       ["On a phase diagram", "A field between the terminal solutions", "A near-vertical line"]
     ] },
   {"terms":["Eutectic reaction","Eutectoid reaction","Peritectic reaction","Peritectoid reaction"],"rows":[["On cooling","L → α + β","γ → α + Fe₃C","L + α → β","α + β → γ"],
+      ["Prefix","eu-: one into two","eu-: one into two","peri-: two into one","peri-: two into one"],
+      ["Ending","-tic: liquid involved","-toid: all solid","-tic: liquid involved","-toid: all solid"],
       ["Starts from","One liquid","One solid","A liquid and a solid","Two solids"],
       ["Ends with","Two solids","Two solids","One solid","One solid"],
       ["Example","Pb-Sn, 183 °C","Fe-C, 727 °C","Fe-C, 1493 °C","Ti-Ag (slide)"]]},

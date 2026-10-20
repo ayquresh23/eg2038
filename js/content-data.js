@@ -26,7 +26,7 @@ window.SITE_CONTENT = {
     "subtitle": "Thermodynamics and kinetics as the twin forces behind every microstructure: why phases form, when they're stable, and how alloying, processing and heat treatment control the properties that follow. Built out unit by unit as the module runs.",
     "stats": [
       { "value": "4 of 10", "label": "Units built" },
-      { "value": "80", "label": "Terms" },
+      { "value": "81", "label": "Terms" },
       { "value": "23", "label": "Formulas" },
       { "value": "44", "label": "Exam Traps" }
     ],
@@ -34,7 +34,7 @@ window.SITE_CONTENT = {
       { "type": "raw", "html": "<h2>Quick reference</h2>" },
       {
         "type": "raw",
-        "html": "<div class=\"card-grid\">\n      <div class=\"topic-card\" onclick=\"showSection('formulas')\" style=\"--bar-color:#00a87a\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📐 Formula Sheet</div>\n        <div class=\"topic-desc\">Every equation covered so far. Variables defined, units flagged.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('glossary')\" style=\"--bar-color:#2fa15c\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📚 Glossary</div>\n        <div class=\"topic-desc\">80 terms from Units 1 to 4. Instant search, topic filter, and flashcard mode.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('traps')\" style=\"--bar-color:#e04545\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">⚠️ MCQ Traps</div>\n        <div class=\"topic-desc\">Plausible-but-wrong claims the exam uses. Know what's actually true.</div>\n      </div>\n    </div>"
+        "html": "<div class=\"card-grid\">\n      <div class=\"topic-card\" onclick=\"showSection('formulas')\" style=\"--bar-color:#00a87a\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📐 Formula Sheet</div>\n        <div class=\"topic-desc\">Every equation covered so far. Variables defined, units flagged.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('glossary')\" style=\"--bar-color:#2fa15c\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📚 Glossary</div>\n        <div class=\"topic-desc\">81 terms from Units 1 to 4. Instant search, topic filter, and flashcard mode.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('traps')\" style=\"--bar-color:#e04545\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">⚠️ MCQ Traps</div>\n        <div class=\"topic-desc\">Plausible-but-wrong claims the exam uses. Know what's actually true.</div>\n      </div>\n    </div>"
       }
     ]
   },
@@ -928,8 +928,8 @@ window.SITE_CONTENT = {
         {
           "type": "conceptbox",
           "variant": "note",
-          "title": "How to keep them straight",
-          "html": "<p><strong>Eutectic:</strong> one liquid splits into two solids. <strong>Eutectoid:</strong> the same split, but starting from one solid. <strong>Peritectic:</strong> a liquid and a solid react to form a new solid.</p><p style=\"margin-top:8px\">The rest of this unit uses the Pb-Sn eutectic (183 °C, 61.9 wt% Sn) and generic peritectic diagrams. Unit 9 returns to Fe-C in full.</p>"
+          "title": "The naming code",
+          "html": "<ul><li><strong>eu-</strong> means <strong>one becomes two</strong>. <strong>peri-</strong> means <strong>two become one</strong></li><li><strong>-tic</strong> means a <strong>liquid</strong> is involved. <strong>-toid</strong> means the same reaction played out entirely in the <strong>solid</strong></li></ul><p style=\"margin-top:8px\">Pick one prefix and one ending and you have named the reaction: eutectic is a liquid splitting in two, peritectic is a liquid and a solid combining into one. Unit 4 meets the all-solid pair (eutectoid and peritectoid) in full.</p><p style=\"margin-top:8px\">The rest of this unit uses the Pb-Sn eutectic (183 °C, 61.9 wt% Sn) and generic peritectic diagrams. Unit 9 returns to Fe-C in full.</p>"
         },
         {
           "type": "h2",
@@ -1094,7 +1094,7 @@ window.SITE_CONTENT = {
         },
         {
           "type": "p",
-          "text": "The Pb-Sn diagram has a eutectic: one liquid composition (61.9 wt% Sn) that freezes at one fixed temperature (183 °C) into two solids at once. Pb and Sn dissolve in each other only a little, so the solids are α (Pb-rich, up to 18.3 wt% Sn at 183 °C) and β (Sn-rich, up to 97.8 wt% Sn).",
+          "text": "The Pb-Sn diagram has a eutectic (eu-: one becomes two): one liquid composition (61.9 wt% Sn) that freezes at one fixed temperature (183 °C) into two solids at once. Pb and Sn dissolve in each other only a little, so the solids are α (Pb-rich, up to 18.3 wt% Sn at 183 °C) and β (Sn-rich, up to 97.8 wt% Sn).",
           "class": ""
         },
         {
@@ -1170,7 +1170,7 @@ window.SITE_CONTENT = {
         },
         {
           "type": "p",
-          "text": "Steels with roughly 0.1 to 0.17 wt% C have a reputation for being awkward to cast continuously, and the peritectic in the Fe-C diagram is a big part of why. A peritectic is the odd one out: on cooling, a liquid and a solid react to make a new solid, \\(L + \\alpha \\rightarrow \\beta\\), at the peritectic temperature \\(T_p\\). What you get depends on where the alloy sits relative to the three compositions on the horizontal line: \\(\\alpha_p\\), \\(\\beta_p\\) and \\(L_p\\), from left to right.",
+          "text": "Steels with roughly 0.1 to 0.17 wt% C have a reputation for being awkward to cast continuously, and the peritectic in the Fe-C diagram is a big part of why. A peritectic is the odd one out, because it is the peri- reaction where two become one: on cooling, a liquid and a solid react to make a new solid, \\(L + \\alpha \\rightarrow \\beta\\), at the peritectic temperature \\(T_p\\). What you get depends on where the alloy sits relative to the three compositions on the horizontal line: \\(\\alpha_p\\), \\(\\beta_p\\) and \\(L_p\\), from left to right.",
           "class": ""
         },
         {
@@ -1211,7 +1211,7 @@ window.SITE_CONTENT = {
         {
           "type": "conceptbox",
           "variant": "",
-          "html": "<ul><li>Three steps: locate \\((T, C_0)\\), name the phases (horizontal tie line in a two-phase field), then apply the lever rule</li><li>One-phase field: 100% of that phase at composition \\(C_0\\)</li><li>Lever rule: a phase's fraction is the <strong>opposite</strong> arm over the whole tie line. Closer to \\(C_0\\) means more of that phase</li><li>The lever rule gives mass fractions. Convert with densities to compare with a micrograph</li><li>Overall composition never changes on cooling. Phase compositions slide along the boundaries</li><li>Eutectic: \\(L \\rightarrow \\alpha + \\beta\\). Pb-Sn at 183 °C and 61.9 wt% Sn. Lamellar through co-operative growth, so thermodynamically costly but kinetically favoured</li><li>Hypo: pro-eutectic α + eutectic. Hyper: pro-eutectic β + eutectic. Pb-30 wt% Sn: 73.2% pro-eutectic α and 26.8% eutectic, which is 85.3% α and 14.7% β as phases</li><li>Peritectic: \\(L + \\alpha \\rightarrow \\beta\\). Hypo leaves α behind, hyper leaves liquid behind. Real microstructures often differ (EG-286)</li><li>Fe-C: peritectic 1493 °C / 0.16 wt% C, eutectic 1147 °C / 4.3 wt% C, eutectoid 727 °C / 0.76 wt% C</li></ul>",
+          "html": "<ul><li>Three steps: locate \\((T, C_0)\\), name the phases (horizontal tie line in a two-phase field), then apply the lever rule</li><li>One-phase field: 100% of that phase at composition \\(C_0\\)</li><li>Lever rule: a phase's fraction is the <strong>opposite</strong> arm over the whole tie line. Closer to \\(C_0\\) means more of that phase</li><li>The lever rule gives mass fractions. Convert with densities to compare with a micrograph</li><li>Overall composition never changes on cooling. Phase compositions slide along the boundaries</li><li>Naming code: <strong>eu-</strong> one becomes two, <strong>peri-</strong> two become one, <strong>-tic</strong> a liquid is involved, <strong>-toid</strong> the all-solid version</li><li>Eutectic: \\(L \\rightarrow \\alpha + \\beta\\). Pb-Sn at 183 °C and 61.9 wt% Sn. Lamellar through co-operative growth, so thermodynamically costly but kinetically favoured</li><li>Hypo: pro-eutectic α + eutectic. Hyper: pro-eutectic β + eutectic. Pb-30 wt% Sn: 73.2% pro-eutectic α and 26.8% eutectic, which is 85.3% α and 14.7% β as phases</li><li>Peritectic: \\(L + \\alpha \\rightarrow \\beta\\). Hypo leaves α behind, hyper leaves liquid behind. Real microstructures often differ (EG-286)</li><li>Fe-C: peritectic 1493 °C / 0.16 wt% C, eutectic 1147 °C / 4.3 wt% C, eutectoid 727 °C / 0.76 wt% C</li></ul>",
           "titleLearn": "Quick recap",
           "titleRevise": "EXAM CHEAT SHEET"
         }
@@ -1659,7 +1659,7 @@ window.SITE_CONTENT = {
           "type": "conceptbox",
           "variant": "",
           "title": "How to spot them on a diagram",
-          "html": "<p>Find the horizontal line and look at the fields just above and just below it at the composition where the reaction happens.</p><ul><li><strong>One phase above, two below:</strong> the phase splits. A liquid splitting is <strong>eutectic</strong>, a solid splitting is <strong>eutectoid</strong></li><li><strong>Two phases above, one below:</strong> two phases combine. If one of them is liquid it is <strong>peritectic</strong>, if both are solid it is <strong>peritectoid</strong></li></ul><p style=\"margin-top:8px\">Not every horizontal line is an invariant reaction. A tie line inside a two-phase field is also horizontal, but it is only a tool for reading compositions. The invariant line is the one drawn on the diagram where three phases meet.</p>"
+          "html": "<p><strong>The naming code:</strong> <strong>eu-</strong> means one becomes two, <strong>peri-</strong> means two become one, <strong>-tic</strong> means a liquid is involved, and <strong>-toid</strong> is the all-solid version.</p><p style=\"margin-top:8px\">Find the horizontal line and look at the fields just above and just below it at the composition where the reaction happens.</p><ul><li><strong>One phase above, two below:</strong> the phase splits. A liquid splitting is <strong>eutectic</strong>, a solid splitting is <strong>eutectoid</strong></li><li><strong>Two phases above, one below:</strong> two phases combine. If one of them is liquid it is <strong>peritectic</strong>, if both are solid it is <strong>peritectoid</strong></li></ul><p style=\"margin-top:8px\">Not every horizontal line is an invariant reaction. A tie line inside a two-phase field is also horizontal, but it is only a tool for reading compositions. The invariant line is the one drawn on the diagram where three phases meet.</p>"
         },
         {
           "type": "formulablock",
