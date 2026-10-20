@@ -50,7 +50,7 @@ const glossaryData = {
       ["Regular solution parameter (Ω)", "\\(\\Omega = N_a z\\varepsilon\\). The bond energy parameter scaled to one mole, with \\(z\\) the number of bonds per atom. Same sign as \\(\\varepsilon\\)"],
       ["Ordering", "A tendency for unlike atoms to sit next to each other (A-B bonds), which happens when \\(\\varepsilon < 0\\)"],
       ["Clustering", "A tendency for like atoms to group together (A-A and B-B bonds), which happens when \\(\\varepsilon > 0\\) at low temperature"],
-      ["Miscibility gap", "A composition range where a single mixed phase is unstable and the alloy splits into two phases of different composition, because the \\(\\Delta G_{\\mathrm{mix}}\\) curve has a hump"],
+      ["Miscibility gap", "A composition range, at a given temperature, where a single mixed phase is unstable and the alloy splits into two phases of the same crystal structure but different composition (\\(\\alpha' + \\alpha''\\)). It comes from a positive \\(\\Delta H_{\\mathrm{mix}}\\), which puts a hump in the \\(\\Delta G_{\\mathrm{mix}}\\) curve, and it appears on a phase diagram as a dome-shaped two-phase region"],
       ["Substitutional alloy", "A solid solution where solute atoms replace solvent atoms on lattice sites. Occurs when atomic sizes are similar, e.g. brass (Cu-Zn)"],
       ["Interstitial alloy", "A solid solution where small solute atoms sit in the gaps between solvent atoms, e.g. carbon in iron (steel)"],
       ["Intermediate phase", "A phase with a different crystal structure to the pure components, stable over a range of compositions"],
@@ -91,7 +91,6 @@ const glossaryData = {
     terms: [
       ["Heterogeneous equilibrium", "Equilibrium between two or more phases that coexist. Each phase has its own free energy curve, and the compositions settle where the total free energy of the mixture is lowest"],
       ["Common tangent", "A single straight line touching the free energy curves of two phases. The two touching points are the equilibrium compositions of the phases, and they are what gets plotted on the phase diagram. The line gives equal chemical potentials in both phases"],
-      ["Miscibility gap", "A region of temperature and composition where a single solid solution is unstable and separates into two phases of the same crystal structure but different composition (\\(\\alpha' + \\alpha''\\)). It comes from a positive \\(\\Delta H_{\\mathrm{mix}}\\)"],
       ["Ordered phase", "A solid solution in which A and B atoms sit in regular, preferred positions instead of at random. It forms when \\(\\Delta H_{\\mathrm{mix}} < 0\\) and is written \\(\\alpha'\\). It melts at a higher temperature than either pure component"],
       ["Invariant reaction", "A transformation between phases of fixed composition at a fixed temperature under equilibrium conditions. It appears as a horizontal line on the phase diagram. The eutectic, eutectoid, peritectic and peritectoid reactions are the four examples"],
       ["Peritectoid reaction", "On cooling, two solid phases react to form a new solid phase at a fixed temperature, \\(\\alpha + \\beta \\rightarrow \\gamma\\). Slide example: \\((\\mathrm{Ti}) + \\mathrm{TiAg} \\rightarrow \\mathrm{Ti_2Ag}\\)"],
