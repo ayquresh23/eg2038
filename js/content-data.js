@@ -2849,7 +2849,7 @@ window.SITE_CONTENT = {
               "desc": "average grain size"
             }
           ],
-          "note": "The slide prints this as \\(k/d\\); the standard form has \\(\\sqrt{d}\\). Grain boundaries block dislocations, so more boundaries per unit length means a higher yield strength."
+          "note": "Grain boundaries block dislocations, so more boundaries per unit length means a higher yield strength."
         },
         {
           "type": "example",
