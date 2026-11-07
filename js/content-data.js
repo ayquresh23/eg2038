@@ -3,19 +3,41 @@
 window.SITE_CONFIG = {
   "wikiHint": "metallurgy",
   "slug": "eg2038",
-  "topicIds": ["u1", "u2", "u3", "u4"],
-  "navOrder": ["u1", "u2", "u3", "u4"],
+  "topicIds": [
+    "u1",
+    "u2",
+    "u3",
+    "u4",
+    "u5",
+    "u6",
+    "u7"
+  ],
+  "navOrder": [
+    "u1",
+    "u2",
+    "u3",
+    "u4",
+    "u5",
+    "u6",
+    "u7"
+  ],
   "topicColors": {
     "u1": "#00a87a",
     "u2": "#3b82e8",
     "u3": "#8855f5",
-    "u4": "#e04545"
+    "u4": "#e04545",
+    "u5": "#d89800",
+    "u6": "#e08000",
+    "u7": "#e03f78"
   },
   "topicLabels": {
     "u1": "Intro to Thermodynamics",
     "u2": "Solution Thermodynamics",
     "u3": "Using Phase Diagrams",
-    "u4": "Construction of Phase Diagrams"
+    "u4": "Construction of Phase Diagrams",
+    "u5": "Limitations of Thermodynamics",
+    "u6": "Solidification: Nucleation",
+    "u7": "Solidification: Growth"
   }
 };
 
@@ -25,16 +47,31 @@ window.SITE_CONTENT = {
     "title": "EG2038 Study Site",
     "subtitle": "Thermodynamics and kinetics as the twin forces behind every microstructure: why phases form, when they're stable, and how alloying, processing and heat treatment control the properties that follow. Built out unit by unit as the module runs.",
     "stats": [
-      { "value": "4 of 10", "label": "Units built" },
-      { "value": "80", "label": "Terms" },
-      { "value": "23", "label": "Formulas" },
-      { "value": "44", "label": "Exam Traps" }
+      {
+        "value": "7 of 10",
+        "label": "Units built"
+      },
+      {
+        "value": "155",
+        "label": "Terms"
+      },
+      {
+        "value": "37",
+        "label": "Formulas"
+      },
+      {
+        "value": "75",
+        "label": "Exam Traps"
+      }
     ],
     "extra": [
-      { "type": "raw", "html": "<h2>Quick reference</h2>" },
       {
         "type": "raw",
-        "html": "<div class=\"card-grid\">\n      <div class=\"topic-card\" onclick=\"showSection('formulas')\" style=\"--bar-color:#00a87a\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📐 Formula Sheet</div>\n        <div class=\"topic-desc\">Every equation covered so far. Variables defined, units flagged.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('glossary')\" style=\"--bar-color:#2fa15c\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📚 Glossary</div>\n        <div class=\"topic-desc\">80 terms from Units 1 to 4. Instant search, topic filter, and flashcard mode.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('traps')\" style=\"--bar-color:#e04545\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">⚠️ MCQ Traps</div>\n        <div class=\"topic-desc\">Plausible-but-wrong claims the exam uses. Know what's actually true.</div>\n      </div>\n    </div>"
+        "html": "<h2>Quick reference</h2>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"card-grid\">\n      <div class=\"topic-card\" onclick=\"showSection('formulas')\" style=\"--bar-color:#00a87a\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📐 Formula Sheet</div>\n        <div class=\"topic-desc\">Every equation covered so far. Variables defined, units flagged.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('glossary')\" style=\"--bar-color:#2fa15c\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">📚 Glossary</div>\n        <div class=\"topic-desc\">155 terms from Units 1 to 7. Instant search, topic filter, and flashcard mode.</div>\n      </div>\n      <div class=\"topic-card\" onclick=\"showSection('traps')\" style=\"--bar-color:#e04545\">\n        <div class=\"topic-num\">Reference</div>\n        <div class=\"topic-title\">⚠️ MCQ Traps</div>\n        <div class=\"topic-desc\">Plausible-but-wrong claims the exam uses. Know what's actually true.</div>\n      </div>\n    </div>"
       }
     ]
   },
@@ -49,19 +86,49 @@ window.SITE_CONTENT = {
           "type": "toc",
           "title": "In this unit",
           "items": [
-            { "href": "#u1-why", "label": "Why microstructure matters" },
-            { "href": "#u1-thermo-kinetics", "label": "Thermodynamics vs kinetics" },
-            { "href": "#u1-stability", "label": "Stability, metastability and activation energy" },
-            { "href": "#u1-terminology", "label": "Terminology" },
-            { "href": "#u1-firstlaw", "label": "First law of thermodynamics" },
-            { "href": "#u1-enthalpy", "label": "Enthalpy" },
-            { "href": "#u1-entropy", "label": "Entropy & the second law" },
-            { "href": "#u1-gibbs", "label": "Gibbs free energy" },
-            { "href": "#u1-measuring", "label": "Measuring the parameters" }
+            {
+              "href": "#u1-why",
+              "label": "Why microstructure matters"
+            },
+            {
+              "href": "#u1-thermo-kinetics",
+              "label": "Thermodynamics vs kinetics"
+            },
+            {
+              "href": "#u1-stability",
+              "label": "Stability, metastability and activation energy"
+            },
+            {
+              "href": "#u1-terminology",
+              "label": "Terminology"
+            },
+            {
+              "href": "#u1-firstlaw",
+              "label": "First law of thermodynamics"
+            },
+            {
+              "href": "#u1-enthalpy",
+              "label": "Enthalpy"
+            },
+            {
+              "href": "#u1-entropy",
+              "label": "Entropy & the second law"
+            },
+            {
+              "href": "#u1-gibbs",
+              "label": "Gibbs free energy"
+            },
+            {
+              "href": "#u1-measuring",
+              "label": "Measuring the parameters"
+            }
           ]
         },
-
-        { "type": "h2", "id": "u1-why", "text": "Why Microstructure Matters" },
+        {
+          "type": "h2",
+          "id": "u1-why",
+          "text": "Why Microstructure Matters"
+        },
         {
           "type": "p",
           "text": "Different applications need different properties from the same base metal, and microstructure is the most fundamental way to control property.",
@@ -84,9 +151,21 @@ window.SITE_CONTENT = {
         {
           "type": "cardgrid",
           "cards": [
-            { "title": "Alloying", "color": "#00a87a", "text": "Changing composition. Pure Al (soft, ductile) vs Al-Si alloy (hard, rigid) — same base element, different phases present." },
-            { "title": "Processing", "color": "#00a87a", "text": "Changing how the metal is worked. A Damascus sword's legendary properties came from forging and folding technique, not a different alloy." },
-            { "title": "Heat treatment", "color": "#00a87a", "text": "A type of secondary processing that changes properties without altering the manufactured geometry. Example: Al-Cu aircraft fuselage alloy is heat treated for strength." }
+            {
+              "title": "Alloying",
+              "color": "#00a87a",
+              "text": "Changing composition. Pure Al (soft, ductile) vs Al-Si alloy (hard, rigid) — same base element, different phases present."
+            },
+            {
+              "title": "Processing",
+              "color": "#00a87a",
+              "text": "Changing how the metal is worked. A Damascus sword's legendary properties came from forging and folding technique, not a different alloy."
+            },
+            {
+              "title": "Heat treatment",
+              "color": "#00a87a",
+              "text": "A type of secondary processing that changes properties without altering the manufactured geometry. Example: Al-Cu aircraft fuselage alloy is heat treated for strength."
+            }
           ]
         },
         {
@@ -95,8 +174,11 @@ window.SITE_CONTENT = {
           "title": "Stability matters as much as optimisation",
           "html": "<p>Producing the optimum microstructure for an application isn't enough on its own — that microstructure also has to stay <strong>stable under the operating environment</strong>. Ti, Ni, steel and Al alloys all lose specific strength differently as temperature rises, which is why a jet engine uses Ni-superalloy turbine blades in the hottest section and Ti-alloy blades further back — each alloy's high-temperature strength curve decides where it can be used.</p>"
         },
-
-        { "type": "h2", "id": "u1-thermo-kinetics", "text": "Thermodynamics vs Kinetics" },
+        {
+          "type": "h2",
+          "id": "u1-thermo-kinetics",
+          "text": "Thermodynamics vs Kinetics"
+        },
         {
           "type": "p",
           "text": "What fundamentally dictates microstructure formation? Two separate questions, and keeping them separate is the single most important idea in this unit.",
@@ -123,8 +205,11 @@ window.SITE_CONTENT = {
           "text": "A transformation happens only when the associated energy change is negative (ΔE = E<sub>final</sub> − E<sub>initial</sub> &lt; 0); kinetics then decides how fast it proceeds. Everyday analogy: unstable = running (any disturbance moves it further away), metastable = sitting (stable to a small push, not a large one), stable = lying down (the lowest-energy resting state). All systems move towards equilibrium <em>if undisturbed</em>.",
           "class": "learn-only"
         },
-
-        { "type": "h2", "id": "u1-stability", "text": "Stability, Metastability and Activation Energy" },
+        {
+          "type": "h2",
+          "id": "u1-stability",
+          "text": "Stability, Metastability and Activation Energy"
+        },
         {
           "type": "p",
           "text": "Plotting free energy against atomic arrangement gives an energy landscape: a global minimum (stable), and possible local minima (metastable) separated from it by an energy hill.",
@@ -150,8 +235,11 @@ window.SITE_CONTENT = {
           ],
           "answer": "Diamond is thermodynamically unstable relative to graphite but kinetically frozen — for all practical purposes, permanently."
         },
-
-        { "type": "h2", "id": "u1-terminology", "text": "Terminology" },
+        {
+          "type": "h2",
+          "id": "u1-terminology",
+          "text": "Terminology"
+        },
         {
           "type": "h3",
           "text": "General thermodynamics"
@@ -186,8 +274,11 @@ window.SITE_CONTENT = {
           "variant": "note",
           "html": "<p><strong>Phase transformation:</strong> conversion of one or more phases into a new phase or mixture of phases, occurring to increase phase stability.</p><p style=\"margin-top:8px\"><strong>Equilibrium:</strong> a state of stability where no further change is possible under the specified conditions. All systems move towards equilibrium if undisturbed.</p>"
         },
-
-        { "type": "h2", "id": "u1-firstlaw", "text": "First Law of Thermodynamics" },
+        {
+          "type": "h2",
+          "id": "u1-firstlaw",
+          "text": "First Law of Thermodynamics"
+        },
         {
           "type": "p",
           "text": "Relates heat, work and internal energy of a system.",
@@ -206,8 +297,11 @@ window.SITE_CONTENT = {
           ],
           "note": "<strong>Sign convention:</strong> heat entering the system is positive (ΔQ &gt; 0). Work done <em>by</em> the system is positive (PΔV &gt; 0)."
         },
-
-        { "type": "h2", "id": "u1-enthalpy", "text": "Enthalpy" },
+        {
+          "type": "h2",
+          "id": "u1-enthalpy",
+          "text": "Enthalpy"
+        },
         {
           "type": "p",
           "text": "Enthalpy (H) is a measure of the heat content of the system.",
@@ -228,8 +322,11 @@ window.SITE_CONTENT = {
           "title": "Open question",
           "html": "<p>Nature prefers a low internal energy (strong bonding, order). So why does a solid ever melt, or a liquid boil? Enthalpy alone can't answer this — the answer needs entropy, next.</p>"
         },
-
-        { "type": "h2", "id": "u1-entropy", "text": "Entropy & the Second Law" },
+        {
+          "type": "h2",
+          "id": "u1-entropy",
+          "text": "Entropy & the Second Law"
+        },
         {
           "type": "p",
           "text": "Entropy (S) is a measure of the disorder in the system.",
@@ -246,8 +343,11 @@ window.SITE_CONTENT = {
           "text": "Nature prefers order (low internal energy), but disorder (high entropy) is far more prevalent because it is far more probable, especially once atoms have thermal mobility. Balancing these two competing tendencies — low energy vs high entropy — is exactly what Gibbs free energy does.",
           "class": ""
         },
-
-        { "type": "h2", "id": "u1-gibbs", "text": "Gibbs Free Energy" },
+        {
+          "type": "h2",
+          "id": "u1-gibbs",
+          "text": "Gibbs Free Energy"
+        },
         {
           "type": "p",
           "text": "The single quantity that decides whether a phase transformation will happen — the central result of this unit.",
@@ -260,9 +360,18 @@ window.SITE_CONTENT = {
             "G = H - TS"
           ],
           "vars": [
-            { "symbol": "H", "desc": "enthalpy (heat content)" },
-            { "symbol": "S", "desc": "entropy (disorder)" },
-            { "symbol": "T", "desc": "absolute temperature of the system" }
+            {
+              "symbol": "H",
+              "desc": "enthalpy (heat content)"
+            },
+            {
+              "symbol": "S",
+              "desc": "entropy (disorder)"
+            },
+            {
+              "symbol": "T",
+              "desc": "absolute temperature of the system"
+            }
           ],
           "note": "\"Free\" refers to the energy <strong>available to do useful (non-PΔV) work</strong>."
         },
@@ -281,8 +390,11 @@ window.SITE_CONTENT = {
           "title": "Resolving the melting question",
           "html": "<p>Enthalpy dominates stability at low temperature (small TΔS term); entropy dominates at high temperature (large TΔS term). That's why an ordered, low-energy solid is stable at low T, but a disordered, high-entropy liquid or gas becomes favoured as T rises — the TΔS term eventually outweighs the enthalpy penalty and ΔG turns negative.</p>"
         },
-
-        { "type": "h2", "id": "u1-measuring", "text": "Measuring the Thermodynamic Parameters" },
+        {
+          "type": "h2",
+          "id": "u1-measuring",
+          "text": "Measuring the Thermodynamic Parameters"
+        },
         {
           "type": "p",
           "text": "H, S and G aren't measured directly — they're built up from heat capacity, which is directly measurable with a calorimeter (commonly DSC — differential scanning calorimetry).",
@@ -295,20 +407,29 @@ window.SITE_CONTENT = {
             "C = \\frac{Q}{\\Delta T} \\qquad C_P = \\left(\\frac{\\partial Q}{\\partial T}\\right)_P = \\left(\\frac{\\partial H}{\\partial T}\\right)_P"
           ],
           "vars": [
-            { "symbol": "C", "desc": "quantity of heat required to raise the temperature of a substance by one degree" },
-            { "symbol": "C_P", "desc": "specific heat capacity at constant pressure (specific = per unit mass)" }
+            {
+              "symbol": "C",
+              "desc": "quantity of heat required to raise the temperature of a substance by one degree"
+            },
+            {
+              "symbol": "C_P",
+              "desc": "specific heat capacity at constant pressure (specific = per unit mass)"
+            }
           ]
         },
         {
           "type": "formulablock",
-          "name": "\u0394H and \u0394S from heat capacity",
+          "name": "ΔH and ΔS from heat capacity",
           "eqs": [
             "\\Delta H = \\int C_P \\, dT \\qquad \\Delta S = \\int \\frac{C_P}{T} \\, dT"
           ],
           "note": "<strong>Reference points (the convention):</strong> H = 0 at 298 K (room temperature); S = 0 at 0 K (absolute zero), from the <strong>third law</strong> of thermodynamics. Absolute values of H, S, G aren't physically meaningful on their own — only the <em>changes</em> (ΔH, ΔS, ΔG for large changes; ∂H, ∂S, ∂G for small ones) matter for predicting transformations. C<sub>P</sub> tends towards a limit of roughly 3R at high temperature for a pure metal."
         },
-
-        { "type": "h2", "id": "", "text": "Unit 1 essentials" },
+        {
+          "type": "h2",
+          "id": "",
+          "text": "Unit 1 essentials"
+        },
         {
           "type": "conceptbox",
           "variant": "",
@@ -1807,12 +1928,1483 @@ window.SITE_CONTENT = {
       "readTime": "35 min",
       "color": "#e04545"
     },
-    { "soon": true, "numLabel": "Unit 5", "title": "Limitations of Thermodynamics (Intro to Kinetics)", "desc": "Coming soon — added once covered in lectures.", "color": "#d89800", "sections": [] },
-    { "soon": true, "numLabel": "Unit 6", "title": "Solidification — Nucleation", "desc": "Coming soon — added once covered in lectures.", "color": "#e08000", "sections": [] },
-    { "soon": true, "numLabel": "Unit 7", "title": "Solidification — Growth", "desc": "Coming soon — added once covered in lectures.", "color": "#e03f78", "sections": [] },
-    { "soon": true, "numLabel": "Unit 8", "title": "Metalforming (Hot and Cold Work)", "desc": "Coming soon — added once covered in lectures.", "color": "#2fa15c", "sections": [] },
-    { "soon": true, "numLabel": "Unit 9", "title": "The Fe-C System", "desc": "Coming soon — added once covered in lectures.", "color": "#3b82e8", "sections": [] },
-    { "soon": true, "numLabel": "Unit 10", "title": "Precipitation Strengthening", "desc": "Coming soon — added once covered in lectures.", "color": "#8855f5", "sections": [] }
+    {
+      "id": "u5",
+      "numLabel": "Unit 5 of 10",
+      "color": "#d89800",
+      "title": "Limitations of Thermodynamics (Intro to Kinetics)",
+      "subtitle": "Units 1 to 4 answered one question: which phases <em>should</em> form. This unit shows where that answer breaks down in real metals, and brings in the second half of the story: how fast a change happens, set by an activation barrier and by the diffusion of atoms.",
+      "desc": "Why real microstructures deviate from the phase diagram: coring, activation energy and the Arrhenius rate law, Fick's first and second laws, vacancy vs interstitial diffusion, and chemical potential as the true driver.",
+      "difficulty": "Medium",
+      "readTime": "25 min",
+      "sections": [
+        {
+          "type": "toc",
+          "title": "In this unit",
+          "items": [
+            {
+              "href": "#u5-big",
+              "label": "What thermodynamics cannot tell you"
+            },
+            {
+              "href": "#u5-coring",
+              "label": "Coring: when the diagram is wrong"
+            },
+            {
+              "href": "#u5-rate",
+              "label": "Rate of transformation"
+            },
+            {
+              "href": "#u5-diff",
+              "label": "Diffusion: the mechanism"
+            },
+            {
+              "href": "#u5-fick1",
+              "label": "Steady state: Fick's first law"
+            },
+            {
+              "href": "#u5-fick2",
+              "label": "Transient state: Fick's second law"
+            },
+            {
+              "href": "#u5-mech",
+              "label": "Vacancy vs interstitial diffusion"
+            },
+            {
+              "href": "#u5-why",
+              "label": "What actually drives diffusion"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u5-big",
+          "text": "What Thermodynamics Cannot Tell You"
+        },
+        {
+          "type": "p",
+          "text": "A map can tell you the valley is lower than the hill you are standing on. It cannot tell you how long the walk down will take, or whether there is a ridge in the way. A phase diagram is that map. It shows the <strong>equilibrium</strong> phases, the state of lowest Gibbs free energy, and nothing about the route or the time.",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "Diamond is the classic case. At room temperature and pressure graphite has the lower free energy, so diamond should turn into graphite. It never does on any timescale that matters, because the atoms cannot rearrange fast enough. The change is <strong>favourable</strong> but practically <strong>irrelevant</strong>.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Thermodynamics",
+              "color": "#d89800",
+              "text": "Which state is most stable, and whether a change is possible (\\(\\Delta G < 0\\)). Read straight off a phase diagram."
+            },
+            {
+              "title": "Kinetics",
+              "color": "#d89800",
+              "text": "How fast the change happens and by what mechanism. Controlled mainly by <strong>atomic diffusion</strong>, which needs time and temperature."
+            },
+            {
+              "title": "Observed microstructure",
+              "color": "#d89800",
+              "text": "What you actually see under the microscope. Often <em>not</em> what the diagram predicts, e.g. coring or an incomplete peritectic reaction."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>You need both: thermodynamics to say what is possible, kinetics to say what actually forms in the time available.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u5-coring",
+          "text": "Coring: When the Phase Diagram Is Wrong"
+        },
+        {
+          "type": "p",
+          "text": "Think of making tea by adding milk while stirring the cup but never the cloud already at the bottom. The liquid evens out instantly, the sediment never does. Solidifying alloys behave the same way: atoms in the liquid mix easily, atoms in the solid barely move.",
+          "class": ""
+        },
+        {
+          "type": "h3",
+          "text": "The equilibrium prediction (Cu-35 wt% Ni)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "At every temperature in the two-phase region, the tie line gives the solid composition (on the solidus) and the liquid composition (on the liquidus)",
+            "Equilibrium assumes <strong>both</strong> phases stay uniform: as the temperature drops, all the solid already formed adjusts to the new solidus composition",
+            "The final \\(\\alpha\\) grains therefore end up uniform at <strong>35 wt% Ni</strong>, the alloy composition"
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "What really happens at a normal cooling rate"
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: a cored Cu-35 wt% Ni grain (compositions from the lecture slide)</div>\n<svg viewBox=\"0 0 640 300\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Cross-section of three cored grains, each with concentric layers. The centre was the first solid to form at about 1260 degrees C with 46 weight percent nickel, then layers of 40, 35 and 31 weight percent nickel formed at progressively lower temperatures.\">\n<rect x=\"40\" y=\"35\" width=\"250\" height=\"240\" rx=\"10\" fill=\"#e04545\" fill-opacity=\"0.08\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/><polygon points=\"184.9,110.0 185.2,123.9 181.0,137.1 172.5,148.2 161.5,156.1 149.6,161.2 137.7,164.5 126.0,167.0 113.8,168.7 100.9,168.9 87.6,166.2 75.4,159.6 66.0,149.2 60.7,136.4 59.3,122.9 60.9,110.0 64.0,98.1 67.7,86.7 72.2,75.3 78.5,64.0 87.6,53.8 99.4,46.6 113.0,43.6 126.8,45.4 139.2,51.0 149.6,58.8 158.3,67.4 166.3,76.3 173.9,86.0 180.6,97.1 184.9,110.0\" fill=\"#f8d4cc\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"168.1,110.0 168.4,120.3 165.2,130.1 159.0,138.3 150.8,144.2 141.9,148.0 133.1,150.4 124.4,152.3 115.4,153.6 105.8,153.7 95.9,151.7 86.9,146.8 79.9,139.1 76.0,129.6 75.0,119.6 76.1,110.0 78.4,101.2 81.2,92.7 84.6,84.2 89.2,75.8 95.9,68.3 104.7,62.9 114.8,60.8 125.0,62.1 134.2,66.2 141.9,72.0 148.4,78.4 154.4,85.0 160.0,92.2 165.0,100.4 168.1,110.0\" fill=\"#f0a898\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"152.4,110.0 152.6,116.9 150.5,123.6 146.3,129.1 140.8,133.1 134.8,135.6 128.9,137.2 123.0,138.5 116.9,139.4 110.4,139.5 103.8,138.1 97.7,134.8 93.0,129.6 90.3,123.2 89.7,116.4 90.4,110.0 92.0,104.0 93.8,98.4 96.1,92.6 99.3,87.0 103.8,81.9 109.7,78.3 116.5,76.8 123.4,77.7 129.6,80.5 134.8,84.4 139.2,88.7 143.2,93.2 147.0,98.0 150.3,103.6 152.4,110.0\" fill=\"#e0705f\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"136.7,110.0 136.8,113.6 135.7,117.0 133.6,119.9 130.7,121.9 127.6,123.2 124.6,124.1 121.5,124.7 118.4,125.2 115.1,125.2 111.6,124.5 108.5,122.8 106.1,120.1 104.7,116.8 104.3,113.3 104.7,110.0 105.5,106.9 106.5,104.0 107.7,101.0 109.3,98.1 111.6,95.5 114.7,93.6 118.2,92.9 121.8,93.3 124.9,94.8 127.6,96.8 129.9,99.0 132.0,101.3 133.9,103.8 135.6,106.7 136.7,110.0\" fill=\"#c0392b\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"275.2,170.0 273.6,182.4 268.0,193.6 259.7,202.5 250.3,209.2 240.7,214.5 231.0,219.2 220.6,223.3 209.1,226.0 196.8,225.9 184.9,222.1 174.9,214.5 168.1,204.1 164.5,192.5 163.4,181.0 163.6,170.0 164.4,159.2 166.0,148.2 169.4,136.9 175.6,126.3 184.9,117.9 196.5,113.1 208.9,112.3 220.8,115.0 231.3,119.8 240.7,125.5 249.6,131.5 258.4,138.5 266.4,147.1 272.5,157.8 275.2,170.0\" fill=\"#f8d4cc\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"259.6,170.0 258.4,179.2 254.3,187.5 248.2,194.1 241.2,199.1 234.1,203.0 226.9,206.5 219.2,209.6 210.6,211.6 201.5,211.5 192.7,208.7 185.3,203.0 180.2,195.3 177.5,186.7 176.7,178.1 176.8,170.0 177.5,162.0 178.7,153.8 181.2,145.4 185.8,137.6 192.7,131.3 201.3,127.8 210.5,127.2 219.3,129.2 227.1,132.8 234.1,137.0 240.7,141.5 247.2,146.6 253.2,153.0 257.7,160.9 259.6,170.0\" fill=\"#f0a898\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"245.1,170.0 244.3,176.2 241.5,181.8 237.4,186.2 232.7,189.6 227.9,192.3 223.0,194.6 217.8,196.7 212.1,198.0 205.9,198.0 200.0,196.1 195.0,192.2 191.5,187.0 189.7,181.2 189.2,175.5 189.3,170.0 189.7,164.6 190.5,159.1 192.2,153.5 195.3,148.1 200.0,143.9 205.8,141.5 212.0,141.2 217.9,142.5 223.2,144.9 227.9,147.7 232.3,150.8 236.7,154.2 240.7,158.5 243.8,163.9 245.1,170.0\" fill=\"#e0705f\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"230.5,170.0 230.1,173.2 228.7,176.1 226.5,178.4 224.1,180.1 221.6,181.5 219.1,182.7 216.4,183.8 213.5,184.5 210.3,184.4 207.2,183.4 204.7,181.5 202.9,178.8 202.0,175.8 201.7,172.8 201.7,170.0 201.9,167.2 202.4,164.4 203.2,161.5 204.8,158.7 207.2,156.6 210.2,155.3 213.4,155.1 216.5,155.8 219.2,157.0 221.6,158.5 223.9,160.1 226.2,161.9 228.3,164.1 229.8,166.8 230.5,170.0\" fill=\"#c0392b\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"162.5,215.0 159.0,225.4 154.4,234.8 149.4,243.7 143.7,252.4 136.4,260.8 127.1,267.6 115.9,271.5 104.1,271.3 93.0,267.3 83.7,260.5 76.5,252.2 70.7,243.6 65.5,234.8 60.7,225.5 57.1,215.0 55.9,203.5 58.1,191.9 64.2,181.7 73.2,174.1 83.7,169.5 94.5,167.4 104.9,166.6 115.1,166.5 125.6,167.1 136.4,169.2 147.0,173.9 155.9,181.6 161.8,192.0 163.8,203.6 162.5,215.0\" fill=\"#f8d4cc\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"149.0,215.0 146.3,222.7 143.0,229.7 139.3,236.3 135.0,242.8 129.6,249.0 122.7,254.0 114.4,256.9 105.6,256.8 97.4,253.8 90.5,248.7 85.1,242.6 80.8,236.2 77.0,229.7 73.4,222.8 70.8,215.0 69.8,206.5 71.5,197.9 76.0,190.3 82.7,184.7 90.5,181.3 98.5,179.7 106.2,179.1 113.8,179.0 121.5,179.5 129.6,181.0 137.5,184.5 144.1,190.2 148.4,197.9 149.9,206.5 149.0,215.0\" fill=\"#f0a898\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"136.3,215.0 134.5,220.2 132.2,224.9 129.7,229.3 126.9,233.7 123.2,237.9 118.5,241.3 113.0,243.2 107.0,243.2 101.5,241.2 96.9,237.7 93.2,233.6 90.3,229.3 87.7,224.9 85.4,220.2 83.6,215.0 82.9,209.2 84.1,203.5 87.1,198.4 91.6,194.6 96.9,192.3 102.3,191.2 107.5,190.8 112.5,190.8 117.8,191.0 123.2,192.1 128.5,194.4 133.0,198.3 135.9,203.5 136.9,209.3 136.3,215.0\" fill=\"#e0705f\" stroke=\"#b05040\" stroke-width=\"0.8\"/><polygon points=\"123.6,215.0 122.6,217.7 121.5,220.1 120.2,222.4 118.7,224.7 116.8,226.8 114.4,228.6 111.5,229.6 108.5,229.5 105.6,228.5 103.2,226.7 101.4,224.6 99.8,222.4 98.5,220.1 97.3,217.7 96.4,215.0 96.0,212.0 96.6,209.0 98.2,206.4 100.5,204.4 103.2,203.3 106.0,202.7 108.7,202.5 111.3,202.5 114.0,202.6 116.8,203.2 119.6,204.4 121.9,206.4 123.4,209.1 123.9,212.0 123.6,215.0\" fill=\"#c0392b\" stroke=\"#b05040\" stroke-width=\"0.8\"/><text x=\"165.0\" y=\"26.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">one cored grain, sectioned</text><text x=\"330.0\" y=\"60.0\" fill=\"#a0a0ac\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">Layer (centre &#8594; edge)</text><rect x=\"330\" y=\"78\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#c0392b\" stroke=\"#b05040\" stroke-width=\"0.8\"/><text x=\"358.0\" y=\"92.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">first solid, ~1260 &#176;C</text><text x=\"600.0\" y=\"92.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">46 wt% Ni</text><rect x=\"330\" y=\"108\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#e0705f\" stroke=\"#b05040\" stroke-width=\"0.8\"/><text x=\"358.0\" y=\"122.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">formed ~1240 &#176;C</text><text x=\"600.0\" y=\"122.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">40 wt% Ni</text><rect x=\"330\" y=\"138\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#f0a898\" stroke=\"#b05040\" stroke-width=\"0.8\"/><text x=\"358.0\" y=\"152.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">formed ~1220 &#176;C</text><text x=\"600.0\" y=\"152.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">35 wt% Ni</text><rect x=\"330\" y=\"168\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#f8d4cc\" stroke=\"#b05040\" stroke-width=\"0.8\"/><text x=\"358.0\" y=\"182.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">last solid, ~1205 &#176;C</text><text x=\"600.0\" y=\"182.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">31 wt% Ni</text><text x=\"330.0\" y=\"222.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">Average of the whole grain = 35 wt% Ni,</text><text x=\"330.0\" y=\"240.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">but no single layer is 35 wt% Ni throughout.</text><text x=\"330.0\" y=\"264.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">Cu-35 wt% Ni, cooled too fast for the solid to keep up</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">Each layer has the solidus composition at the temperature it froze. The solid underneath never had time to re-equilibrate.</p>\n</div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Step by step on the slide (Cu-35 wt% Ni)",
+          "html": "<ul><li><strong>~1260 &#176;C:</strong> first solid forms at 46 wt% Ni, from liquid of 35 wt% Ni</li><li><strong>~1240 &#176;C:</strong> new solid at the solidus is 40 wt% Ni, but the 46 wt% core cannot change. The <em>average</em> solid is about 42 wt% Ni. Liquid is 29 wt% Ni</li><li><strong>~1220 &#176;C:</strong> the equilibrium solidus for this alloy is reached, but the average solid is only about 38 wt% Ni, so liquid (24 wt% Ni) is still present. Solidification is <strong>not</strong> finished where the diagram says it should be</li><li><strong>~1205 &#176;C:</strong> the last solid (31 wt% Ni) forms from liquid of about 21 wt% Ni. Only now does the average solid reach 35 wt% Ni and solidification ends</li></ul>"
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Why the liquid keeps up",
+              "color": "#d89800",
+              "text": "Diffusion in a liquid is fast, and the liquid is stirred by convection. It stays at the liquidus composition for each temperature."
+            },
+            {
+              "title": "Why the solid does not",
+              "color": "#d89800",
+              "text": "Solid-state diffusion is orders of magnitude slower. Each layer keeps the composition it froze with."
+            },
+            {
+              "title": "The result",
+              "color": "#d89800",
+              "text": "Layers of different composition in each grain: <strong>coring</strong>, also called <strong>solute segregation</strong>."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Consequences and the fix",
+          "html": "<ul><li><strong>Inhomogeneous properties:</strong> strength, corrosion resistance and melting behaviour vary across each grain</li><li><strong>Solidification finishes below the equilibrium solidus</strong> (about 1205 &#176;C instead of about 1220 &#176;C on the slide)</li><li><strong>Fix:</strong> a <strong>homogenising heat treatment</strong> at an elevated temperature <em>below the solidus</em>. Holding it there gives atoms time to diffuse and even out the layers</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Why \"below the solidus\" matters (beyond the slide)",
+          "html": "<p>The last, Ni-poor layers of a cored grain melt at a lower temperature than the equilibrium solidus suggests. Heating a cored casting just under the equilibrium solidus can partially melt those regions at the grain boundaries (sometimes called incipient melting). This is standard practice knowledge rather than a lecture point.</p>"
+        },
+        {
+          "type": "example",
+          "label": "Try it: explain a cored grain",
+          "q": "A Cu-35 wt% Ni casting is sectioned and analysed. The centre of a grain reads 46 wt% Ni and the edge 31 wt% Ni. The phase diagram says the solid should be 35 wt% Ni. Explain the readings and say how to remove the difference.",
+          "steps": [
+            "The centre was the first solid to form, high in the two-phase region, where the solidus composition is 46 wt% Ni",
+            "Each later layer formed at a lower temperature, with a lower solidus Ni content, down to 31 wt% Ni for the last layer",
+            "Diffusion in the solid was too slow to bring the earlier layers down to the current solidus composition, so the gradient was frozen in"
+          ],
+          "answer": "The grain is cored. A homogenising anneal below the solidus lets Ni and Cu diffuse until the grain is uniform at 35 wt% Ni, which is the equilibrium the diagram predicted."
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>The diagram assumes infinite time for diffusion. Coring is what you get when the solid cannot keep up.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u5-rate",
+          "text": "Rate of Transformation: the Activation Barrier"
+        },
+        {
+          "type": "p",
+          "text": "Pushing a boulder from one valley into a lower one still means rolling it over the ridge first. The drop between valleys is the <strong>driving force</strong>. The height of the ridge is the <strong>activation energy</strong>. A deep valley on the far side does not help if nobody can get the boulder over the top.",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: the energy path of a transformation (schematic)</div>\n<svg viewBox=\"0 0 640 310\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Free energy against progress of a transformation. The initial state at G1 must climb a hump to the activated state, the activation energy, before dropping to the lower final state at G2. The drop from G1 to G2 is the driving force.\">\n<line x1=\"70.0\" y1=\"270.0\" x2=\"70.0\" y2=\"36.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"70.0,24.0 65.2,34.2 74.8,34.2\" fill=\"#5e5e6c\"/><line x1=\"70.0\" y1=\"270.0\" x2=\"594.0\" y2=\"270.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"606.0,270.0 595.8,265.2 595.8,274.8\" fill=\"#5e5e6c\"/><polyline points=\"70.0,173.4 73.2,173.4 76.4,173.4 79.6,173.4 82.8,173.4 85.9,173.4 89.1,173.4 92.3,173.4 95.5,173.4 98.7,173.4 101.9,173.4 105.1,173.4 108.3,173.4 111.4,173.4 114.6,173.4 117.8,173.4 121.0,173.4 124.2,173.4 127.4,173.4 130.6,173.4 133.8,173.4 136.9,173.4 140.1,173.4 143.3,173.4 146.5,173.4 149.7,173.4 152.9,173.4 156.1,173.3 159.3,173.3 162.4,173.3 165.6,173.2 168.8,173.2 172.0,173.1 175.2,173.0 178.4,172.9 181.6,172.8 184.8,172.6 187.9,172.3 191.1,172.1 194.3,171.7 197.5,171.2 200.7,170.7 203.9,170.1 207.1,169.5 210.3,168.7 213.4,167.9 216.6,166.9 219.8,165.7 223.0,164.3 226.2,162.6 229.4,160.7 232.6,158.5 235.8,156.0 238.9,153.1 242.1,149.9 245.3,146.3 248.5,142.3 251.7,138.0 254.9,133.4 258.1,128.4 261.3,123.1 264.4,117.7 267.6,112.0 270.8,106.3 274.0,100.5 277.2,94.8 280.4,89.3 283.6,84.0 286.8,79.1 289.9,74.6 293.1,70.7 296.3,67.4 299.5,64.8 302.7,63.1 305.9,62.1 309.1,62.1 312.3,63.0 315.4,64.8 318.6,67.5 321.8,71.1 325.0,75.5 328.2,80.7 331.4,86.6 334.6,93.1 337.8,100.2 340.9,107.6 344.1,115.4 347.3,123.4 350.5,131.5 353.7,139.6 356.9,147.7 360.1,155.6 363.3,163.3 366.4,170.6 369.6,177.6 372.8,184.3 376.0,190.5 379.2,196.2 382.4,201.6 385.6,206.4 388.8,210.8 391.9,214.8 395.1,218.3 398.3,221.5 401.5,224.2 404.7,226.7 407.9,228.7 411.1,230.5 414.3,232.0 417.4,233.2 420.6,234.2 423.8,235.0 427.0,235.6 430.2,236.1 433.4,236.5 436.6,236.7 439.8,237.0 442.9,237.2 446.1,237.3 449.3,237.4 452.5,237.5 455.7,237.6 458.9,237.6 462.1,237.7 465.3,237.7 468.4,237.7 471.6,237.8 474.8,237.8 478.0,237.8 481.2,237.8 484.4,237.8 487.6,237.8 490.8,237.8 493.9,237.8 497.1,237.8 500.3,237.8 503.5,237.8 506.7,237.8 509.9,237.8 513.1,237.8 516.3,237.8 519.4,237.8 522.6,237.8 525.8,237.8 529.0,237.8 532.2,237.8 535.4,237.8 538.6,237.8 541.8,237.8 544.9,237.8 548.1,237.8 551.3,237.8 554.5,237.8 557.7,237.8 560.9,237.8 564.1,237.8 567.3,237.8 570.4,237.8 573.6,237.8 576.8,237.8 580.0,237.8\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"70.0\" y1=\"173.4\" x2=\"386.2\" y2=\"173.4\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><line x1=\"452.5\" y1=\"237.8\" x2=\"580.0\" y2=\"237.8\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><line x1=\"253.6\" y1=\"63.0\" x2=\"376.0\" y2=\"63.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><circle cx=\"312.3\" cy=\"63.0\" r=\"5\" fill=\"#e04545\"/><line x1=\"274.0\" y1=\"68.0\" x2=\"274.0\" y2=\"168.4\" stroke=\"#e04545\" stroke-width=\"1.4\"/><polygon points=\"274.0,59.0 270.0,67.5 278.0,67.5\" fill=\"#e04545\"/><polygon points=\"274.0,177.4 270.0,168.9 278.0,168.9\" fill=\"#e04545\"/><text x=\"266.0\" y=\"122.2\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">&#916;G<tspan dy=\"4\" font-size=\"10\">a</tspan></text><line x1=\"406.6\" y1=\"178.4\" x2=\"406.6\" y2=\"232.8\" stroke=\"#00a87a\" stroke-width=\"1.4\"/><polygon points=\"406.6,169.4 402.6,177.9 410.6,177.9\" fill=\"#00a87a\"/><polygon points=\"406.6,241.8 402.6,233.3 410.6,233.3\" fill=\"#00a87a\"/><text x=\"414.6\" y=\"209.6\" fill=\"#00a87a\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">&#916;G (driving force)</text><line x1=\"386.2\" y1=\"173.4\" x2=\"416.8\" y2=\"173.4\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><text x=\"312.3\" y=\"51.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">activated state</text><text x=\"105.7\" y=\"163.4\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">initial state</text><text x=\"544.3\" y=\"227.8\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">final state</text><text x=\"60.0\" y=\"177.4\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">G<tspan dy=\"4\" font-size=\"10\">1</tspan></text><text x=\"60.0\" y=\"241.8\" fill=\"#90909c\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">G<tspan dy=\"4\" font-size=\"10\">2</tspan></text><text x=\"335.0\" y=\"296.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">progress of the transformation &#8594;</text><text x=\"28.0\" y=\"150.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" transform=\"rotate(-90 28.0 150.0)\">free energy G</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">The driving force \\(\\Delta G\\) says the change is <strong>possible</strong>. The barrier \\(\\Delta G_a\\) decides how <strong>fast</strong> it happens.</p>\n</div>"
+        },
+        {
+          "type": "p",
+          "text": "For a transformation from an initial state to a final state, atoms must pass through a higher-energy <strong>activated state</strong>. Thermal vibration supplies the energy, and only a small fraction of atoms have enough at any instant. That fraction follows a Boltzmann factor:",
+          "class": ""
+        },
+        {
+          "type": "formulablock",
+          "name": "Probability of reaching the activated state",
+          "eqs": [
+            "p_a \\propto \\exp\\left(-\\frac{\\Delta G_a}{kT}\\right)"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\Delta G_a\\)",
+              "desc": "activation energy per atom (J)"
+            },
+            {
+              "symbol": "\\(k\\)",
+              "desc": "Boltzmann constant, \\(1.38 \\times 10^{-23}\\ \\mathrm{J\\,K^{-1}}\\)"
+            },
+            {
+              "symbol": "\\(T\\)",
+              "desc": "absolute temperature (K)"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The rate of transformation depends on how often atoms reach the activated state, so it carries the same exponential. This is the <strong>Arrhenius equation</strong>:",
+          "class": ""
+        },
+        {
+          "type": "formulablock",
+          "name": "Arrhenius rate law",
+          "eqs": [
+            "\\text{rate} \\propto \\exp\\left(-\\frac{\\Delta G_a}{kT}\\right) \\qquad \\text{rate} \\propto \\exp\\left(-\\frac{\\Delta H_a}{RT}\\right)"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\Delta H_a\\)",
+              "desc": "activation enthalpy per mole (J mol\\(^{-1}\\))"
+            },
+            {
+              "symbol": "\\(R\\)",
+              "desc": "universal gas constant, \\(8.314\\ \\mathrm{J\\,mol^{-1}\\,K^{-1}}\\)"
+            }
+          ],
+          "note": "Same law, two unit systems: per atom with \\(k\\), or per mole with \\(R\\). \\(R = N_A k\\), so the two exponents are identical numbers. Never mix them (J per atom over \\(RT\\) gives nonsense)."
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "What the exponential means in practice",
+          "html": "<ul><li>The rate depends on the barrier height, <strong>not</strong> on the size of the driving force. A very favourable change can still be very slow</li><li>Because temperature sits inside an exponential, a modest rise in \\(T\\) can speed a process up by orders of magnitude (see the example in the next section)</li><li>This is why heat treatments are done hot: annealing, homogenising and ageing all rely on making diffusion fast enough to finish in hours, not centuries</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>\\(\\Delta G\\) says whether. \\(\\Delta G_a\\) and temperature say how fast.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u5-diff",
+          "text": "Diffusion: the Mechanism Behind the Rate"
+        },
+        {
+          "type": "p",
+          "text": "Drop food colouring into still water and it spreads out on its own, with no stirring. Metal atoms do the same in a solid, just far more slowly. Diffusion is the most fundamental process controlling the rate of a transformation, because almost every change in microstructure needs atoms to move.",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: a Cu-Ni diffusion couple flattening out over time</div>\n<svg viewBox=\"0 0 640 300\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Concentration of copper and nickel against distance across a copper-nickel diffusion couple. At time zero there is a sharp step at the joint. At later times t1, t2, t3 the profiles become progressively smoother S-shaped curves, and at equilibrium te both sit flat at 50 percent.\">\n<line x1=\"70.0\" y1=\"250.0\" x2=\"70.0\" y2=\"36.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"70.0,24.0 65.2,34.2 74.8,34.2\" fill=\"#5e5e6c\"/><line x1=\"70.0\" y1=\"250.0\" x2=\"594.0\" y2=\"250.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"606.0,250.0 595.8,245.2 595.8,254.8\" fill=\"#5e5e6c\"/><line x1=\"325.0\" y1=\"40.0\" x2=\"325.0\" y2=\"250.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/><polyline points=\"70.0,50.0 325.0,50.0 325.0,250.0 580.0,250.0\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-dasharray=\"6 4\"/><polyline points=\"70.0,250.0 325.0,250.0 325.0,50.0 580.0,50.0\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-dasharray=\"6 4\"/><polyline points=\"70.0,50.0 73.6,50.0 77.3,50.0 80.9,50.0 84.6,50.0 88.2,50.0 91.9,50.0 95.5,50.0 99.1,50.0 102.8,50.0 106.4,50.0 110.1,50.0 113.7,50.0 117.4,50.0 121.0,50.0 124.6,50.0 128.3,50.0 131.9,50.0 135.6,50.0 139.2,50.0 142.9,50.0 146.5,50.0 150.1,50.0 153.8,50.0 157.4,50.0 161.1,50.0 164.7,50.0 168.4,50.0 172.0,50.0 175.6,50.0 179.3,50.0 182.9,50.0 186.6,50.0 190.2,50.0 193.9,50.0 197.5,50.0 201.1,50.0 204.8,50.0 208.4,50.0 212.1,50.0 215.7,50.0 219.4,50.0 223.0,50.0 226.6,50.0 230.3,50.0 233.9,50.0 237.6,50.0 241.2,50.0 244.9,50.0 248.5,50.0 252.1,50.0 255.8,50.0 259.4,50.0 263.1,50.0 266.7,50.0 270.4,50.0 274.0,50.0 277.6,50.0 281.3,50.1 284.9,50.1 288.6,50.4 292.2,50.9 295.9,52.1 299.5,54.3 303.1,58.3 306.8,64.9 310.4,74.8 314.1,88.7 317.7,106.4 321.4,127.3 325.0,150.0 328.6,172.7 332.3,193.6 335.9,211.3 339.6,225.2 343.2,235.1 346.9,241.7 350.5,245.7 354.1,247.9 357.8,249.1 361.4,249.6 365.1,249.9 368.7,249.9 372.4,250.0 376.0,250.0 379.6,250.0 383.3,250.0 386.9,250.0 390.6,250.0 394.2,250.0 397.9,250.0 401.5,250.0 405.1,250.0 408.8,250.0 412.4,250.0 416.1,250.0 419.7,250.0 423.4,250.0 427.0,250.0 430.6,250.0 434.3,250.0 437.9,250.0 441.6,250.0 445.2,250.0 448.9,250.0 452.5,250.0 456.1,250.0 459.8,250.0 463.4,250.0 467.1,250.0 470.7,250.0 474.4,250.0 478.0,250.0 481.6,250.0 485.3,250.0 488.9,250.0 492.6,250.0 496.2,250.0 499.9,250.0 503.5,250.0 507.1,250.0 510.8,250.0 514.4,250.0 518.1,250.0 521.7,250.0 525.4,250.0 529.0,250.0 532.6,250.0 536.3,250.0 539.9,250.0 543.6,250.0 547.2,250.0 550.9,250.0 554.5,250.0 558.1,250.0 561.8,250.0 565.4,250.0 569.1,250.0 572.7,250.0 576.4,250.0 580.0,250.0\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"70.0,250.0 73.6,250.0 77.3,250.0 80.9,250.0 84.6,250.0 88.2,250.0 91.9,250.0 95.5,250.0 99.1,250.0 102.8,250.0 106.4,250.0 110.1,250.0 113.7,250.0 117.4,250.0 121.0,250.0 124.6,250.0 128.3,250.0 131.9,250.0 135.6,250.0 139.2,250.0 142.9,250.0 146.5,250.0 150.1,250.0 153.8,250.0 157.4,250.0 161.1,250.0 164.7,250.0 168.4,250.0 172.0,250.0 175.6,250.0 179.3,250.0 182.9,250.0 186.6,250.0 190.2,250.0 193.9,250.0 197.5,250.0 201.1,250.0 204.8,250.0 208.4,250.0 212.1,250.0 215.7,250.0 219.4,250.0 223.0,250.0 226.6,250.0 230.3,250.0 233.9,250.0 237.6,250.0 241.2,250.0 244.9,250.0 248.5,250.0 252.1,250.0 255.8,250.0 259.4,250.0 263.1,250.0 266.7,250.0 270.4,250.0 274.0,250.0 277.6,250.0 281.3,249.9 284.9,249.9 288.6,249.6 292.2,249.1 295.9,247.9 299.5,245.7 303.1,241.7 306.8,235.1 310.4,225.2 314.1,211.3 317.7,193.6 321.4,172.7 325.0,150.0 328.6,127.3 332.3,106.4 335.9,88.7 339.6,74.8 343.2,64.9 346.9,58.3 350.5,54.3 354.1,52.1 357.8,50.9 361.4,50.4 365.1,50.1 368.7,50.1 372.4,50.0 376.0,50.0 379.6,50.0 383.3,50.0 386.9,50.0 390.6,50.0 394.2,50.0 397.9,50.0 401.5,50.0 405.1,50.0 408.8,50.0 412.4,50.0 416.1,50.0 419.7,50.0 423.4,50.0 427.0,50.0 430.6,50.0 434.3,50.0 437.9,50.0 441.6,50.0 445.2,50.0 448.9,50.0 452.5,50.0 456.1,50.0 459.8,50.0 463.4,50.0 467.1,50.0 470.7,50.0 474.4,50.0 478.0,50.0 481.6,50.0 485.3,50.0 488.9,50.0 492.6,50.0 496.2,50.0 499.9,50.0 503.5,50.0 507.1,50.0 510.8,50.0 514.4,50.0 518.1,50.0 521.7,50.0 525.4,50.0 529.0,50.0 532.6,50.0 536.3,50.0 539.9,50.0 543.6,50.0 547.2,50.0 550.9,50.0 554.5,50.0 558.1,50.0 561.8,50.0 565.4,50.0 569.1,50.0 572.7,50.0 576.4,50.0 580.0,50.0\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"70.0,50.0 73.6,50.0 77.3,50.0 80.9,50.0 84.6,50.0 88.2,50.0 91.9,50.0 95.5,50.0 99.1,50.0 102.8,50.0 106.4,50.0 110.1,50.0 113.7,50.0 117.4,50.0 121.0,50.0 124.6,50.0 128.3,50.0 131.9,50.0 135.6,50.0 139.2,50.0 142.9,50.0 146.5,50.0 150.1,50.0 153.8,50.0 157.4,50.0 161.1,50.0 164.7,50.0 168.4,50.0 172.0,50.0 175.6,50.0 179.3,50.0 182.9,50.0 186.6,50.0 190.2,50.0 193.9,50.0 197.5,50.0 201.1,50.0 204.8,50.0 208.4,50.0 212.1,50.1 215.7,50.1 219.4,50.1 223.0,50.2 226.6,50.2 230.3,50.4 233.9,50.5 237.6,50.7 241.2,51.0 244.9,51.4 248.5,51.8 252.1,52.5 255.8,53.3 259.4,54.3 263.1,55.6 266.7,57.3 270.4,59.2 274.0,61.6 277.6,64.5 281.3,67.8 284.9,71.7 288.6,76.2 292.2,81.2 295.9,86.9 299.5,93.2 303.1,100.1 306.8,107.5 310.4,115.3 314.1,123.6 317.7,132.2 321.4,141.1 325.0,150.0 328.6,158.9 332.3,167.8 335.9,176.4 339.6,184.7 343.2,192.5 346.9,199.9 350.5,206.8 354.1,213.1 357.8,218.8 361.4,223.8 365.1,228.3 368.7,232.2 372.4,235.5 376.0,238.4 379.6,240.8 383.3,242.7 386.9,244.4 390.6,245.7 394.2,246.7 397.9,247.5 401.5,248.2 405.1,248.6 408.8,249.0 412.4,249.3 416.1,249.5 419.7,249.6 423.4,249.8 427.0,249.8 430.6,249.9 434.3,249.9 437.9,249.9 441.6,250.0 445.2,250.0 448.9,250.0 452.5,250.0 456.1,250.0 459.8,250.0 463.4,250.0 467.1,250.0 470.7,250.0 474.4,250.0 478.0,250.0 481.6,250.0 485.3,250.0 488.9,250.0 492.6,250.0 496.2,250.0 499.9,250.0 503.5,250.0 507.1,250.0 510.8,250.0 514.4,250.0 518.1,250.0 521.7,250.0 525.4,250.0 529.0,250.0 532.6,250.0 536.3,250.0 539.9,250.0 543.6,250.0 547.2,250.0 550.9,250.0 554.5,250.0 558.1,250.0 561.8,250.0 565.4,250.0 569.1,250.0 572.7,250.0 576.4,250.0 580.0,250.0\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"70.0,250.0 73.6,250.0 77.3,250.0 80.9,250.0 84.6,250.0 88.2,250.0 91.9,250.0 95.5,250.0 99.1,250.0 102.8,250.0 106.4,250.0 110.1,250.0 113.7,250.0 117.4,250.0 121.0,250.0 124.6,250.0 128.3,250.0 131.9,250.0 135.6,250.0 139.2,250.0 142.9,250.0 146.5,250.0 150.1,250.0 153.8,250.0 157.4,250.0 161.1,250.0 164.7,250.0 168.4,250.0 172.0,250.0 175.6,250.0 179.3,250.0 182.9,250.0 186.6,250.0 190.2,250.0 193.9,250.0 197.5,250.0 201.1,250.0 204.8,250.0 208.4,250.0 212.1,249.9 215.7,249.9 219.4,249.9 223.0,249.8 226.6,249.8 230.3,249.6 233.9,249.5 237.6,249.3 241.2,249.0 244.9,248.6 248.5,248.2 252.1,247.5 255.8,246.7 259.4,245.7 263.1,244.4 266.7,242.7 270.4,240.8 274.0,238.4 277.6,235.5 281.3,232.2 284.9,228.3 288.6,223.8 292.2,218.8 295.9,213.1 299.5,206.8 303.1,199.9 306.8,192.5 310.4,184.7 314.1,176.4 317.7,167.8 321.4,158.9 325.0,150.0 328.6,141.1 332.3,132.2 335.9,123.6 339.6,115.3 343.2,107.5 346.9,100.1 350.5,93.2 354.1,86.9 357.8,81.2 361.4,76.2 365.1,71.7 368.7,67.8 372.4,64.5 376.0,61.6 379.6,59.2 383.3,57.3 386.9,55.6 390.6,54.3 394.2,53.3 397.9,52.5 401.5,51.8 405.1,51.4 408.8,51.0 412.4,50.7 416.1,50.5 419.7,50.4 423.4,50.2 427.0,50.2 430.6,50.1 434.3,50.1 437.9,50.1 441.6,50.0 445.2,50.0 448.9,50.0 452.5,50.0 456.1,50.0 459.8,50.0 463.4,50.0 467.1,50.0 470.7,50.0 474.4,50.0 478.0,50.0 481.6,50.0 485.3,50.0 488.9,50.0 492.6,50.0 496.2,50.0 499.9,50.0 503.5,50.0 507.1,50.0 510.8,50.0 514.4,50.0 518.1,50.0 521.7,50.0 525.4,50.0 529.0,50.0 532.6,50.0 536.3,50.0 539.9,50.0 543.6,50.0 547.2,50.0 550.9,50.0 554.5,50.0 558.1,50.0 561.8,50.0 565.4,50.0 569.1,50.0 572.7,50.0 576.4,50.0 580.0,50.0\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"70.0,50.0 73.6,50.0 77.3,50.0 80.9,50.0 84.6,50.0 88.2,50.0 91.9,50.0 95.5,50.0 99.1,50.1 102.8,50.1 106.4,50.1 110.1,50.1 113.7,50.1 117.4,50.1 121.0,50.2 124.6,50.2 128.3,50.2 131.9,50.3 135.6,50.4 139.2,50.4 142.9,50.5 146.5,50.6 150.1,50.7 153.8,50.8 157.4,51.0 161.1,51.2 164.7,51.4 168.4,51.6 172.0,51.8 175.6,52.1 179.3,52.5 182.9,52.9 186.6,53.3 190.2,53.8 193.9,54.3 197.5,55.0 201.1,55.6 204.8,56.4 208.4,57.3 212.1,58.2 215.7,59.2 219.4,60.4 223.0,61.6 226.6,63.0 230.3,64.5 233.9,66.1 237.6,67.8 241.2,69.7 244.9,71.7 248.5,73.9 252.1,76.2 255.8,78.6 259.4,81.2 263.1,84.0 266.7,86.9 270.4,90.0 274.0,93.2 277.6,96.6 281.3,100.1 284.9,103.7 288.6,107.5 292.2,111.4 295.9,115.3 299.5,119.4 303.1,123.6 306.8,127.9 310.4,132.2 314.1,136.6 317.7,141.1 321.4,145.5 325.0,150.0 328.6,154.5 332.3,158.9 335.9,163.4 339.6,167.8 343.2,172.1 346.9,176.4 350.5,180.6 354.1,184.7 357.8,188.6 361.4,192.5 365.1,196.3 368.7,199.9 372.4,203.4 376.0,206.8 379.6,210.0 383.3,213.1 386.9,216.0 390.6,218.8 394.2,221.4 397.9,223.8 401.5,226.1 405.1,228.3 408.8,230.3 412.4,232.2 416.1,233.9 419.7,235.5 423.4,237.0 427.0,238.4 430.6,239.6 434.3,240.8 437.9,241.8 441.6,242.7 445.2,243.6 448.9,244.4 452.5,245.0 456.1,245.7 459.8,246.2 463.4,246.7 467.1,247.1 470.7,247.5 474.4,247.9 478.0,248.2 481.6,248.4 485.3,248.6 488.9,248.8 492.6,249.0 496.2,249.2 499.9,249.3 503.5,249.4 507.1,249.5 510.8,249.6 514.4,249.6 518.1,249.7 521.7,249.8 525.4,249.8 529.0,249.8 532.6,249.9 536.3,249.9 539.9,249.9 543.6,249.9 547.2,249.9 550.9,249.9 554.5,250.0 558.1,250.0 561.8,250.0 565.4,250.0 569.1,250.0 572.7,250.0 576.4,250.0 580.0,250.0\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"70.0,250.0 73.6,250.0 77.3,250.0 80.9,250.0 84.6,250.0 88.2,250.0 91.9,250.0 95.5,250.0 99.1,249.9 102.8,249.9 106.4,249.9 110.1,249.9 113.7,249.9 117.4,249.9 121.0,249.8 124.6,249.8 128.3,249.8 131.9,249.7 135.6,249.6 139.2,249.6 142.9,249.5 146.5,249.4 150.1,249.3 153.8,249.2 157.4,249.0 161.1,248.8 164.7,248.6 168.4,248.4 172.0,248.2 175.6,247.9 179.3,247.5 182.9,247.1 186.6,246.7 190.2,246.2 193.9,245.7 197.5,245.0 201.1,244.4 204.8,243.6 208.4,242.7 212.1,241.8 215.7,240.8 219.4,239.6 223.0,238.4 226.6,237.0 230.3,235.5 233.9,233.9 237.6,232.2 241.2,230.3 244.9,228.3 248.5,226.1 252.1,223.8 255.8,221.4 259.4,218.8 263.1,216.0 266.7,213.1 270.4,210.0 274.0,206.8 277.6,203.4 281.3,199.9 284.9,196.3 288.6,192.5 292.2,188.6 295.9,184.7 299.5,180.6 303.1,176.4 306.8,172.1 310.4,167.8 314.1,163.4 317.7,158.9 321.4,154.5 325.0,150.0 328.6,145.5 332.3,141.1 335.9,136.6 339.6,132.2 343.2,127.9 346.9,123.6 350.5,119.4 354.1,115.3 357.8,111.4 361.4,107.5 365.1,103.7 368.7,100.1 372.4,96.6 376.0,93.2 379.6,90.0 383.3,86.9 386.9,84.0 390.6,81.2 394.2,78.6 397.9,76.2 401.5,73.9 405.1,71.7 408.8,69.7 412.4,67.8 416.1,66.1 419.7,64.5 423.4,63.0 427.0,61.6 430.6,60.4 434.3,59.2 437.9,58.2 441.6,57.3 445.2,56.4 448.9,55.6 452.5,55.0 456.1,54.3 459.8,53.8 463.4,53.3 467.1,52.9 470.7,52.5 474.4,52.1 478.0,51.8 481.6,51.6 485.3,51.4 488.9,51.2 492.6,51.0 496.2,50.8 499.9,50.7 503.5,50.6 507.1,50.5 510.8,50.4 514.4,50.4 518.1,50.3 521.7,50.2 525.4,50.2 529.0,50.2 532.6,50.1 536.3,50.1 539.9,50.1 543.6,50.1 547.2,50.1 550.9,50.1 554.5,50.0 558.1,50.0 561.8,50.0 565.4,50.0 569.1,50.0 572.7,50.0 576.4,50.0 580.0,50.0\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"70.0\" y1=\"150.0\" x2=\"580.0\" y2=\"150.0\" stroke=\"#00a87a\" stroke-width=\"2.4\"/><text x=\"335.2\" y=\"44.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">t<tspan dy=\"4\" font-size=\"10\">0</tspan></text><text x=\"291.9\" y=\"118.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">t<tspan dy=\"4\" font-size=\"10\">1</tspan></text><text x=\"248.5\" y=\"118.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">t<tspan dy=\"4\" font-size=\"10\">2</tspan></text><text x=\"184.8\" y=\"118.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">t<tspan dy=\"4\" font-size=\"10\">3</tspan></text><text x=\"108.3\" y=\"142.0\" fill=\"#00a87a\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">t<tspan dy=\"4\" font-size=\"10\">e</tspan> (uniform)</text><text x=\"108.3\" y=\"42.0\" fill=\"#e08000\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">Cu</text><text x=\"541.8\" y=\"42.0\" fill=\"#3b82e8\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">Ni</text><text x=\"62.0\" y=\"54.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">100</text><text x=\"62.0\" y=\"154.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">50</text><text x=\"62.0\" y=\"254.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">0</text><text x=\"325.0\" y=\"268.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">original joint</text><text x=\"335.0\" y=\"290.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">distance along the couple &#8594;</text><text x=\"26.0\" y=\"140.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" transform=\"rotate(-90 26.0 140.0)\">concentration (at.%)</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">Each curve is a snapshot. Atoms move from high to low concentration, the step smooths into an S, and diffusion stops once the bar is uniform (\\(t_e\\)).</p>\n</div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            "A block of Cu and a block of Ni are joined to make a <strong>diffusion couple</strong> and heated (below the solidus)",
+            "Cu atoms diffuse into the Ni and Ni atoms into the Cu. The concentration profile changes with time (\\(t_0 \\to t_1 \\to t_2 \\to t_3\\))",
+            "Net diffusion runs from <strong>high to low concentration</strong> (we refine this statement at the end of the unit)",
+            "When the whole block is uniform, net diffusion stops: that is equilibrium (\\(t_e\\))"
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u5-fick1",
+          "text": "Steady State: Fick's First Law"
+        },
+        {
+          "type": "p",
+          "text": "Picture a water pipe with a fixed pressure difference across it: the flow rate settles to a constant. In <strong>steady-state</strong> diffusion the concentrations at each end are held fixed, so the flow of atoms (the <strong>flux</strong>) does not change with time and the concentration varies linearly through the material. Hydrogen leaking through a steel pressure-vessel wall, or carbon passing through a thin iron membrane between two gases, are standard examples.",
+          "class": ""
+        },
+        {
+          "type": "formulablock",
+          "name": "Fick's first law",
+          "eqs": [
+            "J = -D\\,\\frac{\\partial C}{\\partial x}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(J\\)",
+              "desc": "diffusion flux: quantity passing through unit area per unit time (quantity m\\(^{-2}\\) s\\(^{-1}\\))"
+            },
+            {
+              "symbol": "\\(\\partial C/\\partial x\\)",
+              "desc": "concentration gradient (quantity m\\(^{-4}\\), i.e. quantity m\\(^{-3}\\) per m)"
+            },
+            {
+              "symbol": "\\(D\\)",
+              "desc": "diffusivity, or diffusion coefficient (m\\(^2\\) s\\(^{-1}\\))"
+            }
+          ],
+          "note": "The minus sign means atoms move <strong>down</strong> the concentration gradient, from high to low. <strong>Units check:</strong> the slide lists \\(D\\) as m\\(^{-2}\\) s\\(^{-1}\\). That is a typo: from \\(J = -D\\,\\partial C/\\partial x\\), D must be m\\(^2\\) s\\(^{-1}\\)."
+        },
+        {
+          "type": "formulablock",
+          "name": "Temperature dependence of diffusivity",
+          "eqs": [
+            "D = D_0 \\exp\\left(-\\frac{\\Delta H_a}{RT}\\right)"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(D_0\\)",
+              "desc": "pre-exponential factor (m\\(^2\\) s\\(^{-1}\\))"
+            },
+            {
+              "symbol": "\\(\\Delta H_a\\)",
+              "desc": "activation enthalpy for diffusion (J mol\\(^{-1}\\))"
+            }
+          ],
+          "note": "Diffusion is an activated process, so \\(D\\) follows the Arrhenius law from the previous section."
+        },
+        {
+          "type": "example",
+          "label": "Try it: steady-state flux",
+          "q": "A 2 mm thick plate has its two faces held at solute concentrations of 1.2 kg m\\(^{-3}\\) and 0.4 kg m\\(^{-3}\\). \\(D = 3 \\times 10^{-11}\\) m\\(^2\\) s\\(^{-1}\\). Find the steady-state flux.",
+          "steps": [
+            "Steady state, so the gradient is linear: \\(\\partial C/\\partial x = (0.4 - 1.2)/0.002 = -400\\) kg m\\(^{-4}\\)",
+            "\\(J = -D\\,\\partial C/\\partial x = -(3 \\times 10^{-11})(-400)\\)"
+          ],
+          "answer": "\\(J = 1.2 \\times 10^{-8}\\) kg m\\(^{-2}\\) s\\(^{-1}\\), positive, so flowing from the 1.2 face towards the 0.4 face."
+        },
+        {
+          "type": "example",
+          "label": "Try it: how much does 200 K matter?",
+          "q": "For a diffusing species \\(D_0 = 1.0 \\times 10^{-4}\\) m\\(^2\\) s\\(^{-1}\\) and \\(\\Delta H_a = 150\\) kJ mol\\(^{-1}\\). Compare \\(D\\) at 800 K and at 1000 K.",
+          "steps": [
+            "\\(D_{800} = 10^{-4} \\exp\\left(-\\frac{150000}{8.314 \\times 800}\\right) = 10^{-4} \\times e^{-22.55} = 1.6 \\times 10^{-14}\\) m\\(^2\\) s\\(^{-1}\\)",
+            "\\(D_{1000} = 10^{-4} \\exp\\left(-\\frac{150000}{8.314 \\times 1000}\\right) = 10^{-4} \\times e^{-18.04} = 1.5 \\times 10^{-12}\\) m\\(^2\\) s\\(^{-1}\\)",
+            "Ratio \\(D_{1000}/D_{800} \\approx 91\\)"
+          ],
+          "answer": "A 200 K rise makes diffusion about 90 times faster. A homogenising treatment that takes an hour at 1000 K would take almost four days at 800 K. Always convert to kelvin and kJ to J."
+        },
+        {
+          "type": "h2",
+          "id": "u5-fick2",
+          "text": "Transient State: Fick's Second Law"
+        },
+        {
+          "type": "p",
+          "text": "Most real cases are not steady. In the diffusion couple, the concentration at any point keeps changing until the bar is uniform. This is <strong>unsteady</strong> or <strong>transient-state</strong> diffusion, and it may eventually settle into a steady state if the boundary conditions allow it.",
+          "class": ""
+        },
+        {
+          "type": "formulablock",
+          "name": "Fick's second law",
+          "eqs": [
+            "\\frac{\\partial C}{\\partial t} = D\\,\\frac{\\partial^2 C}{\\partial x^2}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(C\\)",
+              "desc": "concentration (quantity m\\(^{-3}\\))"
+            },
+            {
+              "symbol": "\\(t\\)",
+              "desc": "time (s)"
+            },
+            {
+              "symbol": "\\(D\\)",
+              "desc": "diffusivity (m\\(^2\\) s\\(^{-1}\\)), assumed independent of concentration"
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Reading the equation",
+          "html": "<ul><li>The rate of change of concentration at a point is set by the <strong>curvature</strong> of the profile there, not its slope</li><li>Where the profile is curved like a valley (\\(\\partial^2 C/\\partial x^2 > 0\\)) concentration rises; where it is curved like a hill it falls. Sharp features smooth out first</li><li>A straight-line profile has zero curvature, so nothing changes: that is exactly the steady state of the first law</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>First law: flux from the slope, constant in time. Second law: change in time from the curvature.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u5-mech",
+          "text": "Vacancy vs Interstitial Diffusion"
+        },
+        {
+          "type": "p",
+          "text": "Moving through a crowded concert is easy if you are small enough to slip through gaps, and slow if you must wait for someone to step out of a seat. Atoms have the same two options.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Vacancy diffusion",
+              "color": "#d89800",
+              "text": "An atom jumps into a neighbouring <strong>vacant</strong> lattice site. Needs a vacancy next door, so it depends on the vacancy concentration. <strong>Slow</strong>, especially at low temperature. Used by substitutional atoms (e.g. Cu and Ni in the couple) and by self-diffusion."
+            },
+            {
+              "title": "Interstitial diffusion",
+              "color": "#d89800",
+              "text": "A small atom hops between the <strong>interstitial</strong> gaps of the lattice. Interstitial sites are almost always free, so no waiting. <strong>Faster</strong>. Used by small atoms such as C, N and H in iron."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Where the activation energy comes from",
+          "html": "<p>Either way, the jumping atom must squeeze between neighbours that are forced apart to open a path. That distortion raises the Gibbs energy along the way: the hump in the energy path is the activation energy for the jump, which is why \\(D = D_0 \\exp(-\\Delta H_a/RT)\\) for both mechanisms. For vacancy diffusion the barrier is effectively higher, because a vacancy has to be present as well.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u5-why",
+          "text": "What Actually Drives Diffusion"
+        },
+        {
+          "type": "p",
+          "text": "\"Atoms move from high to low concentration\" is the everyday rule, and Fick's first law is written that way. But it is a consequence, not the cause. The real driver is the same one as in every unit so far: <strong>a fall in Gibbs free energy</strong>.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Normal (downhill) diffusion",
+              "color": "#d89800",
+              "text": "In a solution that likes to mix, B atoms leaving a B-rich region for an A-rich region lowers the free energy of the mixture (\\(G_3 \\to G_4\\) on the slide). Here that happens to be <strong>down</strong> the concentration gradient."
+            },
+            {
+              "title": "Uphill diffusion",
+              "color": "#d89800",
+              "text": "In <strong>spinodal decomposition</strong> (clustering within a solution, Unit 2), atoms move <strong>up</strong> the concentration gradient, from low to high. It sounds wrong, but clustering lowers \\(G\\) for that system, so diffusion goes that way."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "The universal statement: chemical potential",
+          "html": "<ul><li>Atoms diffuse from regions of <strong>high chemical potential</strong> to regions of <strong>low chemical potential</strong></li><li>Diffusion stops when the chemical potential of each component is the <strong>same everywhere</strong>. That is the equilibrium condition from Unit 4: \\(\\mu_A^{1} = \\mu_A^{2}\\), \\(\\mu_B^{1} = \\mu_B^{2}\\), the common tangent</li><li>In a normal solution, high concentration of B means high \\(\\mu_B\\), so \"down the chemical potential gradient\" and \"down the concentration gradient\" agree. Inside a spinodal they disagree, and chemical potential wins</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>Diffusion runs down the chemical potential gradient. Usually that is also down the concentration gradient, but not always.</p>"
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "numLabel": "Unit 6 of 10",
+      "color": "#e08000",
+      "title": "Solidification: Nucleation",
+      "subtitle": "Every cast, welded or 3D-printed metal part starts as liquid. This unit covers the first step of freezing: why the liquid has to be cooled below its melting point before any solid appears, how big the first stable crystal must be, and how foreign surfaces and inoculants make that step easy enough to control grain size.",
+      "desc": "Driving force for solidification, cooling curves, homogeneous nucleation (critical radius and energy barrier), the effect of undercooling, heterogeneous nucleation and the spherical cap, and grain refinement by inoculation.",
+      "difficulty": "Medium-Hard",
+      "readTime": "35 min",
+      "sections": [
+        {
+          "type": "toc",
+          "title": "In this unit",
+          "items": [
+            {
+              "href": "#u6-why",
+              "label": "Why solidification matters"
+            },
+            {
+              "href": "#u6-drive",
+              "label": "The driving force"
+            },
+            {
+              "href": "#u6-cool",
+              "label": "Reading a cooling curve"
+            },
+            {
+              "href": "#u6-hom",
+              "label": "Homogeneous nucleation"
+            },
+            {
+              "href": "#u6-crit",
+              "label": "Critical radius and energy barrier"
+            },
+            {
+              "href": "#u6-under",
+              "label": "The effect of undercooling"
+            },
+            {
+              "href": "#u6-tn",
+              "label": "When does it actually happen?"
+            },
+            {
+              "href": "#u6-het",
+              "label": "Heterogeneous nucleation"
+            },
+            {
+              "href": "#u6-inoc",
+              "label": "Grain refinement by inoculation"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u6-why",
+          "text": "Why Solidification Matters"
+        },
+        {
+          "type": "p",
+          "text": "A forged crankshaft and a rolled car body panel never look cast, but both began life as a cast ingot or slab. Solidification is the most important phase transformation in metal processing, because almost every metal component passes through it. The microstructure it leaves, grain size and shape above all, carries through to the finished part.",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "Solidification is the change from liquid to solid, which for metals usually means from a <strong>non-crystalline</strong> to a <strong>crystalline</strong> structure. The exception is extremely rapid cooling, which can freeze the disordered liquid structure into a <strong>metallic glass</strong> (Unit 7 case study).",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Casting",
+              "color": "#e08000",
+              "text": "Ingot casting, continuous casting (slabs and billets for rolling), and shape casting (finished parts straight from the mould)."
+            },
+            {
+              "title": "Joining and printing",
+              "color": "#e08000",
+              "text": "Fusion welding and metal additive manufacturing are both tiny moving castings: a melt pool that solidifies behind the heat source."
+            },
+            {
+              "title": "Special routes",
+              "color": "#e08000",
+              "text": "Single crystal growth (turbine blades), and rapid solidification (fine or glassy structures)."
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u6-drive",
+          "text": "The Driving Force for Solidification"
+        },
+        {
+          "type": "p",
+          "text": "Water at 0 &#176;C does not freeze by itself: it can sit there as liquid indefinitely. It needs to be a little colder first. Metals are the same. At the melting point solid and liquid have exactly equal free energy, so there is nothing to gain by freezing. The gain, and so the drive to freeze, only appears <strong>below</strong> \\(T_m\\).",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: why liquid metal wants to freeze below its melting point</div>\n<svg viewBox=\"0 0 640 320\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Molar free energy of solid and liquid against temperature. Both fall with temperature but the liquid curve falls more steeply, so they cross at the melting point Tm. Below Tm the solid is lower; at a temperature T below Tm the gap Delta G is the driving force for solidification, and the distance from T to Tm is the undercooling Delta T.\">\n<line x1=\"70.0\" y1=\"260.0\" x2=\"70.0\" y2=\"36.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"70.0,24.0 65.2,34.2 74.8,34.2\" fill=\"#5e5e6c\"/><line x1=\"70.0\" y1=\"260.0\" x2=\"594.0\" y2=\"260.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"606.0,260.0 595.8,255.2 595.8,264.8\" fill=\"#5e5e6c\"/><polyline points=\"85.3,90.4 90.1,91.3 94.9,92.1 99.7,92.9 104.5,93.8 109.3,94.6 114.1,95.5 118.9,96.3 123.7,97.2 128.4,98.1 133.2,98.9 138.0,99.8 142.8,100.7 147.6,101.6 152.4,102.5 157.2,103.4 162.0,104.3 166.8,105.2 171.6,106.1 176.4,107.0 181.2,108.0 186.0,108.9 190.8,109.8 195.6,110.8 200.4,111.7 205.2,112.7 209.9,113.6 214.7,114.6 219.5,115.5 224.3,116.5 229.1,117.5 233.9,118.5 238.7,119.4 243.5,120.4 248.3,121.4 253.1,122.4 257.9,123.4 262.7,124.4 267.5,125.5 272.3,126.5 277.1,127.5 281.9,128.5 286.6,129.6 291.4,130.6 296.2,131.7 301.0,132.7 305.8,133.8 310.6,134.8 315.4,135.9 320.2,137.0 325.0,138.0 329.8,139.1 334.6,140.2 339.4,141.3 344.2,142.4 349.0,143.5 353.8,144.6 358.6,145.7 363.4,146.8 368.1,148.0 372.9,149.1 377.7,150.2 382.5,151.4 387.3,152.5 392.1,153.6 396.9,154.8 401.7,156.0 406.5,157.1 411.3,158.3 416.1,159.5 420.9,160.6 425.7,161.8 430.5,163.0 435.3,164.2 440.1,165.4 444.9,166.6 449.6,167.8 454.4,169.0 459.2,170.2 464.0,171.5 468.8,172.7 473.6,173.9 478.4,175.2 483.2,176.4 488.0,177.7 492.8,178.9 497.6,180.2 502.4,181.4 507.2,182.7 512.0,184.0 516.8,185.3 521.6,186.5 526.3,187.8 531.1,189.1 535.9,190.4 540.7,191.7 545.5,193.0 550.3,194.4 555.1,195.7 559.9,197.0 564.7,198.3\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polyline points=\"192.4,53.5 196.1,55.3 199.8,57.0 203.6,58.7 207.3,60.5 211.0,62.3 214.7,64.0 218.5,65.8 222.2,67.6 225.9,69.4 229.6,71.2 233.4,73.0 237.1,74.8 240.8,76.6 244.5,78.4 248.2,80.3 252.0,82.1 255.7,83.9 259.4,85.8 263.1,87.6 266.9,89.5 270.6,91.3 274.3,93.2 278.0,95.1 281.8,97.0 285.5,98.9 289.2,100.7 292.9,102.6 296.6,104.6 300.4,106.5 304.1,108.4 307.8,110.3 311.5,112.2 315.3,114.2 319.0,116.1 322.7,118.1 326.4,120.0 330.2,122.0 333.9,123.9 337.6,125.9 341.3,127.9 345.0,129.9 348.8,131.9 352.5,133.9 356.2,135.9 359.9,137.9 363.7,139.9 367.4,141.9 371.1,143.9 374.8,146.0 378.6,148.0 382.3,150.1 386.0,152.1 389.7,154.2 393.4,156.2 397.2,158.3 400.9,160.4 404.6,162.5 408.3,164.6 412.1,166.7 415.8,168.8 419.5,170.9 423.2,173.0 426.9,175.1 430.7,177.2 434.4,179.4 438.1,181.5 441.8,183.6 445.6,185.8 449.3,187.9 453.0,190.1 456.7,192.3 460.5,194.4 464.2,196.6 467.9,198.8 471.6,201.0 475.3,203.2 479.1,205.4 482.8,207.6 486.5,209.8 490.2,212.1 494.0,214.3 497.7,216.5 501.4,218.8 505.1,221.0 508.9,223.3 512.6,225.5 516.3,227.8 520.0,230.1 523.7,232.4 527.5,234.6 531.2,236.9 534.9,239.2 538.6,241.5 542.4,243.8 546.1,246.2 549.8,248.5 553.5,250.8 557.3,253.1 561.0,255.5 564.7,257.8\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"95.5\" y=\"114.2\" fill=\"#3b82e8\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">G<tspan dy=\"4\" font-size=\"10\">S</tspan> (solid)</text><text x=\"207.7\" y=\"64.7\" fill=\"#e08000\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">G<tspan dy=\"4\" font-size=\"10\">L</tspan> (liquid)</text><line x1=\"386.2\" y1=\"152.2\" x2=\"386.2\" y2=\"260.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><text x=\"386.2\" y=\"278.0\" fill=\"#a0a0ac\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">T<tspan dy=\"4\" font-size=\"10\">m</tspan></text><line x1=\"284.2\" y1=\"92.2\" x2=\"284.2\" y2=\"260.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><text x=\"284.2\" y=\"278.0\" fill=\"#a0a0ac\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">T</text><circle cx=\"386.2\" cy=\"152.2\" r=\"4.5\" fill=\"#e04545\"/><line x1=\"270.2\" y1=\"103.2\" x2=\"270.2\" y2=\"124.0\" stroke=\"#e04545\" stroke-width=\"1.4\"/><polygon points=\"270.2,94.2 266.2,102.7 274.2,102.7\" fill=\"#e04545\"/><polygon points=\"270.2,133.0 266.2,124.5 274.2,124.5\" fill=\"#e04545\"/><text x=\"262.2\" y=\"117.6\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">&#916;G</text><line x1=\"284.2\" y1=\"226.0\" x2=\"386.2\" y2=\"226.0\" stroke=\"#00a87a\" stroke-width=\"1.4\"/><polygon points=\"280.2,226.0 288.7,222.0 288.7,230.0\" fill=\"#00a87a\"/><polygon points=\"390.2,226.0 381.7,222.0 381.7,230.0\" fill=\"#00a87a\"/><text x=\"335.2\" y=\"220.0\" fill=\"#00a87a\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">&#916;T</text><text x=\"146.5\" y=\"248.0\" fill=\"#3b82e8\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">&#8592; solid stable</text><text x=\"508.6\" y=\"50.0\" fill=\"#e08000\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">liquid stable &#8594;</text><text x=\"335.0\" y=\"302.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">temperature &#8594;</text><text x=\"28.0\" y=\"145.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" transform=\"rotate(-90 28.0 145.0)\">molar free energy</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">The liquid curve is steeper because the liquid has more entropy (slope \\(= -S\\)). The further below \\(T_m\\), the bigger the gap \\(\\Delta G\\).</p>\n</div>"
+        },
+        {
+          "type": "p",
+          "text": "Stability is the familiar trade-off between enthalpy and entropy (\\(G = H - TS\\)). The solid has lower enthalpy, the liquid higher entropy. Above \\(T_m\\) entropy wins and the liquid is stable; below \\(T_m\\) enthalpy wins and the solid is stable. The temperature gap \\(\\Delta T = T_m - T\\) is the <strong>undercooling</strong> (or supercooling), and it is the key parameter for everything in this unit.",
+          "class": ""
+        },
+        {
+          "type": "example",
+          "label": "Derivation: the driving force in measurable terms",
+          "q": "Show that the free energy change on solidification at an undercooling \\(\\Delta T\\) is \\(\\Delta G \\approx -L\\Delta T/T_m\\). (The slide refers you to the pre-recorded lecture for this; it is reproduced from the lecture notes.)",
+          "steps": [
+            "At temperature \\(T\\): \\(\\Delta G = G_S - G_L = \\Delta H - T\\Delta S\\)",
+            "At \\(T_m\\) the phases are in equilibrium, so \\(\\Delta G = \\Delta H - T_m\\Delta S = 0\\), giving \\(\\Delta S = \\Delta H / T_m\\)",
+            "On freezing, heat is released: \\(\\Delta H = -L\\), where \\(L\\) is the latent heat of fusion. So \\(\\Delta S = -L/T_m\\)",
+            "For small undercooling, \\(\\Delta H\\) and \\(\\Delta S\\) barely change with temperature, so substitute: \\(\\Delta G \\approx -L + T\\dfrac{L}{T_m} = -L\\dfrac{T_m - T}{T_m}\\)"
+          ],
+          "answer": "\\(\\Delta G \\approx -\\dfrac{L\\Delta T}{T_m}\\) per mole. Every term is experimentally measurable. Per unit volume (more useful for nucleation) use the volumetric latent heat: \\(\\Delta G_V = -\\dfrac{L_V\\Delta T}{T_m}\\)."
+        },
+        {
+          "type": "formulablock",
+          "name": "Driving force for solidification",
+          "eqs": [
+            "\\Delta G_V = G_V^S - G_V^L \\approx -\\frac{L_V\\,\\Delta T}{T_m}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\Delta G_V\\)",
+              "desc": "free energy change per unit volume (J m\\(^{-3}\\)), negative below \\(T_m\\)"
+            },
+            {
+              "symbol": "\\(L_V\\)",
+              "desc": "latent heat of fusion per unit volume (J m\\(^{-3}\\))"
+            },
+            {
+              "symbol": "\\(\\Delta T\\)",
+              "desc": "undercooling, \\(T_m - T\\) (K)"
+            }
+          ],
+          "note": "The driving force grows linearly with undercooling. Double the undercooling, double the drive."
+        },
+        {
+          "type": "h2",
+          "id": "u6-cool",
+          "text": "Reading a Cooling Curve"
+        },
+        {
+          "type": "p",
+          "text": "A thermocouple in a cooling melt is the simplest experiment in solidification: plot temperature against time and the curve tells the whole story.",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: cooling curves for homogeneous and heterogeneous nucleation (schematic)</div>\n<svg viewBox=\"0 0 640 300\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Temperature against time for a cooling melt. The liquid cools below the melting point, dips to a minimum where nucleation happens, then jumps back up towards the melting point as latent heat is released, holds on a plateau during growth, and finally cools again once fully solid. A homogeneous curve dips far below Tm; a heterogeneous curve dips only slightly.\">\n<line x1=\"70.0\" y1=\"250.0\" x2=\"70.0\" y2=\"32.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"70.0,20.0 65.2,30.2 74.8,30.2\" fill=\"#5e5e6c\"/><line x1=\"70.0\" y1=\"250.0\" x2=\"594.0\" y2=\"250.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"606.0,250.0 595.8,245.2 595.8,254.8\" fill=\"#5e5e6c\"/><line x1=\"70.0\" y1=\"132.3\" x2=\"570.0\" y2=\"132.3\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><text x=\"62.0\" y=\"136.3\" fill=\"#a0a0ac\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">T<tspan dy=\"4\" font-size=\"10\">m</tspan></text><polyline points=\"70.0,46.7 72.6,49.4 75.1,52.1 77.7,54.7 80.2,57.4 82.8,60.1 85.3,62.8 87.9,65.4 90.4,68.1 93.0,70.8 95.5,73.5 98.1,76.1 100.6,78.8 103.2,81.5 105.7,84.2 108.3,86.8 110.8,89.5 113.4,92.2 115.9,94.9 118.5,97.5 121.0,100.2 123.6,102.9 126.1,105.6 128.7,108.2 131.2,110.9 133.8,113.6 136.3,116.3 138.9,118.9 141.4,121.6 144.0,124.3 146.5,127.0 149.1,129.6 151.6,132.3 154.2,135.0 156.7,137.7 159.3,140.3 161.8,143.0 164.4,145.7 166.9,148.4 169.5,151.0 172.0,153.7 174.6,156.4 177.1,159.1 179.6,161.7 182.2,164.4 184.8,167.1 187.3,169.8 189.9,172.4 192.4,175.1 195.0,177.8 197.5,180.5 200.1,183.1 202.6,185.8 205.2,188.5 207.7,191.2 210.3,193.8 212.8,196.5 215.4,199.2 217.9,201.9 220.5,204.5 223.0,207.2 225.6,209.9 228.1,212.6 230.7,215.2 233.2,217.9 235.8,204.9 238.3,192.2 240.9,180.2 243.4,169.1 246.0,159.2 248.5,150.7 251.1,143.9 253.6,138.9 256.2,135.9 258.7,135.0 261.3,135.0 263.8,135.0 266.4,135.0 268.9,135.0 271.5,135.0 274.0,135.0 276.6,135.0 279.1,135.0 281.7,135.0 284.2,135.0 286.8,135.0 289.3,135.1 291.9,135.1 294.4,135.1 297.0,135.1 299.5,135.1 302.1,135.1 304.6,135.1 307.2,135.1 309.7,135.1 312.3,135.1 314.8,135.1 317.4,135.2 319.9,135.2 322.5,135.2 325.0,135.2 327.6,135.2 330.1,135.2 332.7,135.2 335.2,135.2 337.8,135.2 340.3,135.2 342.9,135.2 345.4,135.2 348.0,135.3 350.5,135.3 353.1,135.3 355.6,135.3 358.2,135.3 360.7,135.3 363.3,135.3 365.8,135.3 368.3,135.3 370.9,135.3 373.5,135.3 376.0,135.3 378.6,135.4 381.1,135.4 383.7,135.4 386.2,135.4 388.8,135.4 391.3,135.4 393.9,135.4 396.4,135.4 399.0,135.4 401.5,135.4 404.1,135.4 406.6,135.5 409.2,135.5 411.7,135.5 414.3,135.5 416.8,135.5 419.4,135.5 421.9,135.5 424.5,135.5 427.0,135.5 429.6,135.5 432.1,135.5 434.7,135.5 437.2,135.6 439.8,135.6 442.3,135.6 444.9,135.6 447.4,135.6 450.0,135.6 452.5,135.6 455.1,135.6 457.6,135.6 460.2,135.6 462.7,135.6 465.3,135.6 467.8,136.2 470.4,137.9 472.9,139.6 475.5,141.3 478.0,143.0 480.6,144.7 483.1,146.4 485.7,148.1 488.2,149.8 490.8,151.6 493.3,153.3 495.9,155.0 498.4,156.7 501.0,158.4 503.5,160.1 506.1,161.8 508.6,163.5 511.2,165.3 513.7,167.0 516.3,168.7 518.8,170.4 521.4,172.1 523.9,173.8 526.5,175.5 529.0,177.2 531.6,179.0 534.1,180.7 536.7,182.4 539.2,184.1 541.8,185.8 544.3,187.5 546.9,189.2 549.4,190.9 552.0,192.6 554.5,194.4 557.1,196.1 559.6,197.8 562.2,199.5 564.7,201.2 567.3,202.9 569.8,204.6 572.3,206.3 574.9,208.1 577.5,209.8 580.0,211.5\" fill=\"none\" stroke=\"#e04545\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"233.2\" y=\"235.9\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\"></text><polyline points=\"70.0,46.7 72.6,49.2 75.1,51.6 77.7,54.1 80.2,56.6 82.8,59.0 85.3,61.5 87.9,64.0 90.4,66.5 93.0,68.9 95.5,71.4 98.1,73.9 100.6,76.3 103.2,78.8 105.7,81.3 108.3,83.7 110.8,86.2 113.4,88.7 115.9,91.1 118.5,93.6 121.0,96.1 123.6,98.6 126.1,101.0 128.7,103.5 131.2,106.0 133.8,108.4 136.3,110.9 138.9,113.4 141.4,115.8 144.0,118.3 146.5,120.8 149.1,123.2 151.6,125.7 154.2,128.2 156.7,130.7 159.3,133.1 161.8,135.6 164.4,138.1 166.9,140.5 169.5,143.0 172.0,145.5 174.6,147.9 177.1,148.4 179.6,145.8 182.2,143.3 184.8,141.0 187.3,138.8 189.9,137.0 192.4,135.4 195.0,134.2 197.5,133.3 200.1,132.9 202.6,132.9 205.2,132.9 207.7,132.9 210.3,132.9 212.8,132.9 215.4,132.9 217.9,133.0 220.5,133.0 223.0,133.0 225.6,133.0 228.1,133.0 230.7,133.0 233.2,133.0 235.8,133.0 238.3,133.0 240.9,133.0 243.4,133.0 246.0,133.0 248.5,133.1 251.1,133.1 253.6,133.1 256.2,133.1 258.7,133.1 261.3,133.1 263.8,133.1 266.4,133.1 268.9,133.1 271.5,133.1 274.0,133.1 276.6,133.2 279.1,133.2 281.7,133.2 284.2,133.2 286.8,133.2 289.3,133.2 291.9,133.2 294.4,133.2 297.0,133.2 299.5,133.2 302.1,133.2 304.6,133.2 307.2,133.3 309.7,133.3 312.3,133.3 314.8,133.3 317.4,133.3 319.9,133.3 322.5,133.3 325.0,133.3 327.6,133.3 330.1,133.3 332.7,133.3 335.2,133.3 337.8,133.4 340.3,133.4 342.9,133.4 345.4,133.4 348.0,133.4 350.5,133.4 353.1,133.4 355.6,133.4 358.2,133.4 360.7,133.4 363.3,133.4 365.8,133.5 368.3,133.5 370.9,133.5 373.5,133.5 376.0,133.5 378.6,133.5 381.1,133.5 383.7,133.5 386.2,133.5 388.8,133.5 391.3,133.5 393.9,133.5 396.4,133.6 399.0,133.6 401.5,133.6 404.1,133.6 406.6,133.6 409.2,133.6 411.7,133.6 414.3,133.6 416.8,133.6 419.4,133.6 421.9,133.6 424.5,133.6 427.0,133.7 429.6,133.7 432.1,133.7 434.7,133.7 437.2,133.7 439.8,133.7 442.3,133.7 444.9,133.7 447.4,133.7 450.0,133.7 452.5,133.7 455.1,133.8 457.6,133.8 460.2,133.8 462.7,133.8 465.3,133.8 467.8,134.1 470.4,135.8 472.9,137.5 475.5,139.2 478.0,140.9 480.6,142.7 483.1,144.4 485.7,146.1 488.2,147.8 490.8,149.5 493.3,151.2 495.9,152.9 498.4,154.6 501.0,156.4 503.5,158.1 506.1,159.8 508.6,161.5 511.2,163.2 513.7,164.9 516.3,166.6 518.8,168.3 521.4,170.0 523.9,171.8 526.5,173.5 529.0,175.2 531.6,176.9 534.1,178.6 536.7,180.3 539.2,182.0 541.8,183.7 544.3,185.5 546.9,187.2 549.4,188.9 552.0,190.6 554.5,192.3 557.1,194.0 559.6,195.7 562.2,197.4 564.7,199.2 567.3,200.9 569.8,202.6 572.3,204.3 574.9,206.0 577.5,207.7 580.0,209.4\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"176.1\" y=\"167.4\" fill=\"#3b82e8\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\"></text><line x1=\"386.2\" y1=\"40.0\" x2=\"411.7\" y2=\"40.0\" stroke=\"#e04545\" stroke-width=\"2.2\"/><text x=\"421.9\" y=\"44.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">homogeneous: dips ~0.2T<tspan dy=\"4\" font-size=\"9\">m</tspan></text><line x1=\"386.2\" y1=\"60.0\" x2=\"411.7\" y2=\"60.0\" stroke=\"#3b82e8\" stroke-width=\"2.2\"/><text x=\"421.9\" y=\"64.0\" fill=\"#3b82e8\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">heterogeneous: dips a few K</text><text x=\"325.0\" y=\"122.3\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">plateau: growth at ~T<tspan dy=\"4\" font-size=\"9\">m</tspan></text><text x=\"508.6\" y=\"196.5\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">all solid,</text><text x=\"508.6\" y=\"211.5\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">cools again</text><text x=\"268.9\" y=\"183.7\" fill=\"#e08000\" font-size=\"11\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">recalescence: latent heat</text><text x=\"268.9\" y=\"197.7\" fill=\"#e08000\" font-size=\"11\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">warms the melt back up</text><text x=\"335.0\" y=\"276.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">time &#8594;</text><text x=\"28.0\" y=\"138.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" transform=\"rotate(-90 28.0 138.0)\">temperature</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">The minimum is where nucleation happens. After it, latent heat lifts the melt back towards \\(T_m\\) and no new crystals form: the rest is growth.</p>\n</div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Reading the curve, left to right",
+          "html": "<ul><li><strong>Liquid cools below \\(T_m\\).</strong> Nothing happens at \\(T_m\\): no solid can form yet</li><li><strong>Minimum temperature = nucleation.</strong> Lots of solid crystals suddenly appear. The depth of this dip is the <strong>nucleation undercooling</strong> \\(\\Delta T_N\\)</li><li><strong>Temperature jumps back up</strong> (recalescence). The latent heat released by all those new crystals warms the melt. No new crystals can form, so nucleation stops</li><li><strong>Plateau near \\(T_m\\) = growth.</strong> The liquid turns to solid by growth of crystals that already exist</li><li><strong>Final drop:</strong> all liquid is gone, so fast cooling resumes</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>Solidification is a two-stage process: <strong>nucleation</strong> (the dip) then <strong>growth</strong> (the plateau). Unit 6 is the dip, Unit 7 the plateau.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u6-hom",
+          "text": "Homogeneous Nucleation"
+        },
+        {
+          "type": "p",
+          "text": "Blowing a soap bubble is hardest at the very start: when it is tiny, almost all your effort goes into stretching the surface. Once it is big enough, it grows easily. A solid crystal forming in a liquid has the same problem.",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "<strong>Homogeneous nucleation</strong> means solid crystals forming evenly through the whole volume of liquid, with <strong>no preferred sites</strong>. It needs a large undercooling and a very clean melt. Consider a spherical cluster of solid of radius \\(r\\). Two things happen when it forms:",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Volume free energy (negative)",
+              "color": "#e08000",
+              "text": "Liquid becomes solid, which has lower free energy below \\(T_m\\). Saving \\(= V_S\\,\\Delta G_V = \\tfrac{4}{3}\\pi r^3 \\Delta G_V\\). Grows as \\(r^3\\)."
+            },
+            {
+              "title": "Surface free energy (positive)",
+              "color": "#e08000",
+              "text": "A new solid-liquid interface is created. Interface atoms have fewer solid neighbours: broken bonds, higher enthalpy. Cost \\(= A_{SL}\\,\\gamma_{SL} = 4\\pi r^2 \\gamma_{SL}\\). Grows as \\(r^2\\)."
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Free energy of a spherical cluster",
+          "eqs": [
+            "\\Delta G_r = V_S\\,\\Delta G_V + A_{SL}\\,\\gamma_{SL} = \\tfrac{4}{3}\\pi r^3\\,\\Delta G_V + 4\\pi r^2\\,\\gamma_{SL}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\gamma_{SL}\\)",
+              "desc": "solid-liquid interfacial energy per unit area (J m\\(^{-2}\\)), positive, assumed isotropic"
+            },
+            {
+              "symbol": "\\(\\Delta G_V\\)",
+              "desc": "driving force per unit volume, negative"
+            }
+          ]
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: free energy of a spherical solid cluster against its radius</div>\n<svg viewBox=\"0 0 640 340\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Free energy change against radius for a spherical solid forming in liquid. The surface term rises as r squared, the volume term falls as r cubed, and their sum rises to a maximum Delta G star at the critical radius r star before falling. Clusters smaller than r star shrink, larger ones grow.\">\n<line x1=\"70.0\" y1=\"300.0\" x2=\"70.0\" y2=\"32.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"70.0,20.0 65.2,30.2 74.8,30.2\" fill=\"#5e5e6c\"/><line x1=\"70.0\" y1=\"150.0\" x2=\"594.0\" y2=\"150.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"606.0,150.0 595.8,145.2 595.8,154.8\" fill=\"#5e5e6c\"/><polyline points=\"70.0,150.0 75.9,149.9 81.8,149.6 87.7,149.1 93.5,148.5 99.4,147.6 105.3,146.6 111.2,145.4 117.1,144.0 123.0,142.3 128.8,140.6 134.7,138.6 140.6,136.4 146.5,134.0 152.4,131.5 158.3,128.7 164.2,125.8 170.0,122.7 175.9,119.4 181.8,115.9 187.7,112.2 193.6,108.3 199.5,104.3 205.3,100.0 211.2,95.6 217.1,90.9 223.0,86.1 228.9,81.1 234.8,75.9 240.7,70.5 246.5,64.9 252.4,59.2 258.3,53.2 264.2,47.1 270.1,40.8 276.0,34.2 281.8,27.5\" fill=\"none\" stroke=\"#8855f5\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-dasharray=\"7 5\"/><polyline points=\"70.0,150.0 76.4,150.0 82.8,150.0 89.1,150.1 95.5,150.2 101.9,150.3 108.3,150.5 114.6,150.8 121.0,151.2 127.4,151.8 133.8,152.4 140.1,153.2 146.5,154.2 152.9,155.3 159.3,156.6 165.6,158.1 172.0,159.8 178.4,161.8 184.8,164.0 191.1,166.5 197.5,169.2 203.9,172.3 210.3,175.6 216.6,179.2 223.0,183.2 229.4,187.5 235.8,192.2 242.1,197.3 248.5,202.7 254.9,208.6 261.3,214.9 267.6,221.6 274.0,228.7 280.4,236.4 286.8,244.4 293.1,253.0 299.5,262.1 305.9,271.7 312.3,281.9 318.6,292.5\" fill=\"none\" stroke=\"#00a87a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-dasharray=\"7 5\"/><polyline points=\"70.0,150.0 73.5,150.0 77.0,149.9 80.5,149.7 84.1,149.5 87.6,149.2 91.1,148.9 94.6,148.5 98.1,148.0 101.6,147.6 105.1,147.0 108.7,146.5 112.2,145.8 115.7,145.2 119.2,144.5 122.7,143.8 126.2,143.0 129.7,142.2 133.3,141.4 136.8,140.6 140.3,139.7 143.8,138.9 147.3,138.0 150.8,137.1 154.3,136.2 157.9,135.2 161.4,134.3 164.9,133.4 168.4,132.4 171.9,131.5 175.4,130.5 178.9,129.6 182.5,128.7 186.0,127.8 189.5,126.9 193.0,126.0 196.5,125.1 200.0,124.2 203.5,123.4 207.1,122.6 210.6,121.8 214.1,121.1 217.6,120.4 221.1,119.7 224.6,119.0 228.1,118.4 231.7,117.9 235.2,117.3 238.7,116.9 242.2,116.4 245.7,116.1 249.2,115.7 252.8,115.5 256.3,115.3 259.8,115.1 263.3,115.0 266.8,115.0 270.3,115.0 273.8,115.2 277.4,115.4 280.9,115.6 284.4,116.0 287.9,116.4 291.4,116.9 294.9,117.5 298.4,118.2 302.0,118.9 305.5,119.8 309.0,120.7 312.5,121.8 316.0,122.9 319.5,124.2 323.0,125.5 326.6,127.0 330.1,128.6 333.6,130.3 337.1,132.0 340.6,134.0 344.1,136.0 347.6,138.1 351.2,140.4 354.7,142.8 358.2,145.3 361.7,148.0 365.2,150.8 368.7,153.7 372.2,156.8 375.8,160.0 379.3,163.3 382.8,166.8 386.3,170.5 389.8,174.3 393.3,178.2 396.8,182.3 400.4,186.6 403.9,191.0 407.4,195.6 410.9,200.3 414.4,205.2 417.9,210.3 421.4,215.5 425.0,221.0 428.5,226.6 432.0,232.3 435.5,238.3 439.0,244.4 442.5,250.8 446.0,257.3 449.6,264.0 453.1,270.9 456.6,278.0 460.1,285.3 463.6,292.8\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"266.2\" y1=\"115.0\" x2=\"266.2\" y2=\"150.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/><line x1=\"70.0\" y1=\"115.0\" x2=\"266.2\" y2=\"115.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/><circle cx=\"266.2\" cy=\"115.0\" r=\"5\" fill=\"#e04545\"/><text x=\"266.2\" y=\"168.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">r*</text><text x=\"62.0\" y=\"119.0\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">&#916;G*</text><text x=\"262.2\" y=\"42.0\" fill=\"#8855f5\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">surface: +4&#960;r&#178;&#947;<tspan dy=\"4\" font-size=\"10\">SL</tspan></text><text x=\"289.7\" y=\"292.0\" fill=\"#00a87a\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">volume: (4/3)&#960;r&#179;&#916;G<tspan dy=\"4\" font-size=\"10\">V</tspan></text><text x=\"434.8\" y=\"207.6\" fill=\"#3b82e8\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">total &#916;G<tspan dy=\"4\" font-size=\"10\">r</tspan></text><text x=\"158.3\" y=\"186.0\" fill=\"#e08000\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">embryos shrink</text><text x=\"374.0\" y=\"98.0\" fill=\"#00a87a\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">nuclei grow</text><line x1=\"217.1\" y1=\"181.0\" x2=\"109.2\" y2=\"181.0\" stroke=\"#e08000\" stroke-width=\"1.2\"/><polygon points=\"104.2,181.0 112.7,177.0 112.7,185.0\" fill=\"#e08000\"/><text x=\"62.0\" y=\"154.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">0</text><text x=\"570.2\" y=\"168.0\" fill=\"#a0a0ac\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-style=\"italic\">r</text><text x=\"26.0\" y=\"163.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" transform=\"rotate(-90 26.0 163.0)\">free energy change</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">Small clusters are mostly surface, so they cost energy. Past \\(r^*\\) the volume term wins and adding atoms lowers \\(G\\).</p>\n</div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Embryo or nucleus?",
+          "html": "<ul><li>For small \\(r\\) the \\(r^2\\) surface term dominates, so adding atoms <em>raises</em> \\(G\\). These clusters are <strong>embryos</strong>: unstable, they dissolve back into the liquid</li><li>For large \\(r\\) the \\(r^3\\) volume term dominates, so adding atoms <em>lowers</em> \\(G\\). These are <strong>nuclei</strong>: stable, they keep growing</li><li>The crossover is the maximum of the curve: the <strong>critical nucleus size</strong> \\(r^*\\), with height \\(\\Delta G^*\\), the <strong>free energy barrier to nucleation</strong> (its activation energy, in Unit 5 terms)</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>A crystal must pay for its surface before it can profit from its volume. \\(r^*\\) is the break-even size.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u6-crit",
+          "text": "Critical Radius and Energy Barrier"
+        },
+        {
+          "type": "example",
+          "label": "Derivation: r* and ΔG*",
+          "q": "Find the critical radius and the energy barrier from \\(\\Delta G_r = \\tfrac{4}{3}\\pi r^3 \\Delta G_V + 4\\pi r^2 \\gamma_{SL}\\). (Again the slide points to the pre-recorded lecture; this follows the lecture notes.)",
+          "steps": [
+            "Differentiate: \\(\\dfrac{\\partial \\Delta G_r}{\\partial r} = 4\\pi r^2 \\Delta G_V + 8\\pi r \\gamma_{SL}\\)",
+            "At the maximum this is zero: \\(4\\pi r^2 \\Delta G_V = -8\\pi r\\gamma_{SL}\\), so \\(r^* = -\\dfrac{2\\gamma_{SL}}{\\Delta G_V}\\) (positive, because \\(\\Delta G_V < 0\\))",
+            "Substitute back: \\(\\Delta G^* = \\tfrac{4}{3}\\pi \\dfrac{-8\\gamma_{SL}^3}{\\Delta G_V^3}\\Delta G_V + 4\\pi\\dfrac{4\\gamma_{SL}^2}{\\Delta G_V^2}\\gamma_{SL} = \\dfrac{16\\pi\\gamma_{SL}^3}{\\Delta G_V^2}\\left(1 - \\tfrac{2}{3}\\right)\\)",
+            "Now replace \\(\\Delta G_V\\) with \\(-L_V\\Delta T/T_m\\) to get both in measurable terms"
+          ],
+          "answer": "\\(r^* = -\\dfrac{2\\gamma_{SL}}{\\Delta G_V} = \\left(\\dfrac{2\\gamma_{SL}T_m}{L_V}\\right)\\dfrac{1}{\\Delta T}\\) and \\(\\Delta G^* = \\dfrac{16\\pi\\gamma_{SL}^3}{3(\\Delta G_V)^2} = \\left(\\dfrac{16\\pi\\gamma_{SL}^3 T_m^2}{3L_V^2}\\right)\\dfrac{1}{(\\Delta T)^2}\\)"
+        },
+        {
+          "type": "formulablock",
+          "name": "Critical nucleus size",
+          "eqs": [
+            "r^* = -\\frac{2\\gamma_{SL}}{\\Delta G_V} = \\left(\\frac{2\\gamma_{SL}T_m}{L_V}\\right)\\frac{1}{\\Delta T}"
+          ],
+          "vars": [
+            {
+              "symbol": "Scaling",
+              "desc": "\\(r^* \\propto 1/\\Delta T\\)"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Free energy barrier to nucleation",
+          "eqs": [
+            "\\Delta G^* = \\frac{16\\pi\\gamma_{SL}^3}{3(\\Delta G_V)^2} = \\left(\\frac{16\\pi\\gamma_{SL}^3T_m^2}{3L_V^2}\\right)\\frac{1}{(\\Delta T)^2}"
+          ],
+          "vars": [
+            {
+              "symbol": "Scaling",
+              "desc": "\\(\\Delta G^* \\propto 1/(\\Delta T)^2\\)"
+            }
+          ],
+          "note": "The \\(\\gamma_{SL}^3\\) is why the interfacial energy dominates everything: a small cut in \\(\\gamma\\) cuts the barrier a lot. Heterogeneous nucleation exploits exactly this."
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"solw learn-only\" data-w=\"nuc\"></div>"
+        },
+        {
+          "type": "example",
+          "label": "Try it: how small is a critical nucleus?",
+          "q": "Pure copper: \\(T_m = 1356\\) K, \\(\\gamma_{SL} = 0.177\\) J m\\(^{-2}\\), \\(L_V = 1.88 \\times 10^{9}\\) J m\\(^{-3}\\), atomic volume \\(1.18 \\times 10^{-29}\\) m\\(^3\\). Find \\(r^*\\), \\(\\Delta G^*\\) and the number of atoms in the nucleus at \\(\\Delta T = 236\\) K. (Property values are standard textbook data, not from the slides; 236 K is the lecture's measured maximum for Cu.)",
+          "steps": [
+            "\\(\\Delta G_V = -\\dfrac{1.88 \\times 10^{9} \\times 236}{1356} = -3.27 \\times 10^{8}\\) J m\\(^{-3}\\)",
+            "\\(r^* = \\dfrac{2 \\times 0.177}{3.27 \\times 10^{8}} = 1.08 \\times 10^{-9}\\) m \\(\\approx 1.1\\) nm",
+            "\\(\\Delta G^* = \\dfrac{16\\pi (0.177)^3}{3(3.27 \\times 10^{8})^2} = 8.7 \\times 10^{-19}\\) J",
+            "Atoms: \\(\\tfrac{4}{3}\\pi (1.08 \\times 10^{-9})^3 / 1.18 \\times 10^{-29} \\approx 450\\)"
+          ],
+          "answer": "The critical nucleus is about 1 nm across and holds roughly 450 atoms. The barrier is about 56 times the thermal energy \\(kT\\) at 1120 K, which is just low enough for nucleation to start. That is why homogeneous nucleation in Cu only happens around this undercooling."
+        },
+        {
+          "type": "h2",
+          "id": "u6-under",
+          "text": "The Effect of Undercooling"
+        },
+        {
+          "type": "p",
+          "text": "Cool further and the volume term (\\(\\propto \\Delta T\\)) gets stronger while the surface cost stays the same. The whole \\(\\Delta G_r\\) curve sinks and its peak moves left.",
+          "class": ""
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "As undercooling increases",
+          "html": "<ul><li>The <strong>critical nucleus size</strong> \\(r^*\\) falls (\\(\\propto 1/\\Delta T\\))</li><li>The <strong>energy barrier</strong> \\(\\Delta G^*\\) falls faster (\\(\\propto 1/\\Delta T^2\\))</li><li>So nucleation becomes easier the colder the liquid. More undercooling means more driving force</li></ul>"
+        },
+        {
+          "type": "example",
+          "label": "Try it: scaling without numbers",
+          "q": "A melt nucleates at an undercooling \\(\\Delta T_1\\). If the undercooling were three times larger, what would happen to \\(r^*\\) and \\(\\Delta G^*\\)?",
+          "steps": [
+            "\\(r^* \\propto 1/\\Delta T\\): three times the undercooling gives \\(r^*/3\\)",
+            "\\(\\Delta G^* \\propto 1/\\Delta T^2\\): three times the undercooling gives \\(\\Delta G^*/9\\)"
+          ],
+          "answer": "The critical radius drops to a third, the barrier to a ninth. Exam questions love this: square the factor for \\(\\Delta G^*\\), do not just divide."
+        },
+        {
+          "type": "h2",
+          "id": "u6-tn",
+          "text": "When Does Homogeneous Nucleation Actually Happen?"
+        },
+        {
+          "type": "p",
+          "text": "If more undercooling always makes nucleation easier, why does it happen at one particular temperature rather than gradually? The answer is in the structure of the liquid.",
+          "class": ""
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Clusters in the liquid",
+          "html": "<ul><li>A liquid metal is not completely random. Tiny clusters with a solid-like arrangement (short-range order) constantly form and dissolve</li><li>The size of the largest cluster, \\(r_{max}\\), grows as the liquid gets colder. The critical size \\(r^*\\) shrinks as the liquid gets colder</li><li>At a specific undercooling \\(\\Delta T_N\\) the two meet: the biggest clusters reach critical size and become stable nuclei</li><li>Above \\(\\Delta T_N\\) essentially nothing; at \\(\\Delta T_N\\) a sudden explosion of solid, called <strong>\"Big Bang\" nucleation</strong></li></ul>"
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\"><div class=\"concept-box-title\">Maximum undercooling measured for pure metals (lecture table)</div><div style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:14px;margin:6px 0\"><thead><tr><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Metal</th><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Max undercooling (K)</th><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Metal</th><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Max undercooling (K)</th></tr></thead><tbody><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Cadmium</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">110</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Gold</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">230</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Lead</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">153</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Copper</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">236</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Aluminium</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">160</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Iron</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">286</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Tin</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">187</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Nickel</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">365</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Silver</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">227</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Niobium</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">525</td></tr></tbody></table></div><p style=\"margin-top:8px\">Rule of thumb for pure metals: \\(\\Delta T_N \\approx 0.2\\,T_m\\) (in kelvin).</p></div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "The discrepancy",
+          "html": "<p>Real castings start to solidify with an undercooling of about <strong>1 K</strong>, sometimes as little as 0.1 &#176;C, not hundreds of kelvin. So homogeneous nucleation almost never happens in practice. Something must be lowering the barrier: the mould wall and impurity particles in the melt. That is heterogeneous nucleation.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u6-het",
+          "text": "Heterogeneous Nucleation"
+        },
+        {
+          "type": "p",
+          "text": "Condensation forms on a cold glass, not in mid-air. Bubbles in a fizzy drink stream from scratches on the glass. In both cases an existing surface removes most of the cost of making a new one. Solid metal forms on mould walls and impurity particles for the same reason.",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "<strong>Heterogeneous nucleation</strong> happens at preferential sites such as the mould wall or an impurity particle. The nucleus takes the shape of a <strong>spherical cap</strong> sitting on the surface:",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: a solid nucleus as a spherical cap on a surface</div>\n<svg viewBox=\"0 0 640 270\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"A solid nucleus sitting on a mould wall as a spherical cap, with contact angle theta at its edge. Three surface tensions act at the edge: gamma ML along the wall outwards, gamma SM along the wall inwards, and gamma SL along the cap surface at angle theta. Their horizontal balance gives gamma ML equals gamma SM plus gamma SL cos theta.\">\n<defs><clipPath id=\"capclip\"><rect x=\"0\" y=\"0\" width=\"640\" height=\"190\"/></clipPath></defs><rect x=\"40\" y=\"190\" width=\"440\" height=\"50\" fill=\"#d8d8de\" fill-opacity=\"0.55\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/><text x=\"260.0\" y=\"222.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">mould wall / particle (M)</text><path d=\"M 146.1 190 A 120 120 0 0 1 353.9 190 Z\" fill=\"#3b82e8\" fill-opacity=\"0.18\" stroke=\"#3b82e8\" stroke-width=\"2.4\"/><text x=\"250.0\" y=\"160.0\" fill=\"#3b82e8\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">solid (S)</text><text x=\"120.0\" y=\"70.0\" fill=\"#e08000\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">liquid (L)</text><line x1=\"353.9\" y1=\"190.0\" x2=\"306.4\" y2=\"107.7\" stroke=\"#e04545\" stroke-width=\"2\"/><polygon points=\"305.4,106.0 305.4,106.0 305.4,106.0\" fill=\"#e04545\"/><polygon points=\"303.9,103.4 314.3,111.3 305.6,116.3\" fill=\"#e04545\"/><text x=\"297.4\" y=\"95.1\" fill=\"#e04545\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">&#947;<tspan dy=\"4\" font-size=\"10\">SL</tspan></text><line x1=\"353.9\" y1=\"190.0\" x2=\"423.9\" y2=\"190.0\" stroke=\"#00a87a\" stroke-width=\"2\"/><polygon points=\"431.9,190.0 421.7,185.2 421.7,194.8\" fill=\"#00a87a\"/><text x=\"433.9\" y=\"184.0\" fill=\"#00a87a\" font-size=\"13\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">&#947;<tspan dy=\"4\" font-size=\"10\">ML</tspan></text><line x1=\"353.9\" y1=\"190.0\" x2=\"293.9\" y2=\"190.0\" stroke=\"#8855f5\" stroke-width=\"2\"/><polygon points=\"285.9,190.0 296.1,185.2 296.1,194.8\" fill=\"#8855f5\"/><text x=\"283.9\" y=\"208.0\" fill=\"#8855f5\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">&#947;<tspan dy=\"4\" font-size=\"10\">SM</tspan></text><path d=\"M 319.9 190 A 34 34 0 0 1 336.9 160.6\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"1.4\"/><text x=\"309.9\" y=\"178.0\" fill=\"#a0a0ac\" font-size=\"15\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">&#952;</text><circle cx=\"353.9\" cy=\"190.0\" r=\"3.5\" fill=\"#5e5e6c\"/><text x=\"530.0\" y=\"80.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">Force balance at the edge:</text><text x=\"530.0\" y=\"102.0\" fill=\"#a0a0ac\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">&#947;<tspan dy=\"4\" font-size=\"10\">ML</tspan><tspan dy=\"-4\"> = &#947;</tspan><tspan dy=\"4\" font-size=\"10\">SM</tspan><tspan dy=\"-4\"> + &#947;</tspan><tspan dy=\"4\" font-size=\"10\">SL</tspan><tspan dy=\"-4\"> cos &#952;</tspan></text><text x=\"530.0\" y=\"140.0\" fill=\"#00a87a\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">small &#952;: flat cap, few atoms</text><text x=\"530.0\" y=\"160.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">&#952; = 180&#176;: full sphere</text><text x=\"530.0\" y=\"176.0\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">(no help from the wall)</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">The cap has the same radius of curvature \\(r^*\\) as the homogeneous nucleus, but it is only a slice of the sphere, so far fewer atoms are needed.</p>\n</div>"
+        },
+        {
+          "type": "formulablock",
+          "name": "Balance of interfacial tensions (contact angle)",
+          "eqs": [
+            "\\gamma_{ML} = \\gamma_{SM} + \\gamma_{SL}\\cos\\theta \\qquad \\cos\\theta = \\frac{\\gamma_{ML} - \\gamma_{SM}}{\\gamma_{SL}}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\gamma_{ML},\\ \\gamma_{SM},\\ \\gamma_{SL}\\)",
+              "desc": "mould-liquid, solid-mould and solid-liquid interfacial energies (J m\\(^{-2}\\))"
+            },
+            {
+              "symbol": "\\(\\theta\\)",
+              "desc": "contact (wetting) angle between the cap and the surface"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Free energy of a cap-shaped nucleus",
+          "eqs": [
+            "\\Delta G_{het} = V_S\\,\\Delta G_V + A_{SL}\\,\\gamma_{SL} + A_{SM}(\\gamma_{SM} - \\gamma_{ML})",
+            "\\Delta G_{het} = \\left(\\tfrac{4}{3}\\pi r^3\\Delta G_V + 4\\pi r^2\\gamma_{SL}\\right)S(\\theta) = \\Delta G_{hom}\\,S(\\theta)"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(A_{SM}(\\gamma_{SM} - \\gamma_{ML})\\)",
+              "desc": "the area of mould-liquid interface that is <em>replaced</em> by mould-solid interface when the cap forms"
+            },
+            {
+              "symbol": "\\(S(\\theta)\\)",
+              "desc": "shape factor, \\(S(\\theta) = (2 + \\cos\\theta)(1 - \\cos\\theta)^2/4 \\le 1\\)"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Critical size and barrier, heterogeneous",
+          "eqs": [
+            "r^*_{het} = -\\frac{2\\gamma_{SL}}{\\Delta G_V} = r^*_{hom} \\qquad \\Delta G^*_{het} = \\frac{16\\pi\\gamma_{SL}^3}{3(\\Delta G_V)^2}S(\\theta) = \\Delta G^*_{hom}\\,S(\\theta)"
+          ],
+          "vars": [],
+          "note": "Same critical radius, smaller barrier. The cap has the curvature of a sphere of radius \\(r^*\\) but is only a slice of it, so it contains far fewer atoms. Its volume is exactly \\(S(\\theta)\\) times the full sphere."
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\"><div class=\"concept-box-title\">How much the contact angle helps</div><div style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:14px;margin:6px 0\"><thead><tr><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Contact angle θ</th><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">S(θ), calculated</th><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Barrier vs homogeneous</th></tr></thead><tbody><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">10°</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">0.00017</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">about 1/6000 (slide rounds to 0.0001)</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">30°</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">0.013</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">about 1/80 (slide quotes 0.02)</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">60°</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">0.156</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">about 1/6</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">90°</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">0.5</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">half (a hemisphere)</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">180°</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">1</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">no help at all (a full sphere)</td></tr></tbody></table></div><p style=\"margin-top:8px\">The 30° value on the slide (0.02) does not match the formula, which gives 0.0129. Use the formula in calculations and expect the ~0.01 to 0.02 order of magnitude in multiple choice.</p></div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "What this means",
+          "html": "<ul><li>Smaller contact angle (better wetting of the surface by the solid) means a smaller \\(S(\\theta)\\) and a lower barrier, so nucleation needs <strong>even less undercooling</strong></li><li>In practical casting, nucleation is <strong>always heterogeneous</strong> and needs only a small undercooling</li><li>But ordinary sites (mould walls, oxide particles) are <strong>inefficient</strong>: their contact angle is large. Cracks and crevices in the mould help, because the solid can fill a corner with very few atoms</li><li>A low contact angle needs <strong>good crystallographic matching</strong> between the solid (nucleus) and the substrate (nucleant)</li></ul>"
+        },
+        {
+          "type": "example",
+          "label": "Try it: the payoff from a good nucleant",
+          "q": "For a particular melt and undercooling \\(\\Delta G^*_{hom} = 8.7 \\times 10^{-19}\\) J. Find \\(\\Delta G^*_{het}\\) on a mould wall with \\(\\theta = 90^\\circ\\) and on an inoculant particle with \\(\\theta = 10^\\circ\\). What happens to \\(r^*\\)?",
+          "steps": [
+            "\\(\\theta = 90^\\circ\\): \\(\\cos\\theta = 0\\), \\(S = (2)(1)^2/4 = 0.5\\), so \\(\\Delta G^*_{het} = 4.3 \\times 10^{-19}\\) J",
+            "\\(\\theta = 10^\\circ\\): \\(\\cos\\theta = 0.985\\), \\(S = (2.985)(0.0152)^2/4 = 1.7 \\times 10^{-4}\\), so \\(\\Delta G^*_{het} = 1.5 \\times 10^{-22}\\) J",
+            "\\(r^*\\) depends only on \\(\\gamma_{SL}\\) and \\(\\Delta G_V\\), so it is unchanged in both cases"
+          ],
+          "answer": "The mould wall halves the barrier; the well-matched particle cuts it by a factor of about 6000, to well below \\(kT\\). That is why an inoculated melt nucleates at a fraction of a kelvin of undercooling."
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>A surface lowers the barrier by \\(S(\\theta)\\) without changing \\(r^*\\). The flatter the cap, the fewer atoms it needs.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u6-inoc",
+          "text": "Grain Refinement by Inoculation"
+        },
+        {
+          "type": "p",
+          "text": "Every successful nucleus becomes one grain. More nuclei means more, smaller grains. That matters because fine grains make a metal both <strong>stronger</strong> and <strong>tougher</strong>, a rare case where you do not trade one for the other.",
+          "class": ""
+        },
+        {
+          "type": "formulablock",
+          "name": "Hall-Petch relationship",
+          "eqs": [
+            "\\sigma_y = \\sigma_0 + \\frac{k}{\\sqrt{d}}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\sigma_y\\)",
+              "desc": "yield strength"
+            },
+            {
+              "symbol": "\\(\\sigma_0\\)",
+              "desc": "friction stress (resistance of the lattice itself)"
+            },
+            {
+              "symbol": "\\(k\\)",
+              "desc": "strengthening coefficient (material constant)"
+            },
+            {
+              "symbol": "\\(d\\)",
+              "desc": "average grain size"
+            }
+          ],
+          "note": "The slide prints this as \\(k/d\\); the standard form has \\(\\sqrt{d}\\). Grain boundaries block dislocations, so more boundaries per unit length means a higher yield strength."
+        },
+        {
+          "type": "example",
+          "label": "Try it: how much does refinement buy?",
+          "q": "An aluminium alloy has \\(\\sigma_0 = 20\\) MPa and \\(k = 0.07\\) MPa m\\(^{1/2}\\) (illustrative values). Compare the yield strength for grain sizes of 1 mm (coarse, uninoculated) and 100 \\(\\mu\\)m (inoculated).",
+          "steps": [
+            "\\(d = 1 \\times 10^{-3}\\) m: \\(\\sigma_y = 20 + 0.07/\\sqrt{0.001} = 20 + 2.2 = 22.2\\) MPa",
+            "\\(d = 1 \\times 10^{-4}\\) m: \\(\\sigma_y = 20 + 0.07/\\sqrt{0.0001} = 20 + 7 = 27\\) MPa"
+          ],
+          "answer": "A tenfold refinement raises the grain-boundary contribution by \\(\\sqrt{10} \\approx 3.2\\) times. Refining to 10 \\(\\mu\\)m would give about 42 MPa."
+        },
+        {
+          "type": "p",
+          "text": "Since casting nucleation is always heterogeneous, the route to fine grains is to make heterogeneous nucleation <strong>more efficient</strong>. <strong>Chemical grain refinement</strong>, or <strong>inoculation</strong>, adds a small amount of another element or master alloy that supplies insoluble particles (often intermetallics) with good crystallographic matching to the solid. They show very low nucleation undercooling on the cooling curve and refine the grain size dramatically.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Al-5Ti-1B in aluminium",
+              "color": "#e08000",
+              "text": "Less than 1% of master alloy added to Al alloys. The TiB\\(_2\\) particles (and probably Al\\(_3\\)Ti) match the Al lattice well and nucleate Al grains. The cooling curve shows a large drop in nucleation undercooling."
+            },
+            {
+              "title": "Zr in magnesium",
+              "color": "#e08000",
+              "text": "Pure Zr added to Mg alloys. Zr particles have good crystallographic matching with Mg and refine pure Mg from coarse grains to a fine structure."
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Limitations of chemical grain refinement"
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Poisoning",
+              "color": "#e08000",
+              "text": "Not universal. Some alloying elements react with the nucleating particles and kill them: Al-5Ti-1B is ineffective in <strong>Al-Si</strong> alloys, and Zr is ineffective in <strong>Mg-Al</strong> alloys."
+            },
+            {
+              "title": "Fading",
+              "color": "#e08000",
+              "text": "Refining efficiency falls quickly if the melt is held before casting (particles settle or react). A serious problem for large industrial castings."
+            },
+            {
+              "title": "Property degradation",
+              "color": "#e08000",
+              "text": "Less than 1% of the added particles actually nucleate a grain. The rest stay trapped as agglomerates, hurting corrosion, fatigue and machinability."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Why this matters for additive manufacturing",
+          "html": "<p>Metal 3D printing commonly produces <strong>large columnar grains</strong> growing up through the layers, which also leads to cracking. Controlling nucleation in the melt pool is therefore an active research area, including <strong>new alloy design</strong> specifically for additive manufacturing.</p>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "An alternative: native refinement through a peritectic (Al-Zr)",
+          "html": "<ul><li>Add a small amount of Zr (e.g. 0.2%) to aluminium</li><li>Around <strong>715 &#176;C</strong>: L &#8594; L + Al\\(_3\\)Zr. Al\\(_3\\)Zr particles form in the melt itself</li><li>At <strong>660.5 &#176;C</strong> (peritectic): L + Al\\(_3\\)Zr &#8594; Al</li><li>Al\\(_3\\)Zr matches the Al lattice well, so the particles grown inside the melt act as nucleants without adding foreign agglomerates</li><li>Physical refinement (stirring, ultrasound) is the other alternative, covered in Unit 7</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>Grain size is set at nucleation. Add well-matched particles (inoculation) to get many grains, but watch for poisoning, fading and leftover particles.</p>"
+        }
+      ]
+    },
+    {
+      "id": "u7",
+      "numLabel": "Unit 7 of 10",
+      "color": "#e03f78",
+      "title": "Solidification: Growth",
+      "subtitle": "Once nuclei exist, the rest of the liquid freezes by growth. This unit explains why a growing front can stay flat or break up into cells and tree-like dendrites, how solute piled up ahead of the front creates constitutional supercooling, and how all of this produces the three-zone ingot structure and the ways industry gets rid of it.",
+      "desc": "Interface stability in pure metals and alloys, dendrites, constitutional supercooling and the four growth forms, faceted vs non-faceted growth, the ingot structure, and chemical vs physical grain refinement, with turbine-blade and metallic-glass case studies.",
+      "difficulty": "Medium-Hard",
+      "readTime": "35 min",
+      "sections": [
+        {
+          "type": "toc",
+          "title": "In this unit",
+          "items": [
+            {
+              "href": "#u7-pure",
+              "label": "Growth in pure metals"
+            },
+            {
+              "href": "#u7-dend",
+              "label": "Dendrites"
+            },
+            {
+              "href": "#u7-alloy",
+              "label": "Growth in alloys: solute rejection"
+            },
+            {
+              "href": "#u7-cs",
+              "label": "Constitutional supercooling"
+            },
+            {
+              "href": "#u7-forms",
+              "label": "Four growth forms"
+            },
+            {
+              "href": "#u7-atomic",
+              "label": "Diffusion vs interface control"
+            },
+            {
+              "href": "#u7-ingot",
+              "label": "The ingot structure"
+            },
+            {
+              "href": "#u7-fix",
+              "label": "Getting rid of the ingot structure"
+            },
+            {
+              "href": "#u7-cases",
+              "label": "Case studies"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u7-pure",
+          "text": "Growth in Pure Metals"
+        },
+        {
+          "type": "p",
+          "text": "Ice on a pond grows as a smooth sheet because heat leaves upwards through the ice into cold air. Frost on a car windscreen grows as feathery branches because the surrounding air is colder than the crystal. The difference is the direction in which heat escapes, and it decides the shape of a growing metal crystal too.",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "After nucleation, solidification continues by <strong>growth</strong> at a small undercooling, with the solid-liquid interface sitting at almost exactly \\(T_m\\). In a pure metal, growth is limited by how fast heat (the melt superheat plus the latent heat) can be carried away from the interface: either through the solid or through the liquid.",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: why the direction of heat flow decides the shape of the front in a pure metal</div>\n<svg viewBox=\"0 0 640 310\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Two panels. Left: temperature rises from solid into liquid, so the liquid ahead of the interface is above the melting point; a small bump on the interface sits in hot liquid and melts back, so a planar front is stable. Right: temperature falls into the liquid, which is undercooled below the melting point; a bump finds colder liquid and grows faster, so the planar front is unstable and dendrites form.\">\n<line x1=\"40.0\" y1=\"170.0\" x2=\"40.0\" y2=\"40.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"40.0,30.0 35.2,40.2 44.8,40.2\" fill=\"#5e5e6c\"/><text x=\"34.0\" y=\"44.0\" fill=\"#a0a0ac\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-style=\"italic\">T</text><line x1=\"40.0\" y1=\"105.0\" x2=\"280.0\" y2=\"105.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><text x=\"284.0\" y=\"109.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">T<tspan dy=\"4\" font-size=\"10\">m</tspan></text><rect x=\"40\" y=\"40\" width=\"110\" height=\"130\" fill=\"#3b82e8\" fill-opacity=\"0.08\"/><line x1=\"150.0\" y1=\"40.0\" x2=\"150.0\" y2=\"170.0\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/><text x=\"95.0\" y=\"186.0\" fill=\"#3b82e8\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">solid</text><text x=\"215.0\" y=\"186.0\" fill=\"#e08000\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">liquid</text><polyline points=\"40.0,150.0 150.0,105.0 280.0,52.0\" fill=\"none\" stroke=\"#e04545\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"40\" y=\"200\" width=\"240\" height=\"70\" fill=\"none\"/><polyline points=\"150.0,200.0 150.0,226.0 160.0,235.0 150.0,244.0 150.0,270.0\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"235.0\" x2=\"156.0\" y2=\"235.0\" stroke=\"#00a87a\" stroke-width=\"1.2\"/><polygon points=\"150.0,235.0 156.8,231.8 156.8,238.2\" fill=\"#00a87a\"/><text x=\"180.0\" y=\"239.0\" fill=\"#00a87a\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">bump melts back</text><text x=\"160.0\" y=\"24.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">Liquid hotter than solid (heat out through the solid)</text><text x=\"160.0\" y=\"286.0\" fill=\"#00a87a\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">planar front STABLE</text><line x1=\"360.0\" y1=\"170.0\" x2=\"360.0\" y2=\"40.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"360.0,30.0 355.2,40.2 364.8,40.2\" fill=\"#5e5e6c\"/><text x=\"354.0\" y=\"44.0\" fill=\"#a0a0ac\" font-size=\"13\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\" font-style=\"italic\">T</text><line x1=\"360.0\" y1=\"105.0\" x2=\"600.0\" y2=\"105.0\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><text x=\"604.0\" y=\"109.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">T<tspan dy=\"4\" font-size=\"10\">m</tspan></text><rect x=\"360\" y=\"40\" width=\"110\" height=\"130\" fill=\"#3b82e8\" fill-opacity=\"0.08\"/><line x1=\"470.0\" y1=\"40.0\" x2=\"470.0\" y2=\"170.0\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/><text x=\"415.0\" y=\"186.0\" fill=\"#3b82e8\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">solid</text><text x=\"535.0\" y=\"186.0\" fill=\"#e08000\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">liquid</text><polyline points=\"360.0,110.0 470.0,105.0 600.0,150.0\" fill=\"none\" stroke=\"#e04545\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"360\" y=\"200\" width=\"240\" height=\"70\" fill=\"none\"/><polyline points=\"470.0,200.0 470.0,226.0 498.0,232.0 498.0,238.0 470.0,244.0 470.0,270.0\" fill=\"none\" stroke=\"#3b82e8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"502.0\" y1=\"235.0\" x2=\"520.0\" y2=\"235.0\" stroke=\"#e04545\" stroke-width=\"1.2\"/><polygon points=\"526.0,235.0 519.2,231.8 519.2,238.2\" fill=\"#e04545\"/><text x=\"528.0\" y=\"239.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">bump runs ahead</text><text x=\"480.0\" y=\"24.0\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"600\">Liquid colder than solid (heat out into the liquid)</text><text x=\"480.0\" y=\"286.0\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">planar front UNSTABLE: dendrites</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">Same metal, same \\(T_m\\) at the interface. Only the slope of the temperature in the liquid changes the outcome.</p>\n</div>"
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Heat out through the solid",
+              "color": "#e03f78",
+              "text": "<strong>Beginning of solidification, from the mould wall.</strong> Superheated liquid is poured, so the liquid is <em>hotter</em> than the solid. A bump on the interface pokes into liquid above \\(T_m\\) and melts back. The <strong>planar interface is stable</strong>."
+            },
+            {
+              "title": "Heat out into the liquid",
+              "color": "#e03f78",
+              "text": "<strong>End of solidification, in the bulk melt.</strong> Crystals nucleated on particles in the melt sit in liquid that is <em>colder</em> than \\(T_m\\) (supercooled). A bump reaches colder liquid, grows faster, and runs ahead. The <strong>planar interface is unstable</strong>."
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "id": "u7-dend",
+          "text": "Dendrites"
+        },
+        {
+          "type": "p",
+          "text": "An unstable interface grows protrusions in many directions. These grow into arms, which sprout their own side arms, giving a tree-like crystal called a <strong>dendrite</strong> (Greek <em>dendron</em>, tree). A snowflake is a dendrite of ice.",
+          "class": ""
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Key facts",
+          "html": "<ul><li>Primary, secondary and tertiary arms grow along specific crystallographic directions: <strong>&#8249;100&#8250; in cubic metals</strong> and <strong>&#8249;10&#772;10&#8250; in hcp metals</strong></li><li>In pure metals the dendrites form purely from growth into thermally undercooled liquid: <strong>thermal dendrites</strong></li><li>They are not visible in the final microstructure of a pure metal: each dendrite fills in to become one polygonal grain. You only see them if the remaining liquid is drained or etched differently (as in alloys)</li></ul>"
+        },
+        {
+          "type": "h2",
+          "id": "u7-alloy",
+          "text": "Growth in Alloys: Solute Rejection"
+        },
+        {
+          "type": "p",
+          "text": "Freeze salty water and the ice that forms is almost pure; the salt is pushed out into the water next to it. Alloys do the same. A pure metal freezes at one temperature, but an alloy freezes over a <strong>solidification range</strong>, and the solid that forms is leaner in solute than the liquid it came from.",
+          "class": ""
+        },
+        {
+          "type": "p",
+          "text": "Take an alloy of composition \\(X_0\\) in a system where solute lowers the melting point (so \\(k < 1\\)). The first solid is \\(kX_0\\). The solute it rejects piles up in a thin layer of liquid at the interface, while far away the liquid stays at \\(X_0\\).",
+          "class": ""
+        },
+        {
+          "type": "formulablock",
+          "name": "Equilibrium partition coefficient",
+          "eqs": [
+            "k = \\frac{X_S}{X_L}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(X_S,\\ X_L\\)",
+              "desc": "solidus and liquidus compositions at the same temperature (tie-line ends)"
+            },
+            {
+              "symbol": "\\(k < 1\\)",
+              "desc": "solid holds less solute than the liquid: solute is rejected at the front"
+            }
+          ],
+          "note": "Read straight off the phase diagram. With straight solidus and liquidus lines \\(k\\) is constant."
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "The compositions at the front (lecture figure)",
+          "html": "<ul><li><strong>At \\(T_1\\) (liquidus of \\(X_0\\)):</strong> first solid forms with composition \\(kX_0\\)</li><li><strong>During steady growth:</strong> the solid forming has the bulk composition \\(X_0\\), so the liquid it is in equilibrium with at the interface must be \\(X_0/k\\). The interface sits at \\(T_3\\), the solidus temperature of \\(X_0\\)</li><li><strong>Ahead of the front:</strong> liquid composition falls from \\(X_0/k\\) back to \\(X_0\\) over a thin boundary layer</li></ul>"
+        },
+        {
+          "type": "example",
+          "label": "Try it: compositions at the front",
+          "q": "An alloy contains 2 wt% solute and the partition coefficient is \\(k = 0.25\\). What is the composition of the first solid, and of the liquid at the interface once growth is steady?",
+          "steps": [
+            "First solid: \\(kX_0 = 0.25 \\times 2 = 0.5\\) wt%",
+            "Steady state: solid forms at \\(X_0 = 2\\) wt%, so interface liquid is \\(X_0/k = 2/0.25 = 8\\) wt%"
+          ],
+          "answer": "0.5 wt% for the first solid, 8 wt% in the liquid right at the interface. A smaller \\(k\\) means a bigger pile-up and a stronger tendency to constitutional supercooling."
+        },
+        {
+          "type": "h2",
+          "id": "u7-cs",
+          "text": "Constitutional Supercooling"
+        },
+        {
+          "type": "p",
+          "text": "Here is the trick of alloy solidification. The solute pile-up changes the <strong>liquidus temperature</strong> of the liquid ahead of the front, point by point, as read from the phase diagram. Solute-rich liquid at the interface has a low liquidus (\\(T_3\\)); liquid further out has the bulk liquidus (\\(T_1\\)).",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: constitutional supercooling ahead of a growing alloy front</div>\n<svg viewBox=\"0 0 640 360\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Two stacked plots against distance from the solid-liquid interface. Top: the solid has composition k X0, the liquid at the interface is enriched to X0 over k, decaying back to the bulk X0 further out. Bottom: the liquidus temperature therefore rises from T3 at the interface to T1 far away, while the actual temperature rises in a straight line. Where the actual temperature lies below the local liquidus, shaded, the liquid is constitutionally supercooled even though it is hotter than the solid.\">\n<line x1=\"80.0\" y1=\"140.0\" x2=\"80.0\" y2=\"30.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"80.0,20.0 75.2,30.2 84.8,30.2\" fill=\"#5e5e6c\"/><line x1=\"80.0\" y1=\"140.0\" x2=\"590.0\" y2=\"140.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><rect x=\"80\" y=\"30\" width=\"90\" height=\"110\" fill=\"#3b82e8\" fill-opacity=\"0.08\"/><line x1=\"170.0\" y1=\"30.0\" x2=\"170.0\" y2=\"140.0\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/><line x1=\"80.0\" y1=\"129.2\" x2=\"170.0\" y2=\"129.2\" stroke=\"#3b82e8\" stroke-width=\"2.4\"/><polyline points=\"170.0,42.9 174.2,48.1 178.4,52.9 182.6,57.3 186.8,61.3 191.0,65.0 195.2,68.4 199.4,71.5 203.6,74.4 207.8,77.1 212.0,79.5 216.2,81.8 220.4,83.8 224.6,85.7 228.8,87.5 233.0,89.1 237.2,90.6 241.4,92.0 245.6,93.2 249.8,94.4 254.0,95.4 258.2,96.4 262.4,97.3 266.6,98.1 270.8,98.9 275.0,99.6 279.2,100.2 283.4,100.8 287.6,101.4 291.8,101.9 296.0,102.3 300.2,102.8 304.4,103.2 308.6,103.5 312.8,103.8 317.0,104.1 321.2,104.4 325.4,104.7 329.6,104.9 333.8,105.1 338.0,105.3 342.2,105.5 346.4,105.7 350.6,105.8 354.8,106.0 359.0,106.1 363.2,106.2 367.4,106.4 371.6,106.5 375.8,106.6 380.0,106.6 384.2,106.7 388.4,106.8 392.6,106.9 396.8,106.9 401.0,107.0 405.2,107.0 409.4,107.1 413.6,107.1 417.8,107.2 422.0,107.2 426.2,107.2 430.4,107.3 434.6,107.3 438.8,107.3 443.0,107.4 447.2,107.4 451.4,107.4 455.6,107.4 459.8,107.4 464.0,107.5 468.2,107.5 472.4,107.5 476.6,107.5 480.8,107.5 485.0,107.5 489.2,107.5 493.4,107.5 497.6,107.5 501.8,107.6 506.0,107.6 510.2,107.6 514.4,107.6 518.6,107.6 522.8,107.6 527.0,107.6 531.2,107.6 535.4,107.6 539.6,107.6 543.8,107.6 548.0,107.6 552.2,107.6 556.4,107.6 560.6,107.6 564.8,107.6 569.0,107.6 573.2,107.6 577.4,107.6 581.6,107.6 585.8,107.6 590.0,107.6\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"74.0\" y=\"46.9\" fill=\"#e08000\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">X<tspan dy=\"4\" font-size=\"10\">0</tspan>/k</text><text x=\"74.0\" y=\"111.6\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">X<tspan dy=\"4\" font-size=\"10\">0</tspan></text><text x=\"74.0\" y=\"133.2\" fill=\"#3b82e8\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">kX<tspan dy=\"4\" font-size=\"10\">0</tspan></text><line x1=\"80.0\" y1=\"107.6\" x2=\"590.0\" y2=\"107.6\" stroke=\"#90909c\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/><text x=\"190.0\" y=\"38.9\" fill=\"#e08000\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">solute piles up</text><text x=\"586.0\" y=\"101.6\" fill=\"#90909c\" font-size=\"11\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">bulk melt</text><text x=\"30.0\" y=\"85.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" transform=\"rotate(-90 30.0 85.0)\">solute</text><line x1=\"80.0\" y1=\"320.0\" x2=\"80.0\" y2=\"175.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><polygon points=\"80.0,165.0 75.2,175.2 84.8,175.2\" fill=\"#5e5e6c\"/><line x1=\"80.0\" y1=\"320.0\" x2=\"590.0\" y2=\"320.0\" stroke=\"#5e5e6c\" stroke-width=\"1.5\"/><rect x=\"80\" y=\"175\" width=\"90\" height=\"145\" fill=\"#3b82e8\" fill-opacity=\"0.08\"/><line x1=\"170.0\" y1=\"175.0\" x2=\"170.0\" y2=\"320.0\" stroke=\"#5e5e6c\" stroke-width=\"1.2\"/><polygon points=\"174.2,274.1 178.4,268.3 182.6,263.0 186.8,258.0 191.0,253.5 195.2,249.3 199.4,245.5 203.6,242.0 207.8,238.7 212.0,235.7 216.2,233.0 220.4,230.5 224.6,228.1 228.8,226.0 233.0,224.0 237.2,222.2 241.4,220.5 245.6,219.0 249.8,217.6 254.0,216.3 258.2,215.1 262.4,214.0 266.6,213.0 270.8,212.1 275.0,211.2 279.2,210.4 283.4,209.7 287.6,209.0 291.8,208.4 296.0,207.9 300.2,207.3 304.4,206.9 308.6,206.4 312.8,206.0 317.0,205.6 321.2,205.3 325.4,205.0 329.6,204.7 333.8,204.4 338.0,204.2 342.2,204.0 346.4,203.8 350.6,203.6 354.8,203.4 359.0,203.2 363.2,203.1 367.4,202.9 371.6,202.8 375.8,202.7 380.0,202.6 384.2,202.5 388.4,202.4 392.6,202.3 396.8,202.2 401.0,202.2 405.2,202.1 409.4,202.0 413.6,202.0 417.8,201.9 422.0,201.9 426.2,201.9 430.4,201.8 434.6,201.8 438.8,201.7 443.0,201.7 447.2,201.7 451.4,201.7 455.6,201.6 459.8,201.6 464.0,201.6 468.2,201.6 472.4,201.6 476.6,201.5 476.6,202.5 472.4,203.6 468.2,204.6 464.0,205.7 459.8,206.8 455.6,207.8 451.4,208.9 447.2,210.0 443.0,211.1 438.8,212.1 434.6,213.2 430.4,214.3 426.2,215.3 422.0,216.4 417.8,217.5 413.6,218.5 409.4,219.6 405.2,220.7 401.0,221.7 396.8,222.8 392.6,223.9 388.4,224.9 384.2,226.0 380.0,227.1 375.8,228.1 371.6,229.2 367.4,230.3 363.2,231.3 359.0,232.4 354.8,233.5 350.6,234.5 346.4,235.6 342.2,236.7 338.0,237.7 333.8,238.8 329.6,239.9 325.4,240.9 321.2,242.0 317.0,243.1 312.8,244.2 308.6,245.2 304.4,246.3 300.2,247.4 296.0,248.4 291.8,249.5 287.6,250.6 283.4,251.6 279.2,252.7 275.0,253.8 270.8,254.8 266.6,255.9 262.4,257.0 258.2,258.0 254.0,259.1 249.8,260.2 245.6,261.2 241.4,262.3 237.2,263.4 233.0,264.4 228.8,265.5 224.6,266.6 220.4,267.6 216.2,268.7 212.0,269.8 207.8,270.8 203.6,271.9 199.4,273.0 195.2,274.0 191.0,275.1 186.8,276.2 182.6,277.3 178.4,278.3 174.2,279.4\" fill=\"#e04545\" fill-opacity=\"0.28\"/><polyline points=\"170.0,280.5 174.2,274.1 178.4,268.3 182.6,263.0 186.8,258.0 191.0,253.5 195.2,249.3 199.4,245.5 203.6,242.0 207.8,238.7 212.0,235.7 216.2,233.0 220.4,230.5 224.6,228.1 228.8,226.0 233.0,224.0 237.2,222.2 241.4,220.5 245.6,219.0 249.8,217.6 254.0,216.3 258.2,215.1 262.4,214.0 266.6,213.0 270.8,212.1 275.0,211.2 279.2,210.4 283.4,209.7 287.6,209.0 291.8,208.4 296.0,207.9 300.2,207.3 304.4,206.9 308.6,206.4 312.8,206.0 317.0,205.6 321.2,205.3 325.4,205.0 329.6,204.7 333.8,204.4 338.0,204.2 342.2,204.0 346.4,203.8 350.6,203.6 354.8,203.4 359.0,203.2 363.2,203.1 367.4,202.9 371.6,202.8 375.8,202.7 380.0,202.6 384.2,202.5 388.4,202.4 392.6,202.3 396.8,202.2 401.0,202.2 405.2,202.1 409.4,202.0 413.6,202.0 417.8,201.9 422.0,201.9 426.2,201.9 430.4,201.8 434.6,201.8 438.8,201.7 443.0,201.7 447.2,201.7 451.4,201.7 455.6,201.6 459.8,201.6 464.0,201.6 468.2,201.6 472.4,201.6 476.6,201.5 480.8,201.5 485.0,201.5 489.2,201.5 493.4,201.5 497.6,201.5 501.8,201.5 506.0,201.5 510.2,201.5 514.4,201.4 518.6,201.4 522.8,201.4 527.0,201.4 531.2,201.4 535.4,201.4 539.6,201.4 543.8,201.4 548.0,201.4 552.2,201.4 556.4,201.4 560.6,201.4 564.8,201.4 569.0,201.4 573.2,201.4 577.4,201.4 581.6,201.4 585.8,201.4 590.0,201.4\" fill=\"none\" stroke=\"#e08000\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polyline points=\"170.0,280.5 207.8,270.8 245.6,261.2 283.4,251.6 321.2,242.0 359.0,232.4 396.8,222.8 434.6,213.2 472.4,203.6 510.2,194.0 548.0,184.4\" fill=\"none\" stroke=\"#e04545\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"359.0\" y=\"195.2\" fill=\"#e08000\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">liquidus temperature</text><text x=\"422.0\" y=\"236.4\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">actual temperature</text><text x=\"283.4\" y=\"233.7\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">constitutionally</text><text x=\"283.4\" y=\"248.7\" fill=\"#e04545\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">supercooled</text><text x=\"74.0\" y=\"284.5\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">T<tspan dy=\"4\" font-size=\"10\">3</tspan></text><text x=\"74.0\" y=\"205.4\" fill=\"#a0a0ac\" font-size=\"12\" text-anchor=\"end\" font-family=\"Inter,system-ui,sans-serif\">T<tspan dy=\"4\" font-size=\"10\">1</tspan></text><text x=\"125.0\" y=\"338.0\" fill=\"#3b82e8\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">solid</text><text x=\"380.0\" y=\"338.0\" fill=\"#e08000\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\">liquid  (distance x &#8594;)</text><text x=\"30.0\" y=\"247.5\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Inter,system-ui,sans-serif\" transform=\"rotate(-90 30.0 247.5)\">temperature</text>\n</svg>\n<p style=\"text-align:center;margin-top:6px\">The liquid is <em>hotter</em> than the solid everywhere, yet in the shaded zone it sits below its own liquidus. That undercooling comes from composition, not from heat.</p>\n</div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Why it is called constitutional",
+          "html": "<ul><li>The <strong>actual temperature</strong> of the liquid is set by heat flow, and in a casting it usually rises into the liquid (liquid hotter than solid)</li><li>Yet in the shaded region the actual temperature is <strong>below the local liquidus</strong>, so that liquid is supercooled</li><li>This supercooling comes from <strong>composition</strong> (the constitution of the phase diagram), not from heat. Hence <strong>constitutional supercooling</strong></li><li>So, unlike in a pure metal, an alloy front can be unstable even when the liquid is hotter than the solid</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>A pure metal needs a colder liquid to go unstable. An alloy only needs liquid below its <em>own</em> liquidus, which solute pile-up provides.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u7-forms",
+          "text": "Four Growth Forms"
+        },
+        {
+          "type": "p",
+          "text": "The liquidus profile is fixed by the solute. What the caster controls is the actual temperature gradient in the liquid. Starting steep and getting shallower, the front passes through four forms (lecture figure, cases 1 to 4):",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "1. Plane front",
+              "color": "#e03f78",
+              "text": "Actual gradient <strong>steeper than the critical gradient</strong> (the slope of the liquidus at the interface). No liquid is supercooled; a bump melts back. Flat front."
+            },
+            {
+              "title": "2. Cellular",
+              "color": "#e03f78",
+              "text": "Gradient <strong>just below critical</strong>. A thin supercooled zone. Bumps survive and grow into an array of convex <strong>cells</strong> growing against the heat flow; each cell usually has <strong>six neighbours</strong>. No side arms."
+            },
+            {
+              "title": "3. Columnar dendritic",
+              "color": "#e03f78",
+              "text": "Gradient lower still but <strong>still positive</strong>. A wide supercooled zone; cell walls become unstable and sprout side arms. Heat still leaves through the solid, so growth is directional. <strong>The most common form in castings</strong>, growing in from the mould wall."
+            },
+            {
+              "title": "4. Free dendritic",
+              "color": "#e03f78",
+              "text": "Gradient <strong>negative</strong>: liquid both thermally and constitutionally undercooled. Latent heat flows into the liquid in every direction, so a crystal grows arms all round, like a pure-metal thermal dendrite. Seen in the <strong>centre</strong> of a casting."
+            }
+          ]
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"solw learn-only\" data-w=\"cs\"></div>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Going further: the constitutional supercooling criterion (not on the slides)",
+          "html": "<p>A standard textbook result makes case 1 quantitative: a planar front is stable when \\(G_L / v \\ge \\Delta T_0 / D_L\\), where \\(G_L\\) is the actual temperature gradient in the liquid, \\(v\\) the growth velocity, \\(\\Delta T_0\\) the solidification range of the alloy and \\(D_L\\) the solute diffusivity in the liquid. It explains why fast growth, shallow gradients and wide freezing ranges all push towards dendrites. Not lectured, so treat it as background.</p>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "A bonus: constitutional supercooling helps inoculation",
+          "html": "<p>Synchrotron X-ray imaging of solidifying alloys (lecture slide) shows new grains nucleating on inoculant particles inside the constitutionally supercooled zone ahead of the front. The supercooled zone gives particles the undercooling they need to activate, so solute and inoculant work together in grain refinement.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u7-atomic",
+          "text": "Diffusion vs Interface Control"
+        },
+        {
+          "type": "p",
+          "text": "Growth needs two steps in series, like a factory where parts must first be delivered and then assembled. Whichever step is slower sets the pace, and also sets the shape of the crystal.",
+          "class": ""
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Diffusion:</strong> atoms move from the liquid to the solid-liquid interface",
+            "<strong>Interface reaction:</strong> those atoms attach to the solid"
+          ]
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Interface-controlled growth",
+              "color": "#e03f78",
+              "text": "Diffusion fast, attachment slow. Atoms only stick at a few favoured sites (steps and ledges), so the interface is <strong>atomically smooth</strong>. The crystal grows as flat planes with sharp edges: a <strong>faceted</strong> solid, e.g. Si in Al-Si alloys."
+            },
+            {
+              "title": "Diffusion-controlled growth",
+              "color": "#e03f78",
+              "text": "Attachment fast, diffusion slow. Atoms stick anywhere, so the interface is <strong>atomically rough</strong>. The crystal follows the diffusion field and grows <strong>smooth, rounded</strong> (non-faceted) shapes and dendrites. Typical of metals."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Watch the wording",
+          "html": "<p>The slide says \"atomically smooth interface: rough faceted solid\" and \"atomically rough interface: smooth rounded solid\". Smooth at the atomic scale gives the jagged, angular crystal you see; rough at the atomic scale gives the smooth rounded one. The two \"roughs\" are at different scales, which is exactly the kind of thing a multiple choice question can twist.</p>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Not assessed: Monte Carlo simulation",
+          "html": "<p>The lecture shows the lecturer's Monte Carlo simulations of growth morphology: diffusion roughens the interface, attachment and capillary forces smooth it, giving dendritic shapes when diffusion dominates and compact shapes when the interface reaction dominates. The slides mark this case study as <strong>not assessed</strong>.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u7-ingot",
+          "text": "The Ingot Structure"
+        },
+        {
+          "type": "p",
+          "text": "Cut a large casting in half, polish and etch it, and you nearly always see the same three zones. Ingots (also called billets, blooms or blanks depending on size and shape) are the starting point for rolled, forged and extruded products, so this structure matters well beyond foundries.",
+          "class": ""
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\">\n<div class=\"concept-box-title\">Diagram: the three zones of an ingot cross-section (schematic)</div>\n<svg viewBox=\"0 0 640 330\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:4px auto 0\" role=\"img\" aria-label=\"Square ingot cross-section. A thin outer band of tiny chill grains lines the mould wall, long columnar grains run inward perpendicular to each wall, and the centre is filled with larger equiaxed grains.\">\n<rect x=\"22\" y=\"22\" width=\"286\" height=\"286\" fill=\"none\" stroke=\"#5e5e6c\" stroke-width=\"4\"/><circle cx=\"33.0\" cy=\"37.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"42.9\" cy=\"35.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"53.2\" cy=\"36.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"61.0\" cy=\"36.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"71.3\" cy=\"36.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"80.1\" cy=\"36.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"89.5\" cy=\"35.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"97.1\" cy=\"36.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"107.1\" cy=\"34.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"116.1\" cy=\"35.9\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"125.8\" cy=\"36.9\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"132.4\" cy=\"36.0\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"143.8\" cy=\"36.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"151.9\" cy=\"36.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"161.7\" cy=\"37.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"169.1\" cy=\"35.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"179.5\" cy=\"35.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"186.5\" cy=\"35.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"196.3\" cy=\"35.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"206.8\" cy=\"36.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"215.2\" cy=\"37.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"222.2\" cy=\"35.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"232.7\" cy=\"36.0\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"241.3\" cy=\"35.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"251.7\" cy=\"34.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"259.1\" cy=\"35.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"269.0\" cy=\"37.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"277.5\" cy=\"35.0\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"286.2\" cy=\"35.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.1\" cy=\"35.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"293.5\" cy=\"34.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.3\" cy=\"42.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.2\" cy=\"52.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.1\" cy=\"61.9\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.4\" cy=\"70.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.0\" cy=\"80.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.3\" cy=\"88.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.6\" cy=\"96.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.3\" cy=\"106.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"293.5\" cy=\"115.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.9\" cy=\"125.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"292.8\" cy=\"134.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"292.7\" cy=\"142.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"293.0\" cy=\"150.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.5\" cy=\"159.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.4\" cy=\"168.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"293.9\" cy=\"178.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"292.9\" cy=\"188.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.2\" cy=\"197.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.2\" cy=\"206.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.8\" cy=\"213.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"292.5\" cy=\"222.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"292.7\" cy=\"231.0\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.4\" cy=\"240.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.7\" cy=\"250.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"294.6\" cy=\"258.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.1\" cy=\"267.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"293.6\" cy=\"278.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"292.9\" cy=\"286.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"292.5\" cy=\"296.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"295.9\" cy=\"295.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"285.1\" cy=\"295.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"276.6\" cy=\"295.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"268.7\" cy=\"294.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"258.8\" cy=\"293.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"249.6\" cy=\"294.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"240.2\" cy=\"294.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"233.1\" cy=\"294.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"223.5\" cy=\"292.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"213.3\" cy=\"295.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"204.4\" cy=\"294.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"197.7\" cy=\"292.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"188.6\" cy=\"295.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"180.0\" cy=\"295.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"170.3\" cy=\"293.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"159.7\" cy=\"294.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"152.6\" cy=\"293.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"141.7\" cy=\"293.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"134.7\" cy=\"294.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"124.1\" cy=\"294.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"116.2\" cy=\"293.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"107.2\" cy=\"293.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"96.6\" cy=\"293.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"90.0\" cy=\"295.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"79.9\" cy=\"295.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"71.8\" cy=\"293.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"61.9\" cy=\"292.9\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"52.5\" cy=\"294.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"44.3\" cy=\"295.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"34.4\" cy=\"293.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.8\" cy=\"294.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.5\" cy=\"286.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.2\" cy=\"277.5\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.8\" cy=\"268.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.8\" cy=\"258.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.4\" cy=\"250.6\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.1\" cy=\"242.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.4\" cy=\"231.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.5\" cy=\"223.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"34.7\" cy=\"215.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"37.0\" cy=\"206.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"37.2\" cy=\"197.0\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"37.4\" cy=\"186.1\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.8\" cy=\"178.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.7\" cy=\"170.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"34.6\" cy=\"159.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"34.7\" cy=\"150.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"34.8\" cy=\"141.0\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.3\" cy=\"134.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.1\" cy=\"123.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.1\" cy=\"116.0\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.2\" cy=\"106.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"37.5\" cy=\"97.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.5\" cy=\"89.3\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.7\" cy=\"79.2\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"34.7\" cy=\"69.7\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.9\" cy=\"62.9\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.0\" cy=\"53.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"36.0\" cy=\"42.4\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><circle cx=\"35.1\" cy=\"34.8\" r=\"3.6\" fill=\"#f3c7bd\" stroke=\"#b05040\" stroke-width=\"0.6\"/><line x1=\"42.0\" y1=\"42.0\" x2=\"101.0\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"51.5\" y1=\"42.0\" x2=\"106.0\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"60.9\" y1=\"42.0\" x2=\"110.9\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"70.4\" y1=\"42.0\" x2=\"115.8\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"79.8\" y1=\"42.0\" x2=\"120.7\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"89.3\" y1=\"42.0\" x2=\"125.6\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"98.8\" y1=\"42.0\" x2=\"130.6\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"108.2\" y1=\"42.0\" x2=\"135.5\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"117.7\" y1=\"42.0\" x2=\"140.4\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"127.2\" y1=\"42.0\" x2=\"145.3\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"136.6\" y1=\"42.0\" x2=\"150.2\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"146.1\" y1=\"42.0\" x2=\"155.2\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"155.5\" y1=\"42.0\" x2=\"160.1\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"165.0\" y1=\"42.0\" x2=\"165.0\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"174.5\" y1=\"42.0\" x2=\"169.9\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"183.9\" y1=\"42.0\" x2=\"174.8\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"193.4\" y1=\"42.0\" x2=\"179.8\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"202.8\" y1=\"42.0\" x2=\"184.7\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"212.3\" y1=\"42.0\" x2=\"189.6\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"221.8\" y1=\"42.0\" x2=\"194.5\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"231.2\" y1=\"42.0\" x2=\"199.4\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"240.7\" y1=\"42.0\" x2=\"204.4\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"250.2\" y1=\"42.0\" x2=\"209.3\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"259.6\" y1=\"42.0\" x2=\"214.2\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"269.1\" y1=\"42.0\" x2=\"219.1\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"278.5\" y1=\"42.0\" x2=\"224.0\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"42.0\" x2=\"229.0\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"42.0\" x2=\"229.0\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"51.5\" x2=\"229.0\" y2=\"106.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"60.9\" x2=\"229.0\" y2=\"110.9\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"70.4\" x2=\"229.0\" y2=\"115.8\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"79.8\" x2=\"229.0\" y2=\"120.7\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"89.3\" x2=\"229.0\" y2=\"125.6\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"98.8\" x2=\"229.0\" y2=\"130.6\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"108.2\" x2=\"229.0\" y2=\"135.5\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"117.7\" x2=\"229.0\" y2=\"140.4\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"127.2\" x2=\"229.0\" y2=\"145.3\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"136.6\" x2=\"229.0\" y2=\"150.2\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"146.1\" x2=\"229.0\" y2=\"155.2\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"155.5\" x2=\"229.0\" y2=\"160.1\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"165.0\" x2=\"229.0\" y2=\"165.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"174.5\" x2=\"229.0\" y2=\"169.9\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"183.9\" x2=\"229.0\" y2=\"174.8\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"193.4\" x2=\"229.0\" y2=\"179.8\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"202.8\" x2=\"229.0\" y2=\"184.7\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"212.3\" x2=\"229.0\" y2=\"189.6\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"221.8\" x2=\"229.0\" y2=\"194.5\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"231.2\" x2=\"229.0\" y2=\"199.4\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"240.7\" x2=\"229.0\" y2=\"204.4\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"250.2\" x2=\"229.0\" y2=\"209.3\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"259.6\" x2=\"229.0\" y2=\"214.2\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"269.1\" x2=\"229.0\" y2=\"219.1\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"278.5\" x2=\"229.0\" y2=\"224.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"288.0\" x2=\"229.0\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"288.0\" y1=\"288.0\" x2=\"229.0\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"278.5\" y1=\"288.0\" x2=\"224.0\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"269.1\" y1=\"288.0\" x2=\"219.1\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"259.6\" y1=\"288.0\" x2=\"214.2\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"250.2\" y1=\"288.0\" x2=\"209.3\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"240.7\" y1=\"288.0\" x2=\"204.4\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"231.2\" y1=\"288.0\" x2=\"199.4\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"221.8\" y1=\"288.0\" x2=\"194.5\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"212.3\" y1=\"288.0\" x2=\"189.6\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"202.8\" y1=\"288.0\" x2=\"184.7\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"193.4\" y1=\"288.0\" x2=\"179.8\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"183.9\" y1=\"288.0\" x2=\"174.8\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"174.5\" y1=\"288.0\" x2=\"169.9\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"165.0\" y1=\"288.0\" x2=\"165.0\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"155.5\" y1=\"288.0\" x2=\"160.1\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"146.1\" y1=\"288.0\" x2=\"155.2\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"136.6\" y1=\"288.0\" x2=\"150.2\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"127.2\" y1=\"288.0\" x2=\"145.3\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"117.7\" y1=\"288.0\" x2=\"140.4\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"108.2\" y1=\"288.0\" x2=\"135.5\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"98.8\" y1=\"288.0\" x2=\"130.6\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"89.3\" y1=\"288.0\" x2=\"125.6\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"79.8\" y1=\"288.0\" x2=\"120.7\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"70.4\" y1=\"288.0\" x2=\"115.8\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"60.9\" y1=\"288.0\" x2=\"110.9\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"51.5\" y1=\"288.0\" x2=\"106.0\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"288.0\" x2=\"101.0\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"288.0\" x2=\"101.0\" y2=\"229.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"278.5\" x2=\"101.0\" y2=\"224.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"269.1\" x2=\"101.0\" y2=\"219.1\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"259.6\" x2=\"101.0\" y2=\"214.2\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"250.2\" x2=\"101.0\" y2=\"209.3\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"240.7\" x2=\"101.0\" y2=\"204.4\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"231.2\" x2=\"101.0\" y2=\"199.4\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"221.8\" x2=\"101.0\" y2=\"194.5\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"212.3\" x2=\"101.0\" y2=\"189.6\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"202.8\" x2=\"101.0\" y2=\"184.7\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"193.4\" x2=\"101.0\" y2=\"179.8\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"183.9\" x2=\"101.0\" y2=\"174.8\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"174.5\" x2=\"101.0\" y2=\"169.9\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"165.0\" x2=\"101.0\" y2=\"165.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"155.5\" x2=\"101.0\" y2=\"160.1\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"146.1\" x2=\"101.0\" y2=\"155.2\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"136.6\" x2=\"101.0\" y2=\"150.2\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"127.2\" x2=\"101.0\" y2=\"145.3\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"117.7\" x2=\"101.0\" y2=\"140.4\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"108.2\" x2=\"101.0\" y2=\"135.5\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"98.8\" x2=\"101.0\" y2=\"130.6\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"89.3\" x2=\"101.0\" y2=\"125.6\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"79.8\" x2=\"101.0\" y2=\"120.7\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"70.4\" x2=\"101.0\" y2=\"115.8\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"60.9\" x2=\"101.0\" y2=\"110.9\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"51.5\" x2=\"101.0\" y2=\"106.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><line x1=\"42.0\" y1=\"42.0\" x2=\"101.0\" y2=\"101.0\" stroke=\"#3b82e8\" stroke-width=\"1\"/><polygon points=\"124.2,114.0 114.0,121.2 102.7,120.7 97.8,110.4 105.7,96.7 120.0,101.6\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"129.2,145.4 120.2,153.6 107.2,154.9 103.2,139.2 108.5,129.0 121.7,133.7\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"123.0,163.8 115.4,174.1 101.2,173.1 97.4,162.1 107.0,150.7 120.1,152.3\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"126.4,190.5 119.9,200.1 108.5,199.5 104.2,187.2 111.6,177.9 121.0,180.4\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"130.0,215.0 120.1,226.1 107.7,224.6 103.2,212.7 111.8,200.7 126.0,201.6\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"150.3,114.5 143.7,124.6 128.8,121.8 124.1,110.1 132.9,98.0 146.8,102.6\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"155.3,138.9 146.9,149.1 132.3,148.8 127.6,135.3 137.4,127.8 149.5,129.5\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"152.1,166.8 145.1,176.8 130.6,173.4 125.9,161.7 134.8,151.6 145.6,154.2\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"151.9,193.8 142.5,203.0 131.7,201.2 125.2,189.7 132.9,181.0 145.8,180.3\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"148.7,216.9 139.9,227.4 126.8,224.3 124.7,212.1 131.0,200.5 144.9,204.2\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"175.7,114.6 167.6,123.8 154.1,121.6 148.3,107.6 155.8,99.8 170.3,101.7\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"179.7,138.8 171.2,147.7 157.8,146.1 155.7,133.2 160.2,121.1 175.9,124.2\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"175.3,163.1 166.4,175.7 156.0,171.6 150.0,161.8 158.1,152.5 171.0,152.5\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"178.5,194.0 167.7,205.5 156.2,202.8 152.3,189.0 159.5,181.1 171.2,182.0\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"180.2,215.5 170.6,229.1 159.4,227.9 156.4,213.9 162.7,203.8 176.6,203.5\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"201.9,115.1 191.6,125.9 180.6,123.3 173.2,110.7 185.0,103.6 196.2,104.1\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"203.3,145.4 195.9,153.1 182.3,152.6 177.6,141.0 184.2,130.7 199.4,131.0\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"200.3,169.2 190.3,176.6 177.9,176.9 173.2,163.2 181.1,154.7 193.4,157.2\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"200.2,189.7 191.6,200.2 178.3,200.3 176.0,187.3 182.7,176.3 198.2,177.2\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"203.3,221.8 193.5,234.9 181.1,230.1 178.3,219.2 185.7,207.4 196.6,209.8\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"230.1,116.5 221.7,124.0 209.8,122.7 204.4,110.2 215.2,102.5 225.7,103.2\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"228.5,139.0 219.5,149.7 209.1,146.1 202.4,137.0 209.8,126.1 223.4,128.1\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"231.6,167.9 224.7,176.5 213.2,176.3 208.4,163.2 217.4,155.7 227.8,156.9\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"233.2,192.7 223.1,202.3 212.4,201.6 205.9,191.0 214.1,180.1 228.2,180.8\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><polygon points=\"232.0,220.1 226.1,229.7 211.2,229.1 206.7,216.2 216.0,207.8 229.8,208.7\" fill=\"#00a87a\" fill-opacity=\"0.15\" stroke=\"#00a87a\" stroke-width=\"1\"/><line x1=\"296.0\" y1=\"65.0\" x2=\"337.0\" y2=\"80.0\" stroke=\"#90909c\" stroke-width=\"1\"/><text x=\"345.0\" y=\"76.0\" fill=\"#e04545\" font-size=\"14\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">Chill zone</text><text x=\"345.0\" y=\"94.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">fine, equiaxed, random orientation</text><text x=\"345.0\" y=\"110.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">many nuclei on the cold mould wall</text><line x1=\"265.0\" y1=\"135.0\" x2=\"337.0\" y2=\"160.0\" stroke=\"#90909c\" stroke-width=\"1\"/><text x=\"345.0\" y=\"156.0\" fill=\"#3b82e8\" font-size=\"14\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">Columnar zone</text><text x=\"345.0\" y=\"174.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">long grains, parallel to heat flow</text><text x=\"345.0\" y=\"190.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">&#8249;100&#8250; grains win the race (cubic metals)</text><line x1=\"195.0\" y1=\"195.0\" x2=\"337.0\" y2=\"240.0\" stroke=\"#90909c\" stroke-width=\"1\"/><text x=\"345.0\" y=\"236.0\" fill=\"#00a87a\" font-size=\"14\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\" font-weight=\"700\">Central equiaxed zone</text><text x=\"345.0\" y=\"254.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">coarse, equiaxed, random orientation</text><text x=\"345.0\" y=\"270.0\" fill=\"#90909c\" font-size=\"12\" text-anchor=\"start\" font-family=\"Inter,system-ui,sans-serif\">few nuclei, slow cooling, mostly in alloys</text>\n</svg>\n</div>"
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Chill zone",
+              "color": "#e03f78",
+              "text": "The mould is much colder than the melt. On pouring, the liquid touching the wall is highly undercooled, so a large number of nuclei form there. Some are swept into the hot melt by pouring and convection and melt back. Survivors impinge on each other quickly: <strong>very fine, equiaxed, randomly oriented</strong> grains of similar size."
+            },
+            {
+              "title": "Columnar zone",
+              "color": "#e03f78",
+              "text": "Nucleation releases latent heat and stops further nucleation. Heat now leaves through the solid and mould wall, so the chill crystals grow inward along the heat flow. Grains whose favoured direction (&#8249;100&#8250; cubic, &#8249;10&#772;10&#8250; hcp) lies close to the heat flow win the race and crowd out the rest. Except in very pure metals, growth is cellular or dendritic."
+            },
+            {
+              "title": "Central equiaxed zone",
+              "color": "#e03f78",
+              "text": "Solid growing in the bulk melt ahead of the columnar front, once the melt has cooled below its liquidus. A network of equiaxed grains <strong>blocks</strong> the columnar grains. Fewer nuclei and slow cooling, so the grains are <strong>coarse</strong>. Rarely seen in pure metals, where the columnar zone can run to the centre."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "Where do the central equiaxed grains come from?",
+          "html": "<ul><li><strong>Nuclei from the chill zone</strong> carried into the melt that survive once it has cooled enough</li><li><strong>Independent nucleation</strong> on impurity particles in the constitutionally supercooled liquid ahead of the columnar front (the reason this zone is an alloy feature)</li><li><strong>Detached dendrite arms</strong> broken off columnar dendrites by convection, which drift to the centre and grow</li><li>(In some cases, crystals showering down from the top surface, which cools in contact with air)</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "note",
+          "title": "Problems with the ingot structure",
+          "html": "<ul><li>Inhomogeneous microstructure and properties across the section</li><li><strong>Anisotropic</strong> mechanical properties from the long columnar grains</li><li>Large grain size, so poor mechanical performance (Hall-Petch, Unit 6)</li><li>Macro- and microsegregation</li><li>Shrinkage porosity and <strong>hot tearing</strong>, because liquid cannot feed through the columnar network in the final stages</li></ul><p style=\"margin-top:8px\">A fine, equiaxed, uniform structure fixes most of these: it feeds liquid better, spreads porosity out, and largely removes hot tearing and segregation. Achieving it is one of the casting industry's top priorities.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u7-fix",
+          "text": "Getting Rid of the Ingot Structure"
+        },
+        {
+          "type": "raw",
+          "html": "<div class=\"concept-box\"><div class=\"concept-box-title\">Three routes compared</div><div style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:14px;margin:6px 0\"><thead><tr><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\"></th><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Chemical refinement</th><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Low superheat casting</th><th style=\"text-align:left;padding:7px 10px;border-bottom:2px solid var(--border);color:var(--text)\">Physical refinement (external field)</th></tr></thead><tbody><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">How</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Inoculant particles nucleate grains everywhere</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Pour close to the liquidus so more melt is undercooled and chill crystals survive</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Strong forced convection (stirring, shearing, fields, ultrasound) during solidification</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Works for</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Specific alloys only</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Small castings</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Any alloy (universal)</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Main drawback</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Poisoning, fading, leftover particles, re-addition after remelting</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Low fluidity, incomplete mould filling, poor in large castings; hardly used</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Equipment and scale-up; still largely research and development</td></tr><tr><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Industrial status</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">The standard industrial solution</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Rarely practised</td><td style=\"padding:7px 10px;border-bottom:1px solid var(--border-soft);vertical-align:top\">Emerging (ultrasound most promising)</td></tr></tbody></table></div></div>"
+        },
+        {
+          "type": "h3",
+          "text": "Chemical grain refinement: why it is not enough"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Many important alloys have <strong>no chemical refiner</strong> because of poisoning (e.g. Al-Si, Mg-Al)",
+            "It stops working if the alloy is <strong>remelted</strong>, so more must be added (cost, composition drift)",
+            "It stops working if the melt is <strong>held</strong> before casting (fading)",
+            "Only about <strong>1%</strong> of the particles nucleate grains (0.1 to 1% in the notes). The rest segregate as stress raisers and worsen fatigue"
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Low superheat casting"
+        },
+        {
+          "type": "p",
+          "text": "With <strong>high superheat</strong>, chill crystals formed on pouring are stripped off by convection and dissolve in the hot melt. With <strong>low superheat</strong>, most of the melt becomes undercooled on contact with the mould, many more chill crystals form, and they survive to fill the casting with equiaxed grains. It can remove the columnar zone in small castings (e.g. Sn-15 wt% Pb cast with 15 &#176;C rather than 125 &#176;C superheat) but loses effectiveness in large ones.",
+          "class": ""
+        },
+        {
+          "type": "h3",
+          "text": "Physical grain refinement"
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "External fields used",
+              "color": "#e03f78",
+              "text": "Intense mechanical stirring or shearing, magnetohydrodynamic (MHD) flow, DC magnetic fields, mould vibration, electric current pulses, high-intensity ultrasound."
+            },
+            {
+              "title": "Why they refine",
+              "color": "#e03f78",
+              "text": "Strong fluid flow; temperature homogenisation (latent heat dispersed); particle coarsening (less constitutional undercooling); <strong>dendrite fragmentation</strong> (a grain multiplier); dispersion of nucleants; enhanced heterogeneous nucleation (ultrasound)."
+            },
+            {
+              "title": "Advantages",
+              "color": "#e03f78",
+              "text": "Universal (any alloy). No insoluble particles added, so melt cleanliness and fatigue performance are preserved."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "",
+          "title": "High-intensity ultrasound",
+          "html": "<ul><li>Gives very strong convection <strong>and</strong> pressure pulses of around <strong>1000 atm</strong> (cavitation)</li><li>The pressure shifts the equilibrium melting point and forces the melt to wet insoluble particles, so heterogeneous nucleation is enhanced</li><li>In pure Al and Al-10% Cu it gives finer grains than Al-5Ti-1B inoculation</li><li><strong>Al-Si:</strong> refines the primary \\(\\alpha\\)-Al, the Si particles and the eutectic together, which chemical refiners cannot do (and Al-Ti-B is poisoned by Si anyway)</li><li><strong>Recycled Al (cans to cars):</strong> Fe impurities form a \"Chinese script\" Al-Si-Fe intermetallic that lowers toughness. Ultrasound turns it into compact particles, improving fracture toughness, strength and ductility</li><li><strong>Al-Zr peritectic:</strong> Al\\(_3\\)Zr refines Al but tends to settle. Ultrasound applied early in the liquid refines and disperses the Al\\(_3\\)Zr and slows settling, giving stronger refinement</li></ul>"
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>Industry uses chemical refiners because they are easy. Physical methods, ultrasound above all, work on any alloy and leave the melt clean.</p>"
+        },
+        {
+          "type": "h2",
+          "id": "u7-cases",
+          "text": "Case Studies"
+        },
+        {
+          "type": "h3",
+          "text": "Gas turbine blades"
+        },
+        {
+          "type": "p",
+          "text": "The hottest parts of a jet engine run in gas hotter than their own melting point, under huge centrifugal load, for thousands of hours. The failure mode is <strong>creep</strong>, and creep in these alloys concentrates at grain boundaries, especially those lying across the stress. Ti alloys serve the cooler fan blades; Ni superalloys keep their strength to the highest temperatures and are used in the turbine.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Equiaxed (conventionally cast)",
+              "color": "#e03f78",
+              "text": "Grain boundaries in every direction, including across the blade axis. Lowest creep resistance."
+            },
+            {
+              "title": "Directionally solidified (DS)",
+              "color": "#e03f78",
+              "text": "Heat removed from one end through a water-cooled chill as the mould is withdrawn from the furnace. Columnar grains run along the blade, so no boundaries lie across the main stress."
+            },
+            {
+              "title": "Single crystal (SC)",
+              "color": "#e03f78",
+              "text": "A helical <strong>single crystal selector</strong> above the chill lets only one grain through into the blade. No grain boundaries at all: the highest temperature capability."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "This is the ingot lesson used deliberately: columnar growth, normally a defect, is controlled until only one grain survives. The blades are made by <strong>investment casting</strong> (the lost-wax process): wax pattern <strong>assembly</strong>, <strong>investing</strong> in ceramic slurry, <strong>stuccoing</strong>, <strong>dewaxing</strong>, <strong>firing</strong> the shell, <strong>pouring</strong>, <strong>knockout</strong> of the shell and <strong>finishing</strong>. The lecture's chart shows blade temperature capability rising steadily from wrought to conventionally cast, DS and finally SC alloys.",
+          "class": ""
+        },
+        {
+          "type": "h3",
+          "text": "Metallic glass"
+        },
+        {
+          "type": "p",
+          "text": "Cool a melt fast enough and nucleation never gets the chance to happen: the atoms are frozen in their disordered liquid arrangement. In <strong>melt spinning</strong>, a jet of molten alloy hits a spinning cooled wheel and solidifies as a thin ribbon at cooling rates of the order of a million kelvin per second.",
+          "class": ""
+        },
+        {
+          "type": "cardgrid",
+          "cards": [
+            {
+              "title": "Structure",
+              "color": "#e03f78",
+              "text": "Disordered, glassy (liquid-like). <strong>No crystals, no grain boundaries, no dislocations.</strong>"
+            },
+            {
+              "title": "Properties",
+              "color": "#e03f78",
+              "text": "Very high strength and <strong>resilience</strong> (ability to store elastic energy), from a large elastic limit (around 2%, roughly ten times a crystalline metal). Good corrosion resistance."
+            }
+          ]
+        },
+        {
+          "type": "conceptbox",
+          "variant": "tip",
+          "title": "In one line",
+          "html": "<p>Turbine blades control growth until one grain is left; metallic glass prevents nucleation so no grain forms at all. Both are solidification control taken to the limit.</p>"
+        }
+      ]
+    },
+    {
+      "soon": true,
+      "numLabel": "Unit 8",
+      "title": "Metalforming (Hot and Cold Work)",
+      "desc": "Coming soon — added once covered in lectures.",
+      "color": "#2fa15c",
+      "sections": []
+    },
+    {
+      "soon": true,
+      "numLabel": "Unit 9",
+      "title": "The Fe-C System",
+      "desc": "Coming soon — added once covered in lectures.",
+      "color": "#3b82e8",
+      "sections": []
+    },
+    {
+      "soon": true,
+      "numLabel": "Unit 10",
+      "title": "Precipitation Strengthening",
+      "desc": "Coming soon — added once covered in lectures.",
+      "color": "#8855f5",
+      "sections": []
+    }
   ],
   "extraSections": null,
   "formulaSheet": [
@@ -1822,34 +3414,49 @@ window.SITE_CONTENT = {
         {
           "type": "formulablock",
           "name": "First law of thermodynamics",
-          "eqs": ["Q = \\Delta U + W \\qquad \\Delta U = Q - P\\Delta V"]
+          "eqs": [
+            "Q = \\Delta U + W \\qquad \\Delta U = Q - P\\Delta V"
+          ]
         },
         {
           "type": "formulablock",
           "name": "Enthalpy",
-          "eqs": ["H = U + PV \\qquad \\Delta H = Q \\text{ (at constant P)} \\qquad \\Delta H \\approx \\Delta U \\text{ (solid/liquid)}"]
+          "eqs": [
+            "H = U + PV \\qquad \\Delta H = Q \\text{ (at constant P)} \\qquad \\Delta H \\approx \\Delta U \\text{ (solid/liquid)}"
+          ]
         },
         {
           "type": "formulablock",
           "name": "Gibbs free energy",
-          "eqs": ["G = H - TS"]
+          "eqs": [
+            "G = H - TS"
+          ]
         },
         {
           "type": "formulablock",
           "name": "Equilibrium & transformation conditions",
-          "eqs": ["\\Delta G = 0 \\text{ (equilibrium)} \\qquad \\Delta G = \\Delta H - T\\Delta S < 0 \\text{ (transformation occurs)}"]
+          "eqs": [
+            "\\Delta G = 0 \\text{ (equilibrium)} \\qquad \\Delta G = \\Delta H - T\\Delta S < 0 \\text{ (transformation occurs)}"
+          ]
         },
         {
           "type": "formulablock",
           "name": "Heat capacity",
-          "eqs": ["C_P = \\left(\\frac{\\partial Q}{\\partial T}\\right)_P = \\left(\\frac{\\partial H}{\\partial T}\\right)_P"]
+          "eqs": [
+            "C_P = \\left(\\frac{\\partial Q}{\\partial T}\\right)_P = \\left(\\frac{\\partial H}{\\partial T}\\right)_P"
+          ]
         },
         {
           "type": "formulablock",
-          "name": "\u0394H and \u0394S from C_P",
-          "eqs": ["\\Delta H = \\int C_P \\, dT \\qquad \\Delta S = \\int \\frac{C_P}{T} \\, dT"],
+          "name": "ΔH and ΔS from C_P",
+          "eqs": [
+            "\\Delta H = \\int C_P \\, dT \\qquad \\Delta S = \\int \\frac{C_P}{T} \\, dT"
+          ],
           "vars": [
-            { "symbol": "Ref.", "desc": "H = 0 at 298 K; S = 0 at 0 K (third law)" }
+            {
+              "symbol": "Ref.",
+              "desc": "H = 0 at 298 K; S = 0 at 0 K (third law)"
+            }
           ]
         }
       ]
@@ -2070,6 +3677,163 @@ window.SITE_CONTENT = {
             "\\text{Eutectic: } L \\rightarrow \\alpha + \\beta \\qquad \\text{Eutectoid: } \\gamma \\rightarrow \\alpha + \\beta",
             "\\text{Peritectic: } L + \\alpha \\rightarrow \\gamma \\qquad \\text{Peritectoid: } \\alpha + \\beta \\rightarrow \\gamma"
           ]
+        }
+      ]
+    },
+    {
+      "heading": "U5 - Limitations of Thermodynamics (Kinetics)",
+      "blocks": [
+        {
+          "type": "formulablock",
+          "name": "Arrhenius rate law",
+          "eqs": [
+            "\\text{rate} \\propto \\exp\\left(-\\frac{\\Delta G_a}{kT}\\right) = \\exp\\left(-\\frac{\\Delta H_a}{RT}\\right)"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(k\\)",
+              "desc": "\\(1.38 \\times 10^{-23}\\) J K\\(^{-1}\\), per atom"
+            },
+            {
+              "symbol": "\\(R\\)",
+              "desc": "\\(8.314\\) J mol\\(^{-1}\\) K\\(^{-1}\\), per mole"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Fick's first law (steady state)",
+          "eqs": [
+            "J = -D\\,\\frac{\\partial C}{\\partial x}"
+          ],
+          "vars": [
+            {
+              "symbol": "Units",
+              "desc": "\\(J\\): quantity m\\(^{-2}\\) s\\(^{-1}\\); \\(D\\): m\\(^2\\) s\\(^{-1}\\)"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Diffusivity",
+          "eqs": [
+            "D = D_0\\exp\\left(-\\frac{\\Delta H_a}{RT}\\right)"
+          ],
+          "vars": []
+        },
+        {
+          "type": "formulablock",
+          "name": "Fick's second law (transient)",
+          "eqs": [
+            "\\frac{\\partial C}{\\partial t} = D\\,\\frac{\\partial^2 C}{\\partial x^2}"
+          ],
+          "vars": []
+        }
+      ]
+    },
+    {
+      "heading": "U6 - Solidification: Nucleation",
+      "blocks": [
+        {
+          "type": "formulablock",
+          "name": "Driving force",
+          "eqs": [
+            "\\Delta G \\approx -\\frac{L\\Delta T}{T_m} \\qquad \\Delta G_V \\approx -\\frac{L_V\\Delta T}{T_m}"
+          ],
+          "vars": [
+            {
+              "symbol": "\\(\\Delta T\\)",
+              "desc": "\\(T_m - T\\)"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Homogeneous nucleus",
+          "eqs": [
+            "\\Delta G_r = \\tfrac{4}{3}\\pi r^3\\Delta G_V + 4\\pi r^2\\gamma_{SL}"
+          ],
+          "vars": []
+        },
+        {
+          "type": "formulablock",
+          "name": "Critical radius",
+          "eqs": [
+            "r^* = -\\frac{2\\gamma_{SL}}{\\Delta G_V} = \\left(\\frac{2\\gamma_{SL}T_m}{L_V}\\right)\\frac{1}{\\Delta T}"
+          ],
+          "vars": []
+        },
+        {
+          "type": "formulablock",
+          "name": "Nucleation barrier",
+          "eqs": [
+            "\\Delta G^* = \\frac{16\\pi\\gamma_{SL}^3}{3(\\Delta G_V)^2} = \\left(\\frac{16\\pi\\gamma_{SL}^3T_m^2}{3L_V^2}\\right)\\frac{1}{(\\Delta T)^2}"
+          ],
+          "vars": []
+        },
+        {
+          "type": "formulablock",
+          "name": "Contact angle (spherical cap)",
+          "eqs": [
+            "\\gamma_{ML} = \\gamma_{SM} + \\gamma_{SL}\\cos\\theta"
+          ],
+          "vars": []
+        },
+        {
+          "type": "formulablock",
+          "name": "Heterogeneous nucleation",
+          "eqs": [
+            "\\Delta G^*_{het} = \\Delta G^*_{hom}\\,S(\\theta) \\qquad r^*_{het} = r^*_{hom} \\qquad S(\\theta) = \\frac{(2 + \\cos\\theta)(1 - \\cos\\theta)^2}{4}"
+          ],
+          "vars": [
+            {
+              "symbol": "Values",
+              "desc": "\\(S(10^\\circ) = 0.00017\\), \\(S(30^\\circ) = 0.013\\), \\(S(90^\\circ) = 0.5\\), \\(S(180^\\circ) = 1\\)"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Hall-Petch",
+          "eqs": [
+            "\\sigma_y = \\sigma_0 + \\frac{k}{\\sqrt{d}}"
+          ],
+          "vars": []
+        }
+      ]
+    },
+    {
+      "heading": "U7 - Solidification: Growth",
+      "blocks": [
+        {
+          "type": "formulablock",
+          "name": "Partition coefficient",
+          "eqs": [
+            "k = \\frac{X_S}{X_L}"
+          ],
+          "vars": []
+        },
+        {
+          "type": "formulablock",
+          "name": "Compositions at an alloy front",
+          "eqs": [
+            "X_S^{\\text{first}} = kX_0 \\qquad X_L^{\\text{interface}} = \\frac{X_0}{k}\\ \\text{(steady state)}"
+          ],
+          "vars": [
+            {
+              "symbol": "Interface temperature",
+              "desc": "Steady state: the solidus temperature of \\(X_0\\)"
+            }
+          ]
+        },
+        {
+          "type": "formulablock",
+          "name": "Planar front stability",
+          "eqs": [
+            "G_{\\text{actual}} \\ge \\left.\\frac{dT_L}{dx}\\right|_{x=0} \\ \\Rightarrow\\ \\text{planar}"
+          ],
+          "vars": [],
+          "note": "Lecture statement: the actual gradient must exceed the critical (liquidus) gradient. Textbook form, not lectured: \\(G_L/v \\ge \\Delta T_0/D_L\\)."
         }
       ]
     }
@@ -2313,6 +4077,176 @@ window.SITE_CONTENT = {
           "tag": "U4 - T14",
           "claim": "\"Cooling lowers the liquid free energy curve relative to the solids, so the liquid becomes more stable.\"",
           "truth": "<strong>FALSE.</strong> Cooling raises the liquid curve relative to the solid curves. That is why the liquid eventually disappears. Heating does the opposite."
+        }
+      ]
+    },
+    {
+      "heading": "Unit 5 - Limitations of Thermodynamics",
+      "items": [
+        {
+          "tag": "U5 - T1",
+          "claim": "\"A slowly cooled alloy always matches the phase diagram, so coring cannot happen in castings.\"",
+          "truth": "<strong>FALSE.</strong> Normal casting rates are far too fast for solid-state diffusion to keep up. Coring is the normal state of an as-cast alloy; the diagram's uniform 35 wt% Ni grain needs near-infinite time."
+        },
+        {
+          "tag": "U5 - T2",
+          "claim": "\"In a cored Cu-35 wt% Ni alloy solidification finishes at the equilibrium solidus.\"",
+          "truth": "<strong>FALSE.</strong> Because the average solid is Ni-richer than the current solidus, liquid remains below the equilibrium solidus. On the slide, solidification ends at about 1205 &#176;C, not at about 1220 &#176;C."
+        },
+        {
+          "tag": "U5 - T3",
+          "claim": "\"Homogenising should be done just above the solidus so diffusion is as fast as possible.\"",
+          "truth": "<strong>FALSE.</strong> Homogenising is done at an elevated temperature <strong>below</strong> the solidus. Above it the alloy would partially melt."
+        },
+        {
+          "tag": "U5 - T4",
+          "claim": "\"A transformation with a large driving force will be fast.\"",
+          "truth": "<strong>FALSE.</strong> Rate is set by the activation energy and temperature (Arrhenius), not by \\(\\Delta G\\). Diamond to graphite is favourable but effectively never happens."
+        },
+        {
+          "tag": "U5 - T5",
+          "claim": "\"\\(\\exp(-\\Delta G_a/kT)\\) and \\(\\exp(-\\Delta H_a/RT)\\) give different answers.\"",
+          "truth": "<strong>FALSE.</strong> They are the same law: \\(k\\) is per atom, \\(R\\) per mole, \\(R = N_A k\\). They only differ if you put a per-mole energy over \\(kT\\) or a per-atom one over \\(RT\\)."
+        },
+        {
+          "tag": "U5 - T6",
+          "claim": "\"Diffusivity D has units of m\\(^{-2}\\) s\\(^{-1}\\).\"",
+          "truth": "<strong>FALSE.</strong> That appears on the slide but is a typo. From \\(J = -D\\,\\partial C/\\partial x\\), \\(D\\) is m\\(^2\\) s\\(^{-1}\\)."
+        },
+        {
+          "tag": "U5 - T7",
+          "claim": "\"In steady-state diffusion the concentration at each point changes linearly with time.\"",
+          "truth": "<strong>FALSE.</strong> In steady state the concentration at each point does not change with time at all. It is the profile across the material that is linear (in distance)."
+        },
+        {
+          "tag": "U5 - T8",
+          "claim": "\"Vacancy diffusion is faster than interstitial diffusion because vacancies give atoms more room.\"",
+          "truth": "<strong>FALSE.</strong> Interstitial diffusion is faster: interstitial sites are almost always free, while vacancy diffusion must wait for a vacancy next to the atom."
+        },
+        {
+          "tag": "U5 - T9",
+          "claim": "\"Atoms always diffuse from high to low concentration.\"",
+          "truth": "<strong>FALSE.</strong> They diffuse down the chemical potential gradient. In spinodal decomposition that is <strong>up</strong> the concentration gradient (uphill diffusion)."
+        },
+        {
+          "tag": "U5 - T10",
+          "claim": "\"Diffusion stops when the concentration is the same everywhere.\"",
+          "truth": "<strong>FALSE.</strong> It stops when the <strong>chemical potential</strong> of each component is the same everywhere. In a two-phase alloy at equilibrium the phases have different compositions but equal chemical potentials."
+        }
+      ]
+    },
+    {
+      "heading": "Unit 6 - Solidification: Nucleation",
+      "items": [
+        {
+          "tag": "U6 - T1",
+          "claim": "\"A pure liquid metal starts to freeze as soon as it reaches \\(T_m\\).\"",
+          "truth": "<strong>FALSE.</strong> At \\(T_m\\) the driving force is zero. Some undercooling is always needed for nucleation; homogeneously about 0.2\\(T_m\\), heterogeneously a few K or less."
+        },
+        {
+          "tag": "U6 - T2",
+          "claim": "\"The temperature rise after nucleation on a cooling curve means the melt is being reheated by the furnace.\"",
+          "truth": "<strong>FALSE.</strong> It is recalescence: latent heat released by the new crystals. It stops further nucleation, and the rest of solidification is growth."
+        },
+        {
+          "tag": "U6 - T3",
+          "claim": "\"Embryos smaller than \\(r^*\\) are stable but grow slowly.\"",
+          "truth": "<strong>FALSE.</strong> Below \\(r^*\\) adding atoms raises the free energy, so embryos are unstable and dissolve back into the liquid."
+        },
+        {
+          "tag": "U6 - T4",
+          "claim": "\"Doubling the undercooling halves the nucleation barrier.\"",
+          "truth": "<strong>FALSE.</strong> \\(\\Delta G^* \\propto 1/\\Delta T^2\\), so doubling the undercooling cuts the barrier to a quarter. It is \\(r^*\\) that halves."
+        },
+        {
+          "tag": "U6 - T5",
+          "claim": "\"Heterogeneous nucleation is easier because the critical radius is smaller.\"",
+          "truth": "<strong>FALSE.</strong> The critical radius is the <strong>same</strong>. The barrier falls by \\(S(\\theta)\\) because the cap is only a slice of the sphere and needs far fewer atoms."
+        },
+        {
+          "tag": "U6 - T6",
+          "claim": "\"A larger contact angle gives better heterogeneous nucleation.\"",
+          "truth": "<strong>FALSE.</strong> Smaller angle means better wetting, smaller \\(S(\\theta)\\) and a lower barrier. At 180&#176; the surface gives no help at all."
+        },
+        {
+          "tag": "U6 - T7",
+          "claim": "\"Homogeneous nucleation is common in industrial casting because melts are kept very clean.\"",
+          "truth": "<strong>FALSE.</strong> In practical casting nucleation is always heterogeneous. Real castings nucleate at about 1 K of undercooling, far below the hundreds of kelvin needed homogeneously."
+        },
+        {
+          "tag": "U6 - T8",
+          "claim": "\"Mould walls are efficient nucleation sites, so inoculants are unnecessary.\"",
+          "truth": "<strong>FALSE.</strong> Mould walls and oxide particles have large contact angles and are inefficient. Well-matched inoculant particles are what give fine grains."
+        },
+        {
+          "tag": "U6 - T9",
+          "claim": "\"Most of the particles added in an Al-5Ti-1B master alloy each nucleate a grain.\"",
+          "truth": "<strong>FALSE.</strong> Under 1% do. The rest stay in the casting as agglomerates and can hurt fatigue, corrosion and machinability."
+        },
+        {
+          "tag": "U6 - T10",
+          "claim": "\"Al-5Ti-1B works for every aluminium alloy.\"",
+          "truth": "<strong>FALSE.</strong> It is poisoned in Al-Si alloys. Likewise Zr does not refine Mg-Al alloys."
+        }
+      ]
+    },
+    {
+      "heading": "Unit 7 - Solidification: Growth",
+      "items": [
+        {
+          "tag": "U7 - T1",
+          "claim": "\"A planar front in a pure metal is unstable when growing from the mould wall into superheated liquid.\"",
+          "truth": "<strong>FALSE.</strong> When the liquid is hotter than the solid, a bump melts back, so the planar front is stable. Instability needs liquid colder than \\(T_m\\), i.e. heat flowing into the liquid."
+        },
+        {
+          "tag": "U7 - T2",
+          "claim": "\"Thermal dendrites are clearly visible in a polished section of a fully solid pure metal.\"",
+          "truth": "<strong>FALSE.</strong> Each dendrite fills in to a polygonal grain, so in a pure metal the dendritic shape is not visible after solidification."
+        },
+        {
+          "tag": "U7 - T3",
+          "claim": "\"Constitutional supercooling can only happen when the liquid is colder than the solid.\"",
+          "truth": "<strong>FALSE.</strong> It happens with liquid hotter than the solid. The liquid only has to be below its own <em>local liquidus</em>, which the solute pile-up lowers."
+        },
+        {
+          "tag": "U7 - T4",
+          "claim": "\"In steady-state alloy growth the liquid at the interface has the bulk composition \\(X_0\\).\"",
+          "truth": "<strong>FALSE.</strong> The solid forming has composition \\(X_0\\), so the interface liquid is enriched to \\(X_0/k\\). The bulk \\(X_0\\) is only reached away from the front."
+        },
+        {
+          "tag": "U7 - T5",
+          "claim": "\"Free dendritic growth happens at the mould wall where cooling is fastest.\"",
+          "truth": "<strong>FALSE.</strong> Columnar dendrites grow from the mould wall (positive gradient, directional heat flow). Free dendrites grow in the centre, where the gradient is negative."
+        },
+        {
+          "tag": "U7 - T6",
+          "claim": "\"An atomically rough interface gives a rough, faceted crystal.\"",
+          "truth": "<strong>FALSE.</strong> Atomically <strong>smooth</strong> (interface-controlled) gives faceted crystals. Atomically rough (diffusion-controlled) gives smooth, rounded crystals."
+        },
+        {
+          "tag": "U7 - T7",
+          "claim": "\"The central equiaxed zone forms from the chill crystals only.\"",
+          "truth": "<strong>FALSE.</strong> Three sources: surviving chill crystals, independent nucleation in constitutionally supercooled liquid, and dendrite arms broken off by convection."
+        },
+        {
+          "tag": "U7 - T8",
+          "claim": "\"A pure metal ingot always shows a large central equiaxed zone.\"",
+          "truth": "<strong>FALSE.</strong> In pure metals the columnar zone often runs to the centre. The central equiaxed zone mainly relies on constitutional supercooling, an alloy effect."
+        },
+        {
+          "tag": "U7 - T9",
+          "claim": "\"Casting with high superheat helps produce fine equiaxed grains.\"",
+          "truth": "<strong>FALSE.</strong> High superheat remelts chill crystals swept into the bulk. <strong>Low</strong> superheat lets them survive, though it hurts fluidity and mould filling."
+        },
+        {
+          "tag": "U7 - T10",
+          "claim": "\"Physical grain refinement, like inoculation, only works for specific alloy systems.\"",
+          "truth": "<strong>FALSE.</strong> Physical methods are universal and add no insoluble particles. Being alloy-specific is a limitation of chemical refinement."
+        },
+        {
+          "tag": "U7 - T11",
+          "claim": "\"Single crystal turbine blades are used because they are stronger at room temperature.\"",
+          "truth": "<strong>FALSE.</strong> The point is high-temperature <strong>creep</strong> resistance: removing grain boundaries, especially those across the stress, where creep damage concentrates."
         }
       ]
     }
